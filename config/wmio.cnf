@@ -1,0 +1,7 @@
+#Application removed the following secrets mft.wmio.keypassword at 2026/04/17 11:37:06
+#Fri Apr 17 11:37:06 IST 2026
+mft.wmio.contexturl=a-vir-c2.int.ipaas.dev.automation.ibm.com
+mft.wmio.fileName=wmio_keystore.file
+mft.wmio.isInternalLink=false
+mft.wmio.keyalias=wmio_sso
+mft.wmio.tenantid=dev1878880

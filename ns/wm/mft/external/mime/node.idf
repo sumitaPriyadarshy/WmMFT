@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.net.mime.MimeData</value>
+    <value>jakarta.mail.internet.ParameterList</value>
+    <value>com.webmethods.is.multipart.MultipartProcessorConstants</value>
+    <value>com.webmethods.is.util.IDataMap</value>
+  </array>
+</Values>

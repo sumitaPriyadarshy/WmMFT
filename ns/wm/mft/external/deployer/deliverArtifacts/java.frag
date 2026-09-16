@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">deliverArtifacts</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">U3RyaW5nIGRlcGxveW1lbnRJZCA9IFZhbHVlc0VtdWxhdG9yLmdldFN0cmluZyhpbnB1dCwgRGVw
+bG95ZXJDb25zdGFudHMuREVQTE9ZTUVOVF9JRCk7ClN0cmluZyBwcm9kdWN0TmFtZXNwYWNlID0g
+VmFsdWVzRW11bGF0b3IuZ2V0U3RyaW5nKGlucHV0LCBEZXBsb3llckNvbnN0YW50cy5QUk9EVUNU
+X05BTUVTUEFDRSk7CklEYXRhW10gYXJ0aWZhY3RzID0gKElEYXRhW10pIFZhbHVlc0VtdWxhdG9y
+LmdldChpbnB1dCwgRGVwbG95ZXJDb25zdGFudHMuQVJUSUZBQ1RTKTsKaWYgKHByb2R1Y3ROYW1l
+c3BhY2UgPT0gbnVsbCB8fCAhcHJvZHVjdE5hbWVzcGFjZS5lcXVhbHNJZ25vcmVDYXNlKERlcGxv
+eWVyQ29uc3RhbnRzLlBST0RVQ1RfTkFNRVNQQUNFX01GVCkpIHsKCXRocm93IG5ldyBTZXJ2aWNl
+RXhjZXB0aW9uKE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCI3MDAyIikpOwp9IGVsc2UgewoJRGVw
+bG95bWVudEhhbmRsZXIuZGVsaXZlckFydGlmYWN0cyhkZXBsb3ltZW50SWQsIGFydGlmYWN0cyk7
+Cn0K</value>
+</Values>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <g fill="#fff" transform="translate(12 12) rotate(180) translate(-12 -12)">
+      <rect fill-opacity="0" height="24" width="24"/>
+      <polygon fill-rule="nonzero"
+        points="12.265 19.528 4.6841 11.931 12.265 4.3338 9.931 2 0 11.931 9.931 21.862"/>
+      <polygon fill-rule="nonzero"
+        points="23.851 19.528 16.27 11.931 23.851 4.3338 21.517 2 11.586 11.931 21.517 21.862"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1e6ccl4pt91bhed*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *Host: localhost*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *Content-Length: 132*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *command:login*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *username:sdey*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *password:************
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *clientid:[Find : vg000100k1e6cc16pt91bhda]*
+09/01/2026 03:26:36 PM|[HTTP:2324::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1e6ccl4pt91bhed*
+09/01/2026 03:26:36 PM|[HTTP:2324:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 03:26:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788256596774_XN1mjXUdho1c4jTzytWFdrd4e1zvD7;*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *c2f:zvD7*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 03:26:36 PM|[HTTP:2325:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788256596774_XN1mjXUdho1c4jTzytWFdrd4e1zvD7;*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *c2f:zvD7*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 03:28:42 PM|[HTTP:2340:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 03:28:45 PM|[HTTP:2345:sdey:127.0.0.1] READ: *GET /ibmmcsp-sftp/123_ren.txt HTTP/1.1*
+09/01/2026 03:28:45 PM|[HTTP:2345:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788256596774_XN1mjXUdho1c4jTzytWFdrd4e1zvD7;*
+09/01/2026 03:28:45 PM|[HTTP:2345:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1e6gacbpt91bhfp*
+09/01/2026 03:28:45 PM|[HTTP:2345:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788256596774_XN1mjXUdho1c4jTzytWFdrd4e1zvD7;*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1e6gacbpt91bhfp*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *c2f:zvD7*
+09/01/2026 03:28:47 PM|[HTTP:2352:sdey:127.0.0.1] READ: *command:logout*

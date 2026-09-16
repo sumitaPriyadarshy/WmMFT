@@ -1,0 +1,47 @@
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1dg5ts5t8okefnf*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *Host: localhost*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *Content-Length: 132*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *command:login*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *username:sdey*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *password:************
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *clientid:[Find : vg000100k1dg5tl6t8okefnc]*
+09/01/2026 08:58:36 AM|[HTTP:68::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1dg5ts5t8okefnf*
+09/01/2026 08:58:36 AM|[HTTP:68:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 08:58:36 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788233316348_TJcV37gtSf5UasJGtjWBj0a6OV8MN7;*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *c2f:8MN7*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 08:58:36 AM|[HTTP:69:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 09:02:51 AM|[HTTP:69:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/. java.net.ConnectException: Operation timed out*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788233316348_TJcV37gtSf5UasJGtjWBj0a6OV8MN7;*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *Content-Length: 58*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *c2f:8MN7*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp*
+09/01/2026 09:02:51 AM|[HTTP:86:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 09:07:06 AM|[HTTP:86:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp. java.net.ConnectException: Operation timed out*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788233316348_TJcV37gtSf5UasJGtjWBj0a6OV8MN7;*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *c2f:8MN7*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 09:07:06 AM|[HTTP:105:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788233316348_TJcV37gtSf5UasJGtjWBj0a6OV8MN7;*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *c2f:8MN7*
+09/01/2026 09:11:22 AM|[HTTP:131:sdey:127.0.0.1] READ: *command:logout*

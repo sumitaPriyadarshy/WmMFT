@@ -1,0 +1,29 @@
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *POST / HTTP/1.1*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *Cookie: CrushAuth=;*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0h32453m5p08n8i*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *Host: localhost*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *Content-Length: 19*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *c2f:*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] READ: *command:logout*
+08/21/2026 08:11:57 AM|[HTTP:1811::127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/21/2026 08:11:57 AM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k12ij5scm4g07fq7*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *Host: localhost*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *Content-Length: 132*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *command:login*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *username:sdey*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *password:************
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *clientid:[Find : vg000100k12ij5j9m4g07fq4]*
+08/28/2026 03:09:08 AM|[HTTP:1811::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k12ij5scm4g07fq7*
+08/28/2026 03:09:08 AM|[HTTP:1811:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/28/2026 03:09:08 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787866748861_jyMHunaYuDt6BgoJAkeCoC57seKPeO;*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *c2f:KPeO*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *command:stat*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/28/2026 03:09:08 AM|[HTTP:1812:sdey:127.0.0.1] READ: *format:stat_dmz*

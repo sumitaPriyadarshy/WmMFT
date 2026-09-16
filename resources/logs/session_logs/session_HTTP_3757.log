@@ -1,0 +1,30 @@
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1f0bm8rpt91csol*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *Host: localhost*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *Content-Length: 132*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *command:login*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *username:sdey*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *password:************
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *clientid:[Find : vg000100k1f0blj4pt91csoi]*
+09/01/2026 11:00:36 PM|[HTTP:3757::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1f0bm8rpt91csol*
+09/01/2026 11:00:36 PM|[HTTP:3757:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 11:00:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788283836806_yAi5DpViNBDTaED4TWoC883naWoGOo;*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *c2f:oGOo*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 11:00:36 PM|[HTTP:3758:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 11:17:45 PM|[HTTP:3758:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/.  Initializing SFTP channels failed*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788283836806_yAi5DpViNBDTaED4TWoC883naWoGOo;*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *Content-Length: 58*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *c2f:oGOo*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp*
+09/01/2026 11:17:45 PM|[HTTP:3759:sdey:127.0.0.1] READ: *format:stat_dmz*

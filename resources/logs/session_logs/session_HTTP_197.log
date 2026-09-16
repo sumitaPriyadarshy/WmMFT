@@ -1,0 +1,322 @@
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Content-Length: 90*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; CrushAuth=1787235788288_MNy8Ld3CGD892GK7GY3zkCF3D5lf9J; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *command:login*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *username:sdey*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *password:************
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *encoded:true*
+08/20/2026 10:26:41 PM|[HTTP:197::0.0.0.0] READ: *random:0.24874077186615418*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/20/2026 10:26:42 PM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *POST / HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Content-Length: 78*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Upgrade-Insecure-Requests: 1*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Origin: null*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: navigate*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Sec-Fetch-User: ?1*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: document*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *username:sdey*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *password:************
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *command:login*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *skip_login:true*
+08/20/2026 10:26:42 PM|[HTTP:197:sdey:0.0.0.0] READ: *encoded:false*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *GET / HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Upgrade-Insecure-Requests: 1*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: navigate*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Sec-Fetch-User: ?1*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: document*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:196:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Content-Length: 46*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *command:isCloudMode*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *random:0.32732016078540804*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Content-Length: 153*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *command:getUsername*
+08/20/2026 10:26:42 PM|[HTTP:202:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Content-Length: 153*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Content-Length: 153*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Content-Length: 164*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Content-Length: 162*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *command:getUserInfo*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *path:%2F*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:199:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *command:isCloudMode*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *command:getUsername*
+08/20/2026 10:26:42 PM|[HTTP:201:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:198:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *command:getUserInfo*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *path:/*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Content-Length: 168*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *command:getCustomForm*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *form:messageForm*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Content-Length: 181*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *command:getXMLListing*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *format:JSONOBJ*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *path:%2F*
+08/20/2026 10:26:42 PM|[HTTP:200:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Content-Length: 197*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06; mainServerInstance=; access_token=eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJBZG1pbmlzdHJhdG9yIiwidXNlcklkIjoiQWRtaW5pc3RyYXRvciJ9.OS6lvdMG5VdygX9yGCAAuPI4SbWixrC2j9cXFZMNpXFk3BeWpnRFTO-sl5h3bOSVyQwB6Qy2EnWzkgbJ3RQORFjlV3mvoQRgkDDGzQd1TXLndvfjLufFWbccdEG3wkX7AS3n9E2DyisnouppoBzB9G3NZNUWd9JOIuIeJrqu8dX1iWh02X-P_i0CU5qXT0lj6jZPWFWcTI8GU_az9c-hTKLFK2jZ2-TlycLWi5B1ECzkkRxMelKtvPy7fP-KBLyLG8vc4c1YZqNOJFWt-qr3sK336TOQ8rZIqqKywk0z_cMk9XMP7NJt1x372SoDin3xq3gzO46Utiq1GXAwutDkCQ; CrushAuth=1787245002031_dkJS3jJYnW6SfLLt3cd84JG36z60AV*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *command:getXMLListing*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *format:JSONOBJ*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *path:%2FazureAppend%2F*
+08/20/2026 10:26:46 PM|[HTTP:199:sdey:0.0.0.0] READ: *random:bENSMzFQQlrO0ABXQAKHVDVBekY4Q3BQc01MSXFzeEwhERWo4RllU;csrf=rO0ABXQAKHRRUzhnQ2Q5bENSMzFQQlhERWo4RllUVDVBekY4Q3BQc01MSXFzeEw*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1143bv9m4g06uhe*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *Host: localhost*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *Content-Length: 132*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *command:login*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *username:sdey*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *password:************
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *clientid:[Find : vg000100k1143bn3m4g06uhb]*
+08/27/2026 01:36:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1143bv9m4g06uhe*
+08/27/2026 01:36:36 PM|[HTTP:197:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/27/2026 01:36:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787817996409_CBJb4Oa8WHjRgSANIA8xGK5enY052G;*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *c2f:052G*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 01:36:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 01:36:38 PM|[HTTP:198:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. File /azureAppend/ not found.*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787817996409_CBJb4Oa8WHjRgSANIA8xGK5enY052G;*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *c2f:052G*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/27/2026 01:36:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 01:36:39 PM|[HTTP:199:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. File /azureAppend not found.*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787817996409_CBJb4Oa8WHjRgSANIA8xGK5enY052G;*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *c2f:052G*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 01:36:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787817996409_CBJb4Oa8WHjRgSANIA8xGK5enY052G;*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *c2f:052G*
+08/27/2026 01:36:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *command:logout*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k11985eum4g0604d*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *Host: localhost*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *Content-Length: 132*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *command:login*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *username:sdey*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *password:************
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *clientid:[Find : vg000100k119855fm4g0604a]*
+08/27/2026 03:06:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k11985eum4g0604d*
+08/27/2026 03:06:36 PM|[HTTP:197:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/27/2026 03:06:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787823396464_1yPqCcgcKNu1QgTTK6mMgpY4KEPPX5;*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *c2f:PPX5*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 03:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 03:06:38 PM|[HTTP:198:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. File /azureAppend/ not found.*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787823396464_1yPqCcgcKNu1QgTTK6mMgpY4KEPPX5;*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *c2f:PPX5*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/27/2026 03:06:38 PM|[HTTP:199:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 03:06:39 PM|[HTTP:199:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. File /azureAppend not found.*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787823396464_1yPqCcgcKNu1QgTTK6mMgpY4KEPPX5;*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *c2f:PPX5*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 03:06:39 PM|[HTTP:200:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787823396464_1yPqCcgcKNu1QgTTK6mMgpY4KEPPX5;*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *c2f:PPX5*
+08/27/2026 03:06:40 PM|[HTTP:204:sdey:127.0.0.1] READ: *command:logout*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k13hb9igm4g08one*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *Host: localhost*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *Content-Length: 132*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *command:login*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *username:sdey*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *password:************
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *clientid:[Find : vg000100k13hb99am4g08onb]*
+08/28/2026 12:06:36 PM|[HTTP:197::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k13hb9igm4g08one*
+08/28/2026 12:06:36 PM|[HTTP:197:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/28/2026 12:06:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787898996445_S40hIOiX71q2lOhyQtav4Sdcyb39lK;*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *c2f:39lK*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *command:stat*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/28/2026 12:06:36 PM|[HTTP:198:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/28/2026 12:06:37 PM|[HTTP:198:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. File /azureAppend/ not found.*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787898996445_S40hIOiX71q2lOhyQtav4Sdcyb39lK;*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *c2f:39lK*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *command:stat*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/28/2026 12:06:37 PM|[HTTP:199:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. File /azureAppend not found.*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787898996445_S40hIOiX71q2lOhyQtav4Sdcyb39lK;*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *c2f:39lK*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/28/2026 12:06:37 PM|[HTTP:200:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787898996445_S40hIOiX71q2lOhyQtav4Sdcyb39lK;*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *c2f:39lK*
+08/28/2026 12:06:38 PM|[HTTP:204:sdey:127.0.0.1] READ: *command:logout*

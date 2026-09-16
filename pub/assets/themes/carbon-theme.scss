@@ -1,0 +1,41 @@
+// Import only the specific Carbon components we use
+@use '@carbon/styles/scss/components/treeview';
+@use '@carbon/styles/scss/components/tag';
+@use "@carbon/styles/scss/theme";
+@use "@carbon/styles/scss/themes";
+
+// Suppress unused CSS warnings by being more selective
+// Only import what's actually used in the application
+@use '@carbon/styles/scss/components/button';
+@use '@carbon/styles/scss/components/text-input';
+@use '@carbon/styles/scss/components/select';
+@use '@carbon/styles/scss/components/dropdown';
+@use '@carbon/styles/scss/components/search';
+@use '@carbon/styles/scss/components/combo-box';
+@use '@carbon/styles/scss/components/inline-loading';
+@use '@carbon/styles/scss/components/popover';
+
+cds-tree-view,
+cds-inline-loading,
+cds-tag,
+cds-tag-selectable,
+cds-combo-box,
+cds-select,
+cds-multi-select,
+cds-search,
+cds-tree-node,
+cds-popover {
+    @include theme.theme(themes.$g10);
+}
+
+hybrid-ipaas-header,
+cds-header {
+    @include theme.theme(themes.$g100);
+}
+
+cds-text-input,
+cds-select,
+cds-button,
+cds-dropdown {
+    @include theme.theme(themes.$white);
+}

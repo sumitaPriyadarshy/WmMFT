@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required eventInfo wm.mft.assets.rec.event:PostProcessEvent</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:1:required validationErrors</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQkKCQlTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDEzIik7CgkJ
+SURhdGFDdXJzb3IgY3VyID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7CgkJCgkJSURhdGEgZXZlbnRQ
+aXBlID0gKElEYXRhKSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJldmVudEluZm8iKTsK
+CQlib29sZWFuIHZhbGlkYXRlSW5wdXQgPSB0cnVlOwoJCWlmICggImZhbHNlIi5lcXVhbHNJZ25v
+cmVDYXNlKFZhbHVlc0VtdWxhdG9yLmdldFN0cmluZyhwaXBlbGluZSwgInZhbGlkYXRlSW5wdXQi
+KSkgKSB7CgkJCXZhbGlkYXRlSW5wdXQgPSBmYWxzZTsKCQl9CgkJUG9zdFByb2Nlc3NFdmVudCBl
+dmVudCA9IG51bGw7CgkJCgkJYm9vbGVhbiBzdWNjZXNzID0gZmFsc2U7CgkJU3RyaW5nW10gbWVz
+c2FnZUFycmF5ID0gbnVsbDsKCQl0cnl7CgkJCWlmICggZXZlbnRQaXBlID09IG51bGwgKQoJCQkJ
+dGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oTUZUUmVzb3VyY2VzLmdldE1lc3NhZ2UoIjEwMDEi
+LCAiZXZlbnRJbmZvIikpOwoJCQlldmVudCA9IEFzc2V0VXRpbHMuZ2V0RXZlbnRGcm9tSURhdGEo
+ZXZlbnRQaXBlKTsKCQkJaWYgKCBldmVudC5nZXREZXNjcmlwdGlvbigpICE9IG51bGwgJiYgZXZl
+bnQuZ2V0RGVzY3JpcHRpb24oKS5sZW5ndGgoKSA+IDI1NiApIHsKCQkJCXRocm93IG5ldyBTZXJ2
+aWNlRXhjZXB0aW9uKE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCI4MTA0IikpOwoJCQl9CgkJCUV2
+ZW50c1Byb3h5LnVwZGF0ZVBvc3RQcm9jZXNzaW5nRXZlbnQoZXZlbnQsIHZhbGlkYXRlSW5wdXQp
+OwoJCQlzdWNjZXNzID0gdHJ1ZTsKCQl9Y2F0Y2ggKFRocm93YWJsZSB0KXsKCQkJbWVzc2FnZSA9
+IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpOwoJCQlpZiAoIHQgaW5zdGFuY2VvZiBNRlRTZXJ2aWNl
+RXhjZXB0aW9uICkgewoJICAgIAkJTGlzdDxTdHJpbmc+IG1lc3NhZ2VMaXN0ID0gKChNRlRTZXJ2
+aWNlRXhjZXB0aW9uKSB0KS5nZXRFcnJvck1lc3NhZ2VMaXN0KCk7CgkgICAgCQlpZiAoIG1lc3Nh
+Z2VMaXN0ICE9IG51bGwgKSB7CgkgICAgCQkJbWVzc2FnZUFycmF5ID0gbmV3IFN0cmluZ1ttZXNz
+YWdlTGlzdC5zaXplKCldOyAKCSAgICAJCQltZXNzYWdlTGlzdC50b0FycmF5KG1lc3NhZ2VBcnJh
+eSk7CgkgICAgCQl9CgkJCX0KCSAgICB9ZmluYWxseSB7CgkgICAgCVZhbHVlc0VtdWxhdG9yLnB1
+dChwaXBlbGluZSwgInN1Y2Nlc3MiLCBTdHJpbmcudmFsdWVPZihzdWNjZXNzKSk7CgkgICAgCVZh
+bHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwibWVzc2FnZSIsbWVzc2FnZSk7CgkJCWlmICggbWVz
+c2FnZUFycmF5ICE9IG51bGwgKQoJCQkJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAidmFs
+aWRhdGlvbkVycm9ycyIsbWVzc2FnZUFycmF5KTsKCQkJaWYgKGN1ciAhPSBudWxsKXsKCSAgICAJ
+CWN1ci5kZXN0cm95KCk7CgkgICAgCX0gICAgICAgCQoJICAgIH0K</value>
+</Values>

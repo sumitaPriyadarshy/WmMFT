@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">view</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional templateId</value>
+    <value>[i] field:0:optional templateName</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] record:0:required templateInfo</value>
+    <value>[o] field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">IAogICAgICAgIFN0cmluZyB0ZW1wbGF0ZUlkID0gbnVsbDsKICAgICAgICBTdHJpbmcgdGVtcGxh
+dGVOYW1lID0gbnVsbDsKICAgICAgICBTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRN
+ZXNzYWdlKCIxMDEzIik7CiAgICAgICAgCiAgICAgICAgSURhdGFDdXJzb3IgaW5jdXIgPSBwaXBl
+bGluZS5nZXRDdXJzb3IoKTsKICAgICAgICBpZiAoaW5jdXIuZmlyc3QoInRlbXBsYXRlSWQiKSkg
+ewogICAgICAgICAgICB0ZW1wbGF0ZUlkID0gKFN0cmluZykgaW5jdXIuZ2V0VmFsdWUoKTsKICAg
+ICAgICB9CiAgICAgICAgaWYgKHRlbXBsYXRlSWQgPT0gbnVsbCkgewogICAgICAgICAgICBpZiAo
+aW5jdXIuZmlyc3QoInRlbXBsYXRlTmFtZSIpKSB7CiAgICAgICAgICAgICAgICB0ZW1wbGF0ZU5h
+bWUgPSAoU3RyaW5nKSBpbmN1ci5nZXRWYWx1ZSgpOwogICAgICAgICAgICB9CiAgICAgICAgfQog
+CiAgICAgICAgYm9vbGVhbiBzdWNjZXNzID0gZmFsc2U7CiAgICAgICAgQWN0aW9uVGVtcGxhdGUg
+dGVtcGxhdGUgPSBudWxsOwogCiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgUkJBUHJveHkudmFs
+aWRhdGVTZXNzaW9uKFJCQVVpSGFuZGxlLkFDVElPTl9URV9WSUVXKTsKICAgICAgICAgICAgdGVt
+cGxhdGUgPSBFdmVudHNQcm94eS52aWV3QWN0aW9uVGVtcGxhdGUodGVtcGxhdGVJZCwgdGVtcGxh
+dGVOYW1lKTsKICAgICAgICAgICAgc3VjY2VzcyA9IHRydWU7CiAgICAgICAgfSBjYXRjaCAoVGhy
+b3dhYmxlIHQpIHsKICAgICAgICAgICAgbWVzc2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgp
+OwogICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgIGlmICh0ZW1wbGF0ZSAhPSBudWxsKSB7
+CiAgICAgICAgICAgICAgICBWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJ0ZW1wbGF0ZUlu
+Zm8iLCBBc3NldFV0aWxzLmdldEFjdGlvblRlbXBsYXRlQXNJRGF0YSh0ZW1wbGF0ZSwgdHJ1ZSwg
+dHJ1ZSkpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIFZhbHVlc0VtdWxhdG9yLnB1dChwaXBl
+bGluZSwgInN1Y2Nlc3MiLCBTdHJpbmcudmFsdWVPZihzdWNjZXNzKSk7CiAgICAgICAgICAgIFZh
+bHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgIm1lc3NhZ2UiLCBtZXNzYWdlKTsKICAgICAgICAg
+ICAgaWYgKGluY3VyICE9IG51bGwpCiAgICAgICAgICAgICAgICBpbmN1ci5kZXN0cm95KCk7CiAg
+ICAgICAgfQo=</value>
+</Values>

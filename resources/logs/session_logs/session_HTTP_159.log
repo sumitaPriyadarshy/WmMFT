@@ -1,0 +1,21 @@
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1dh6ssit8okefuf*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *Host: localhost*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *Content-Length: 132*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *command:login*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *username:sdey*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *password:************
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *clientid:[Find : vg000100k1dh6sb5t8okefuc]*
+09/01/2026 09:16:36 AM|[HTTP:159::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1dh6ssit8okefuf*
+09/01/2026 09:16:36 AM|[HTTP:159:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 09:16:36 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788234396676_8cEQUqe6CmGkBpnPu5zKPP9rTyBPis;*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *c2f:BPis*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 09:16:36 AM|[HTTP:160:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 09:20:51 AM|[HTTP:160:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/. java.net.ConnectException: Operation timed out*

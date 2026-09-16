@@ -1,0 +1,234 @@
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *GET / HTTP/1.1*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Host: localhost:2380*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *sec-ch-ua: "Not=A?Brand";v="99", "Microsoft Edge";v="151", "Chromium";v="151"*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Upgrade-Insecure-Requests: 1*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Sec-Fetch-Site: none*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Sec-Fetch-Mode: navigate*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Sec-Fetch-User: ?1*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Sec-Fetch-Dest: document*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] READ: *Cookie: __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined; ajs_anonymous_id=d3667961-9577-4231-8abd-4458b288a400; XSRF-TOKEN=9a16d0a6-40dc-45ae-b464-63098b105c70; JSESSIONID=FF237DEB98C7F13390B91E1EB57ADE06*
+08/20/2026 07:53:08 PM|[HTTP:2::0.0.0.0] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/20/2026 07:53:08 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *Cookie: CrushAuth=;*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0rftp1nokbm4g00*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *Host: localhost*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *Content-Length: 19*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *c2f:*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] READ: *command:logout*
+08/27/2026 12:43:28 PM|[HTTP:2::127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/27/2026 12:43:28 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Content-Length: 46*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228568293_eCawaW77QzfCw0Orhwh9WrdqEO6t8G*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *command:isCloudMode*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *random:0.40630624905669865*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *GET /favicon.ico HTTP/1.1*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Mode: no-cors*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Dest: image*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228568293_eCawaW77QzfCw0Orhwh9WrdqEO6t8G*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *GET /favicon.ico HTTP/1.1*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Sec-Fetch-Dest: image*
+09/01/2026 07:39:28 AM|[HTTP:3::0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228568293_eCawaW77QzfCw0Orhwh9WrdqEO6t8G*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Content-Length: 90*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228568293_eCawaW77QzfCw0Orhwh9WrdqEO6t8G*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *command:login*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *username:sdey*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *password:************
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *encoded:true*
+09/01/2026 07:39:37 AM|[HTTP:5::0.0.0.0] READ: *random:0.27416384442237884*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 07:39:37 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *POST / HTTP/1.1*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Content-Length: 78*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Upgrade-Insecure-Requests: 1*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Origin: null*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: navigate*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Sec-Fetch-User: ?1*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: document*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *username:sdey*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *password:************
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *command:login*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *skip_login:true*
+09/01/2026 07:39:37 AM|[HTTP:5:sdey:0.0.0.0] READ: *encoded:false*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *GET / HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Upgrade-Insecure-Requests: 1*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Sec-Fetch-Site: none*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: navigate*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Sec-Fetch-User: ?1*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: document*
+09/01/2026 07:40:29 AM|[HTTP:10:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Content-Length: 45*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *command:isCloudMode*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *random:0.2290057473946454*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Content-Length: 153*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Content-Length: 162*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Content-Length: 153*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Content-Length: 153*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *command:getUsername*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Content-Length: 164*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:12:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *command:getUserInfo*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *command:isCloudMode*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:14:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *path:/*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *command:getUserInfo*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *path:%2F*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *command:getUsername*
+09/01/2026 07:40:29 AM|[HTTP:11:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Content-Length: 168*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY; __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *command:getCustomForm*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:40:29 AM|[HTTP:15:sdey:0.0.0.0] READ: *form:messageForm*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Content-Length: 181*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY; __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *command:getXMLListing*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *format:JSONOBJ*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *path:%2F*
+09/01/2026 07:40:29 AM|[HTTP:13:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Host: localhost:2380*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Content-Length: 153*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *sec-ch-ua-platform: "macOS"*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *X-Requested-With: XMLHttpRequest*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Microsoft Edge";v="152"*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *sec-ch-ua-mobile: ?0*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Origin: http://localhost:2380*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Sec-Fetch-Site: same-origin*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Sec-Fetch-Mode: cors*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Sec-Fetch-Dest: empty*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *Cookie: ajs_anonymous_id=2ce7fab4-458f-408e-a7c3-98a115d65be4; JSESSIONID=20986C611D0327C254C5B9B41C0184AB; mainServerInstance=; CrushAuth=1788228577665_JFfadOjXTw5je8JLy8iQt8hUgxcHoY; __WEBINTERFACE_PAGE_SIZE=100; __WEBINTERFACE_HIDE_CHECKBOX_COLUMN=undefined*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *command:getUsername*
+09/01/2026 07:50:30 AM|[HTTP:25:sdey:0.0.0.0] READ: *random:R0F5NFg0RTrO0ABXQAKDcGkxVUszNGFlanROZDNBUjIlZV3NXNmNq;csrf=rO0ABXQAKDQ5b2FTTHF4R0F5NFg0RTlZV3NXNmNqcGkxVUszNGFlanROZDNBUjI*

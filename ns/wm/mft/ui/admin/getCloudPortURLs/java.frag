@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getCloudPortURLs</value>
+  <array name="sig" type="value" depth="1">
+    <value>[o] field:1:required serverURLs</value>
+    <value>[o] field:1:optional privateURLs</value>
+    <value>[o] field:0:required privateURLConfigured</value>
+    <value>[o] field:0:optional message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CklEYXRhQ3Vyc29yIGN1ciA9IG51bGw7CnRyeSB7CgljdXIgPSBwaXBlbGluZS5nZXRDdXJzb3Io
+KTsKCgkvLyBSZWFkIGRpcmVjdGx5IGZyb20gcHJvcGVydGllcy5jbmYgXHUwMEUyXHUwMDgwXHUw
+MDk0IHRoZXNlIGFyZSBkaXNwbGF5LW9ubHkgdmFsdWVzLAoJLy8gbm8gbmVlZCB0byBnbyB0aHJv
+dWdoIHRoZSBTZXJ2ZXJTdGF0dXMgcnVudGltZSBjYWNoZS4KCUZpbGUgcHJvcGVydHlGaWxlID0g
+bmV3IEZpbGUoU2VydmVyLmdldFJlc291cmNlcygpLmdldFBhY2thZ2VDb25maWdEaXIoIldtTUZU
+IiksICJwcm9wZXJ0aWVzLmNuZiIpOwoJUHJvcGVydGllcyBtZnRQcm9wZXJ0aWVzID0gYWRtaW5p
+bXBsLmdldE1mdFByb3BlcnRpZXMocHJvcGVydHlGaWxlKTsKCglTdHJpbmcgc2VydmVyVVJMc1Jh
+dyA9IG1mdFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoIm1mdC5jbG91ZC5wb3J0LnVybHMiLCAiIiku
+dHJpbSgpOwoJU3RyaW5nW10gc2VydmVyVVJMcyA9IHNlcnZlclVSTHNSYXcuaXNFbXB0eSgpID8g
+bmV3IFN0cmluZ1swXSA6IHNlcnZlclVSTHNSYXcuc3BsaXQoIiwiKTsKCWN1ci5pbnNlcnRBZnRl
+cigic2VydmVyVVJMcyIsIHNlcnZlclVSTHMpOwoKCVN0cmluZyBwcml2YXRlVVJMc1JhdyA9IG1m
+dFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoIm1mdC5jbG91ZC5wcml2YXRlLnVybHMiLCAiIikudHJp
+bSgpOwoJYm9vbGVhbiBwcml2YXRlQ29uZmlndXJlZCA9ICFwcml2YXRlVVJMc1Jhdy5pc0VtcHR5
+KCk7CgljdXIuaW5zZXJ0QWZ0ZXIoInByaXZhdGVVUkxDb25maWd1cmVkIiwgcHJpdmF0ZUNvbmZp
+Z3VyZWQpOwoJaWYgKHByaXZhdGVDb25maWd1cmVkKSB7CgkJY3VyLmluc2VydEFmdGVyKCJwcml2
+YXRlVVJMcyIsIHByaXZhdGVVUkxzUmF3LnNwbGl0KCIsIikpOwoJfQp9IGNhdGNoIChUaHJvd2Fi
+bGUgdCkgewoJaWYgKGN1ciA9PSBudWxsKSBjdXIgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKCWN1
+ci5pbnNlcnRBZnRlcigibWVzc2FnZSIsIHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpKTsKfSBmaW5h
+bGx5IHsKCWlmIChjdXIgIT0gbnVsbCkgY3VyLmRlc3Ryb3koKTsKfQoK</value>
+</Values>

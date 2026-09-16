@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getAllProjectsFromIC</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional contextUrl</value>
+    <value>[i] field:0:optional userName</value>
+    <value>[i] field:0:optional jwt</value>
+    <value>[o] field:0:optional success</value>
+    <value>[o] field:0:optional message</value>
+  </array>
+  <value name="encodeutf8">true</value>
+  <value name="body">CklEYXRhQ3Vyc29yIGN1ciA9IG51bGw7CklEYXRhIG91dHB1dCA9IG51bGw7CklEYXRhQ3Vyc29y
+IG91dHB1dEN1ciA9IG51bGw7ClN0cmluZyBtZXNzYWdlID0gIiI7ClN0cmluZyBzdWNjZXNzID0g
+InRydWUiOwp0cnkgewoJdHJ5IHsKCQlSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5k
+bGUuQUNUSU9OX1BQX1ZJRVcpOwoJfSBjYXRjaCAoRXhjZXB0aW9uIGUpIHsKCQl0cnkgewoJCQlS
+QkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5kbGUuQUNUSU9OX1NFX1ZJRVcpOwoJCX0g
+Y2F0Y2ggKEV4Y2VwdGlvbiBleCkgewoJCQlSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlI
+YW5kbGUuQUNUSU9OX01GX1ZJRVcpOwoJCX0KCX0KCVN0cmluZyBjb250ZXh0VXJsID0gVmFsdWVz
+RW11bGF0b3IuZ2V0Tm9uRW1wdHlTdHJpbmcocGlwZWxpbmUsICJjb250ZXh0VXJsIik7CglTdHJp
+bmcgdXNlck5hbWUgPSBWYWx1ZXNFbXVsYXRvci5nZXROb25FbXB0eVN0cmluZyhwaXBlbGluZSwg
+InVzZXJOYW1lIik7CglTdHJpbmcgand0ID0gVmFsdWVzRW11bGF0b3IuZ2V0Tm9uRW1wdHlTdHJp
+bmcocGlwZWxpbmUsICJqd3QiKTsKCUxpc3Q8UHJvamVjdE1ldGFkYXRhPiBwcm9qZWN0TWV0YWRh
+dGFMaXN0ID0gQ29tbW9uUHJveHkubGlzdFByb2plY3RzKGNvbnRleHRVcmwsIHVzZXJOYW1lLCBq
+d3QpOwoJaWYocHJvamVjdE1ldGFkYXRhTGlzdCAhPSBudWxsKSB7CgkJSURhdGFbXSBhcnJheSA9
+IG5ldyBJRGF0YVtwcm9qZWN0TWV0YWRhdGFMaXN0LnNpemUoKV07CgkJaW50IGluZGV4ID0gMDsK
+CQlmb3IoUHJvamVjdE1ldGFkYXRhIHByb2plY3RNZXRhZGF0YSA6IHByb2plY3RNZXRhZGF0YUxp
+c3QpIHsKCQkJYXJyYXlbaW5kZXhdID0gQXNzZXRVdGlscy5nZXRQcm9qZWN0TWV0YWRhdGFBc0lE
+YXRhKHByb2plY3RNZXRhZGF0YSk7CgkJCWluZGV4Kys7CgkJfQoJCVZhbHVlc0VtdWxhdG9yLnB1
+dChwaXBlbGluZSwgInBhY2thZ2VOYW1lcyIsIGFycmF5KTsKCQlyZXR1cm47Cgl9CgoJVmFsdWVz
+RW11bGF0b3IucHV0KHBpcGVsaW5lLCAicGFja2FnZU5hbWVzIiwgbmV3IFN0cmluZ1swXSk7Cn0g
+Y2F0Y2ggKFRocm93YWJsZSB0KSB7CglzdWNjZXNzID0gImZhbHNlIjsKCW1lc3NhZ2UgPSB0Lmdl
+dExvY2FsaXplZE1lc3NhZ2UoKTsKfSBmaW5hbGx5IHsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBl
+bGluZSwgInN1Y2Nlc3MiLCBzdWNjZXNzKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwg
+Im1lc3NhZ2UiLCBtZXNzYWdlKTsKfQo=</value>
+</Values>

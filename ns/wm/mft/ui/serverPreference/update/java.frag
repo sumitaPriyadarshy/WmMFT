@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required serverPrefInfo wm.mft.assets.rec.server:preferences</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:optional instanceId</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CgkJYm9vbGVhbiBzdWNjZXNzID0gZmFsc2U7CgkJU2VydmVyUHJlZmVyZW5jZXMgc2VydmVyUHJl
+ZiA9IG51bGw7CgkJCgkJSURhdGEgc2VydmVyUHJlZkluZm8gPSAoSURhdGEpIFZhbHVlc0VtdWxh
+dG9yLmdldChwaXBlbGluZSwgInNlcnZlclByZWZJbmZvIik7CgkJaWYoc2VydmVyUHJlZkluZm8g
+PT0gbnVsbCl7CgkJCXRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKE1GVFJlc291cmNlcy5nZXRN
+ZXNzYWdlKCIxMDAxIiwic2VydmVyUHJlZkluZm8iKSk7CgkJfQoJCXNlcnZlclByZWZJbmZvID0g
+ZW1wdHlUb1plcm8oc2VydmVyUHJlZkluZm8pOwoJCVN0cmluZyBpbnN0YW5jZUlkID0gVmFsdWVz
+RW11bGF0b3IuZ2V0U3RyaW5nKHBpcGVsaW5lLCAiaW5zdGFuY2VJZCIpOwoJCWlmICggaW5zdGFu
+Y2VJZCA9PSBudWxsIHx8IGluc3RhbmNlSWQudHJpbSgpLmVxdWFscygiIikgKSB7CgkJCWluc3Rh
+bmNlSWQgPSBNRlREYXRhQ29uc3RhbnRzLlNFUlZFUl9JTlNUQU5DRUlEX0RFRkFVTFQ7CgkJCVZh
+bHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInNlcnZlclByZWZJbmZvIiwgaW5zdGFuY2VJZCk7
+CQoJCX0KCQl0cnl7CgkJCVJCQVByb3h5LnZhbGlkYXRlU2Vzc2lvbihSQkFVaUhhbmRsZS5TRVRU
+SU5HU19MSVNURU5FUl9WSUVXKTsKCQkJc2VydmVyUHJlZkluZm8gPSBkZWNvZGVQcml2YXRlUEdQ
+S2V5UGFzc3dvcmQoc2VydmVyUHJlZkluZm8pOwoJCQlzZXJ2ZXJQcmVmID0gQXNzZXRVdGlscy5n
+ZXRTZXJ2ZXJQcmVmZXJlbmNlRnJvbUlEYXRhKHNlcnZlclByZWZJbmZvKTsKCQkJc2VydmVyUHJl
+Zi5zZXRJbnN0YW5jZUlkKGluc3RhbmNlSWQpOwoJCQlzdWNjZXNzID0gU2VydmVyQWRtaW5Qcm94
+eS51cGRhdGVQcmVmZXJlbmNlcyhzZXJ2ZXJQcmVmLCA5OSk7Ly85OSBiZWNhdXNlIHdlIHdhbnQg
+dG8gdXBkYXRlIGFsbCBzZXR0aW5ncywgbmVlZCB0byBjaGVjayBpZiB3ZSBjYW4gdXBkYXRlIHNw
+ZWNpZmljIHR5cGUKCQl9IGNhdGNoIChUaHJvd2FibGUgdCl7CgkJCXRocm93IG5ldyBTZXJ2aWNl
+RXhjZXB0aW9uKHQpOyAKCSAgICB9IGZpbmFsbHkgewoJICAgIAlWYWx1ZXNFbXVsYXRvci5yZW1v
+dmUocGlwZWxpbmUsICJzZXJ2ZXJQcmVmSW5mbyIpOwoJICAgIAlWYWx1ZXNFbXVsYXRvci5wdXQo
+cGlwZWxpbmUsICJzdWNjZXNzIiwgU3RyaW5nLnZhbHVlT2Yoc3VjY2VzcykpOwoJICAgIAlWYWx1
+ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJpbnN0YW5jZUlkIiwgU3RyaW5nLnZhbHVlT2YoaW5z
+dGFuY2VJZCkpOwoJICAgIH0K</value>
+</Values>

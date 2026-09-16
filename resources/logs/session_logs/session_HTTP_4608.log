@@ -1,0 +1,12 @@
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1g56rvmpt91c1j6*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *Host: localhost*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *Content-Length: 132*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *command:login*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *username:sdey*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *password:************
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *clientid:[Find : vg000100k1g56rvdpt91c1j5]*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1g56rvmpt91c1j6*
+09/02/2026 09:44:36 AM|[HTTP:4608:sdey:127.0.0.1] WROTE: *530 Access denied.*
+09/02/2026 09:44:36 AM|[HTTP:4608::127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/02/2026 09:44:36 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*

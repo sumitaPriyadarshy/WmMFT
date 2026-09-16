@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getStatus</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required Locale</value>
+    <value>[o] record:0:required output</value>
+    <value>[o] - field:0:required running</value>
+    <value>[o] - field:0:required code</value>
+    <value>[o] - field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CgkJSURhdGFDdXJzb3IgY3VyID0gbnVsbDsKCQlJRGF0YSBvdXRwdXQgPSBudWxsOwoJCUlEYXRh
+Q3Vyc29yIG91dHB1dEN1ciA9IG51bGw7CgkJSURhdGEgc3ZjUmVzcCA9IG51bGw7CgkJU3RyaW5n
+IHN2Y05hbWUgPSAid20ubWZ0LnVpLnJvdXRlOmdldFN0YXR1cyI7CgkJSURhdGEgaGVhZGVycyA9
+IElEYXRhRmFjdG9yeS5jcmVhdGUoKTsKCQl0cnkgewoJCQljdXIgPSBwaXBlbGluZS5nZXRDdXJz
+b3IoKTsKCQkJb3V0cHV0ID0gSURhdGFGYWN0b3J5LmNyZWF0ZSgpOwoJCQlvdXRwdXRDdXIgPSBv
+dXRwdXQuZ2V0Q3Vyc29yKCk7CgoJCQlJRGF0YSBpbm5lcklucHV0ID0gSURhdGFGYWN0b3J5LmNy
+ZWF0ZSgpOwoJCQlJRGF0YSBpbm5lck91dHB1dCA9IFNlcnZpY2UuZG9JbnZva2UoIndtLm1mdC51
+aS5hZG1pbiIsICJwaW5nU2VydmVyIiwgaW5uZXJJbnB1dCk7CgkJCWJvb2xlYW4gaXNMb2dpbkF1
+dG9Db21wbGV0ZT0gVmFsdWVzRW11bGF0b3IuZ2V0Qm9vbGVhbihpbm5lck91dHB1dCwgImlubmVy
+T3V0cHV0Iik7CgkJCWJvb2xlYW4gaXNSdW5uaW5nID0gVmFsdWVzRW11bGF0b3IuZ2V0Qm9vbGVh
+bihpbm5lck91dHB1dCwgImlzUnVubmluZyIpOwoJCQlpbnQgY29kZSA9IFZhbHVlc0VtdWxhdG9y
+LmdldEludChpbm5lck91dHB1dCwgImNvZGUiKTsKCQkJb3V0cHV0ID0gaW5uZXJPdXRwdXQ7CgkJ
+CWlmICghaXNSdW5uaW5nICYmIGNvZGUgPT0gMTAxKSB7CgkJCQlIdHRwSGVhZGVyIHJlc3BIZWFk
+ZXIgPSBTZXJ2aWNlLmdldEh0dHBSZXNwb25zZUhlYWRlcigpOwoJCQkJcmVzcEhlYWRlci5hZGRG
+aWVsZCgiaXNMb2dpbkF1dG9Db21wbGV0ZSIsIFN0cmluZy52YWx1ZU9mKGlzTG9naW5BdXRvQ29t
+cGxldGUpKTsKCQkJCXRocm93IG5ldyBJT0V4Y2VwdGlvbigpOwoJCQl9CgoJCX0gY2F0Y2ggKFRo
+cm93YWJsZSB0KSB7CgkJCW91dHB1dEN1ci5pbnNlcnRBZnRlcigicnVubmluZyIsICJmYWxzZSIp
+OwoJCQlvdXRwdXRDdXIuaW5zZXJ0QWZ0ZXIoImNvZGUiLCAiOTk5OSIpOwoJCQlvdXRwdXRDdXIu
+aW5zZXJ0QWZ0ZXIoIm1lc3NhZ2UiLCB0LmdldExvY2FsaXplZE1lc3NhZ2UoKSk7CgkJfWZpbmFs
+bHl7CgkJCWFkZFNlY3VyaXR5SGVhZGVycygpOwoJCQljdXIuaW5zZXJ0QWZ0ZXIoIm91dHB1dCIs
+IG91dHB1dCk7CgkJCWN1ci5pbnNlcnRBZnRlcigiaGVhZGVycyIsIGhlYWRlcnMpOwovLwkJCVZh
+bHVlc0VtdWxhdG9yLnB1dChvdXRwdXQsICJoZWFkZXJzIiwgaGVhZGVycyk7CgkJCWlmKGN1ciAh
+PSBudWxsKSBjdXIuZGVzdHJveSgpOwoJCQlpZihvdXRwdXRDdXIgIT0gbnVsbCkgb3V0cHV0Q3Vy
+LmRlc3Ryb3koKTsKCQl9Cgo=</value>
+</Values>

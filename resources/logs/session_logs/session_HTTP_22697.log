@@ -1,0 +1,18 @@
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0rftp1nokbm4g00*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *Host: localhost*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *Content-Length: 135*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *command:login*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *username:sdey*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *password:************
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *clientid:Agent : Download Configuration Files*
+08/26/2026 05:32:38 PM|[HTTP:22697::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k0rftp1nokbm4g00*
+08/26/2026 05:32:38 PM|[HTTP:22697:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/26/2026 05:32:38 PM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787745758863_GdmtL0bG2FxRO9g13G7EdUmzsRHhyM;*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0rftp1nokbm4g00*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *Host: localhost*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *c2f:HhyM*
+08/26/2026 05:32:43 PM|[HTTP:22698:sdey:127.0.0.1] READ: *command:logout*

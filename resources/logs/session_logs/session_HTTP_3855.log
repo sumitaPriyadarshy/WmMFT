@@ -1,0 +1,27 @@
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *Host: localhost*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *Content-Length: 110*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *command:login*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *username:sdey*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *password:************
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *clientid:[Find : vg000100k1f0blj4pt91csoi]*
+09/02/2026 06:51:43 AM|[HTTP:3855::127.0.0.1] READ: *TRANSFER_ID:dummy*
+09/02/2026 06:51:44 AM|[HTTP:3855:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/02/2026 06:51:44 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788312104038_9XLHDxt3ztHBTTHm1LoKxS5fzGhDNu;*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *c2f:hDNu*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/02/2026 06:51:48 AM|[HTTP:3857:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788312104038_9XLHDxt3ztHBTTHm1LoKxS5fzGhDNu;*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *c2f:hDNu*
+09/02/2026 07:30:50 AM|[HTTP:3889:sdey:127.0.0.1] READ: *command:logout*

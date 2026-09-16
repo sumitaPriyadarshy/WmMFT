@@ -1,0 +1,5 @@
+mft.icap.host=localhost
+mft.icap.port=8443
+mft.icap.iseSSL=true
+mft.icap.bufferPerUpload=2
+mft.icap.service=avscan?allow204=on&force=on&sizelimit=on&mode=simple

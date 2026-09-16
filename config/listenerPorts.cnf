@@ -1,0 +1,13 @@
+#Application removed the following secrets sftp.hostKeyPass at 2026/03/20 08:33:36
+#Fri Mar 20 08:33:36 IST 2026
+ftpes.keyPass=${ftpes.keyPass}
+ftpes.keystore=builtin
+ftpes.keystorePass=${ftpes.keystorePass}
+ftpes.listener=4990
+ftpes.passiveHost=
+ftpes.passiveRange=4600-4699
+sftp.hostKey=
+sftp.hostKeySize=2048
+sftp.hostkeyAlgorithm=ECDSA
+sftp.listener=4022
+http.listener=2380

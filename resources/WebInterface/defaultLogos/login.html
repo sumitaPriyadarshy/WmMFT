@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>${WEB_CLIENT_LOGIN_TITLE}</title>
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/css/delite.min.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/login.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/css/carbon.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/login.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/generic.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/color.css" />
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-3.6.0.min.js"></script>
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-1.4.1.min.js"></script>
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-3.1.0.min.js"></script>
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-ui-1.13.2.min.js"></script>
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.blockUI.js"></script>
+	 <script type="text/javascript" src="/WebInterface/jQuery/js/helper.js"></script>
+	 <script type="text/javascript" src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+	 <script type="text/javascript" src="/WebInterface/delite/js/delite.min.js"></script>
+	<script type="text/javascript">
+     function showRecaptcha(element) {
+       Recaptcha.create("/*RECAPTCHA_PUBLIC_KEY*/", element, {
+         theme: "red"
+         });
+     }
+     var passwordRule = {
+		random_password_length : 8,
+		min_password_numbers : 0,
+		min_password_lowers : 0,
+		min_password_uppers : 0,
+		min_password_specials : 0
+	};
+  	</script>
+
+	<script type="text/javascript">
+		var mftSupportedLangs = ['en', 'es', 'ja', 'zh', 'fr', 'de', 'ru', 'he', 'pl', 'pt-BR'];
+		var jsFile = "en.js";
+		if(navigator.languages){ //navigator.languages is not supported by IE
+			for(var i=0; i<navigator.languages.length; i++){
+				if(jQuery.inArray(navigator.languages[i], mftSupportedLangs) != -1){
+					jsFile = navigator.languages[i] + ".js";
+					break;
+				}
+			}
+		} else{ //for IE
+			var browserLocale = navigator.language || navigator.userLanguage;
+			if(jQuery.inArray(browserLocale, mftSupportedLangs) != -1){
+				jsFile = browserLocale + ".js";
+			}
+		}		
+		$.getScript('/WebInterface/jQuery/i18n/' + jsFile, function() {
+			document.getElementById("username").innerHTML = $(localizations)[0].username;
+			document.getElementById("password").innerHTML = $(localizations)[0].password;
+			// document.getElementById("loginText").innerHTML = $(localizations)[0].Login;
+		});
+	</script>
+</head>
+<body class="loginBody">
+	<div class="loginSection">
+		<section class="login">
+			<div class="login__content">
+				<form class="login__content-form" autocomplete="off" id="loginForm" name="loginForm" method="post" action="/" onSubmit="return doLogin2(event);">
+					<img alt="Managed File Transfer" src="/WebInterface/images/${WEB_CLIENT_LOGIN_LOGO}" class="logo-possition">
+					<h4 class="login__content-text">Login to your account.</h4>
+					<div class="login__content-field">
+						<div class="dlt-form-item" style="width: 100%;">
+							<label class="dlt-form-label" aria-label="Username">Username</label>
+							<div class="dlt-form-group">
+								<input autocomplete="off" type="text" class="dlt-text-input dlt-text-input-white" name="username" id="username" value="" />
+								<!-- <button title="Clear" class="clear-icon" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button> -->
+							</div>
+							<div id="userNameEmptyError" class="dlt-form-requirement" style="display:none">
+								<i class="dlt-icon-error icon--small icon--danger icon-style"></i>
+								<span class="error-message">Please enter a valid username.</span>
+							</div>
+						</div>
+					</div>
+					<div class="login__content-field">
+						<div class="dlt-form-item display-block" style="width: 100%;">
+							<label class="dlt-form-label" aria-label="Password">Password</label>
+							<div class="dlt-form-group">
+								<input type="password" class="dlt-text-input dlt-text-input-white" name="password" id="password" value="" autocomplete="new-password"/>
+								<button class="password-show-icon" type="button" title="Show Password"><i
+                                    class="icon--small icon--primary dlt-icon-password-show"></i>
+								</button>
+							</div>
+							<div class="forgot-password-link form-text text-right">
+								<span tabindex="0" id="forgotPasswordSpan"><a id="forgot-password" tabindex="5" class="links-regular" href="/WebInterface/initiateChangePassword.html">Forgot password</a></span>
+							</div>
+							<div id="passwordEmptyError" class="dlt-form-requirement" style="display:none;top:-25px;">
+								<i class="dlt-icon-error icon--small icon--danger icon-style"></i>
+								<span class="error-message">Please enter a valid password.</span>
+							</div>
+						</div>
+					</div>
+					<script>
+						$("#forgotPasswordSpan").keyup(function(event){
+    						if(event.keyCode == 13){
+        						location.href= "/WebInterface/initiateChangePassword.html";
+    						}
+						});
+					</script>
+					<div class="submit clearfix">
+							<input type="submit" value="login" style='display:none;' />
+							<input type="hidden" name="command" value="login" />
+							<input type="hidden" name="skip_login" value="true" />
+							<input type="hidden" name="encoded" value="false" />
+							<input type="submit" value="login now" style="position:absolute;left:-1000px;top:-1000px;"/>
+							<button id="loginButton" type="submit" value="login now" class="login__button">Log in</button>
+						</div>
+				</form>
+			</div>
+			<footer _ngcontent-ill-c79="" class="dlt-footer">
+				<p _ngcontent-ill-c79="">${WEB_CLIENT_COPY_RIGHT_TEXT}</p>
+			</footer> 
+		</section>
+	</div>
+	<div id="olderBrowserNotice" class="displayNone">
+		Your browser is out of date, it was released almost a decade ago! As a result it is very slow, full of bugs, and this WebInterface may or may not even work with IE6.
+		<br />
+		<br />
+		<div>
+			<button id="proceedAnyway">Proceed Anyway Cautiously</button> or get a better browser:
+			<a href="http://chrome.google.com/">Chrome</a> | <a href="http://www.getfirefox.com/">FireFox</a>
+		</div>
+	</div>
+	<iframe id="dummyIframe" name="dummyIframe" src="javascript:false;" class="displayNone" ></iframe>
+	<script type="text/javascript">
+			var attempts = 1;
+			var _badLogin = "Your username, or password may be incorrect, or the account may have expired.";
+			var _serverError = "The server is unavailable or your IP has been banned.";
+			if(!String.prototype.shuffle)
+			{
+				String.prototype.shuffle = function () {
+					var a = this.split(""),
+						n = a.length;
+
+					for(var i = n - 1; i > 0; i--) {
+						var j = Math.floor(Math.random() * (i + 1));
+						var tmp = a[i];
+						a[i] = a[j];
+						a[j] = tmp;
+					}
+					return a.join("");
+				}
+			}
+			$(document).ready(function () {
+				/*RECAPTCHA*/
+				olderBrowserNotification();
+				$("#loginWheel").hide();
+				$("input[name=username]").focus();
+				$("#btnLogin").click(function(evt){
+					$("#loginForm").submit();
+				});
+
+				$("#changepasswordBody").find("#btnChangePasswordCancel").click(function(){
+					window.curUser = false;
+					window.curPass = false;
+					$("#changepasswordBody").hide();
+					$("#loginBody").show();
+					if($("#username").val().length==0)
+					{
+						$("#username").focus().select();
+						$("#password").val("");
+					}
+					else
+					{
+						$("#password").val("").focus().select();
+					}
+					return false;
+				});
+
+				$("#changepasswordBody").find("#btnGeneratePassword").unbind().click(function () {
+					$("#generated_password").val(getGeneratedPass());
+					$("#passwordGeneratePanel").slideDown();
+					return false;
+				});
+
+				$("#changepasswordBody").find("#usePassword").unbind().click(function () {
+					$("#new_password1").val($("#generated_password").val());
+					$("#new_password2").val($("#generated_password").val());
+					return false;
+				});
+
+				$("#changepasswordBody").find("#cancelPassword").unbind().click(function () {
+					$("#generated_password").val("");
+					$("#passwordGeneratePanel").slideUp();
+					return false;
+				});
+
+				$("#current_password").keydown(function (evt) {
+					var evt = (evt) ? evt : ((event) ? event : null);
+					if (evt.keyCode == 13) {
+						$("#new_password1").select().focus();
+						return false;
+					}
+				});
+
+				$("#new_password1").keydown(function (evt) {
+					var evt = (evt) ? evt : ((event) ? event : null);
+					if (evt.keyCode == 13) {
+						$("#new_password2").select().focus();
+						return false;
+					}
+				});
+
+				$("#new_password2").keydown(function (evt) {
+					var evt = (evt) ? evt : ((event) ? event : null);
+					if (evt.keyCode == 13) {
+						$("#btnChangePassword").trigger("click");
+						return false;
+					}
+				});
+
+				$("#changepasswordBody").find("#btnChangePassword").unbind().click(function () {
+					if ($("#new_password1")[0].value != $("#new_password2")[0].value) {
+						alert("New passwords don't match.");
+					}
+					else {
+						var rndm = crushFTPTools.getToken();
+						$.ajax({
+							type: "POST",
+							url: "/WebInterface/function/",
+							data: {
+								command: "changePassword",
+								current_password: $("#current_password")[0].value,
+								new_password1: $("#new_password1")[0].value,
+								new_password2: $("#new_password2")[0].value,
+								random: rndm
+							},
+							success: function (response) {
+								var s = getActionResponseText(response);
+								if (s.toUpperCase().indexOf("PASSWORD CHANGED") >= 0) {
+									$("#changepasswordBody").find("#btnChangePasswordCancel").trigger("click");
+									$.growlUI("Please login again", "Login with new password", 2000, "", false);
+								} else alert(s);
+							}
+						});
+					}
+					return false;
+				});
+			});
+			function getGeneratedPass()
+			{
+				var passwords = [];
+				var maxChars = passwordRule.random_password_length || 8;
+				passwords.push(generateRandomPassword(maxChars));
+
+				var minNumeric = passwordRule.min_password_numbers || 0;
+				var minLower = passwordRule.min_password_lowers || 0;
+				var minUpper = passwordRule.min_password_uppers || 0;
+				var minSpecial = passwordRule.min_password_specials || 0;
+				if(minNumeric>0 || minLower>0 || minUpper>0 || minSpecial>0)
+				{
+					passwords = [];
+					if(minNumeric>0)
+					{
+						passwords.push(generateRandomPassword(minNumeric, true));
+					}
+					if(minLower>0)
+					{
+						passwords.push(generateRandomPassword(minLower, false, 'abcdefghijklmnopqrstuvwxyz'));
+					}
+					if(minUpper>0)
+					{
+						passwords.push(generateRandomPassword(minUpper, false, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'));
+					}
+					if(minSpecial>0)
+					{
+						passwords.push(generateRandomPassword(minSpecial, false, '!$^&*()_-+=[]{};,.<>?~'));
+					}
+				}
+				passwords.sort(function(a,b){ return( parseInt( Math.random()*10 ) %2 );});
+				var pass = passwords.join("");
+				pass = pass.shuffle();
+				if(pass.length>maxChars)
+				{
+					pass = pass.substr(0, maxChars);
+				}
+				else if(pass.length<maxChars)
+				{
+					pass += generateRandomPassword(maxChars - pass.length, true);
+				}
+				pass = pass.shuffle();
+				return pass;
+			}
+
+			function generateRandomPassword(length, numeric, possible) {
+				length = length || 8;
+	            var randomId = "";
+	            possible = possible || "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	            if(numeric)
+	            {
+	                possible = "0123456789";
+	            }
+				var array = new Uint32Array(length);
+				window.crypto.getRandomValues(array);
+	            for( var i=0; i < length; i++ )
+	                randomId += possible.charAt(Math.floor(array[i] % possible.length));
+	            return randomId;
+			}
+
+			function getActionResponseText(msg) {
+				var responseText = '';
+				try {
+					var msgs = msg.getElementsByTagName("commandResult");
+					for (var x = 0; x < msgs.length; x++) {
+						responseText += IE(msgs[x].getElementsByTagName("response")[0]).textContent;
+					}
+				} catch (ex) {}
+				return responseText;
+			}
+			function doLogin()
+			{
+				$("#loginWheel").show();
+				if(username !== '' || password !== '') {
+					// $("#loginButton").attr("disabled","true");
+					$.growlUI("Authenticating...", "", 5000, "", false);
+				}
+			}
+			function showHidePassword() {
+				var imgSrc = document.getElementById("showHide").src;
+				if(imgSrc.includes("dlt-icon-password-hide"))
+				document.getElementById("showHide").src= "/WebInterface/delite/icons/dlt-icon-password-show.svg";
+				   else
+				document.getElementById("showHide").src = "/WebInterface/delite/icons/dlt-icon-password-hide.svg";
+
+            }
+			function doLogin2(e)
+			{
+				$("input").each(function(){
+					$(this).val($.trim($(this).val()));
+				});
+				$("#loginWheel").show();
+				window.curUser = false;
+				window.curPass = false;
+				var username = $("#username").val();
+				if (!username) username = $("input[name=username]").val();
+				var password = $("#password").val();
+				if (!password) password = $("input[name=password]").val();
+				if(username !== '' || password !== '') { 
+					// $("#loginButton").attr("disabled","true");
+					$.growlUI("Authenticating...", "", 5000, "", false);
+				}
+				if($("#username").val()===''){
+					document.getElementById("userNameEmptyError").style.display = 'flex';
+				} else{
+					document.getElementById("userNameEmptyError").style.display = 'none';
+				}
+
+				if($("#password").val()===''){
+					document.getElementById("passwordEmptyError").style.display = 'flex';
+				} else{
+					document.getElementById("passwordEmptyError").style.display = 'none';
+				}
+				
+				if($("#username").val()==='' || $("#password").val()===''){ 
+					e.preventDefault();
+					return false;
+				}
+				var obj = {
+					command: "login",
+					username: encodeURIComponent(username),
+					password: encodeURIComponent(password),
+					encoded: true,
+					random: Math.random()
+				};
+
+				if($("#recaptcha_response_field").length>0)
+					obj.recaptcha_response_field = $("#recaptcha_response_field").val();
+				if($("#recaptcha_challenge_field").length>0)
+					obj.recaptcha_challenge_field = $("#recaptcha_challenge_field").val();
+				var success_login = false;
+				$.ajax({
+					type: "POST",
+					url: "/WebInterface/function/",
+					data: obj,
+					async : false,
+					error: function (XMLHttpRequest, textStatus, errorThrown) {
+						// $("#loginButton").attr("disabled","");
+						if (!errorThrown) errorThrown = "Error";
+						let _serverError = $(localizations)[0].serverUnavailable;
+						if(isCloud) {
+							_serverError = $(localizations)[0].serverUnavailableCloud;
+						}
+						$.growlUI(errorThrown, _serverError, 5000, "", false);
+						$("#loginWheel").hide();
+						success_login = false;
+
+					},
+					success: function (msg, data, request) {
+                        localStorage.setItem("ajxrf", request.getResponseHeader('ajxrf'));
+						var authStateObj = {
+							status: true,
+							csrfToken: request.getResponseHeader('ajxrf')
+						};
+						localStorage.setItem("authState", JSON.stringify(authStateObj));
+						$("#dummyIframe").attr("src","javascript:void(0);");
+						$("#loginWheel").hide();
+						var response = $(msg).find("response").text();
+						if (response == "success")
+						{
+							var link = false;
+							if(link && link.length>0)
+							{
+								$("#loginForm").attr("action",link);
+							}
+							else
+							{
+								$("#loginButton").attr("disabled","true");
+								$.blockUI.defaults.blockMsgClass = 'login-success';
+								$.growlUI($(localizations)[0].success, $(localizations)[0].loadingWebInterface, 30000, "", false);
+								var redirectPath = "/";
+								var path ="/";
+								if (location.href.indexOf("path=") >= 0) redirectPath = location.href.substring(location.href.indexOf("path=")+"path=".length);
+								if (location.href.indexOf("/Web"+"Interface/login.html") >= 0) path = location.href.substring(0,location.href.indexOf("/Web"+"Interface/login.html"))+"/#"+redirectPath;
+								//Web+Interface must be split up to work with reverse proxy
+								else path = location.href.replace("/#/",redirectPath);
+								$("#loginForm").attr("action",path);
+							}
+							success_login = true;
+						}
+						else if (response == "password_expired")
+						{
+							window.curUser = username;
+							window.curPass = password;
+							_badLogin = IE(msg.getElementsByTagName("message")[0]).textContent || _badLogin;
+							$.growlUI("Change Password", _badLogin, 2000, "", false);
+							$("#loginBody").hide();
+							$("#changepasswordBody").show().find("input").val("");
+							$("#current_password").select().focus();
+							success_login = false;
+						}
+						else
+						{
+							$("#password").focus();
+							_badLogin = IE(msg.getElementsByTagName("message")[0]).textContent || _badLogin;
+							
+							if(_badLogin && _badLogin.indexOf("Check your username or password and try again") != -1){
+								_badLogin = $(localizations)[0].checkUsernameAndPassword;
+							}
+							if(username !== '' || password !== '') {
+								if (attempts++ >= 3 && !isCloud) {
+									$.growlUI($(localizations)[0].warning, $(localizations)[0].tooManyFailedAttempts + "\r\n\r\n" + _badLogin, 10000, "", false);
+								}
+								else {
+									$.growlUI($(localizations)[0].loginFailed, _badLogin, 7000, "", false);
+								}
+							}
+							$("#loginWheel").hide();
+							success_login = false;
+						}
+					}
+				});
+				return success_login;
+			}
+
+			function emailPassword()
+			{
+				$("input").each(function(){
+					$(this).val($.trim($(this).val()));
+				});
+				var username = $("#username").val();
+				if (!username) username = $("input[name=username]").val();
+				$("#loginWheel").show();
+				var rndm = crushFTPTools.getToken();
+				$.ajax({
+					type: "POST",
+					url: "/WebInterface/function/",
+					data: {
+						command: "emailpassword",
+						username: encodeURIComponent(username),
+						encoded: true,
+						random: rndm
+					},
+					error: function (XMLHttpRequest, textStatus, errorThrown) {
+						if (!errorThrown) errorThrown = "Error";
+						let _serverError = $(localizations)[0].serverUnavailable;
+						if(isCloud) {
+							_serverError = $(localizations)[0].serverUnavailableCloud;
+						}
+						$.growlUI(errorThrown, _serverError, 5000, "", false);
+						$("#loginWheel").hide();
+					},
+					success: function (msg) {
+						$("#loginWheel").hide();
+						var response = IE(msg.getElementsByTagName("response")[0]).textContent;
+						$.growlUI("", response, 10000, "", false);
+					}
+				});
+			}
+
+			function IE(obj) {
+                if ($.browser.msie && parseInt(jQuery.browser.version) == 10) {
+                    var itm = {};
+                    itm.textContent = $(obj).text();
+                    return itm;
+                }
+                else
+                {
+					if (window.ActiveXObject) {
+						var obj2 = {};
+						try {
+							obj2.textContent = obj.text;
+						} catch (ex) {}
+						return obj2;
+					} else {
+						return obj;
+					}
+                }
+			}
+
+			function olderBrowserNotification()
+			{
+				if ($.browser.msie && $.browser.version == "6.0")
+				{
+					$.blockUI({ message: $('#olderBrowserNotice'), css:{
+						width: '430px',
+						padding: '10px',
+						top:'250px',
+						border:'3px solid #F17E7E'
+					} });
+					$("#proceedAnyway").click(function(){
+						$.unblockUI();
+						$("#username").focus();
+					});
+				}
+			}
+		</script>
+	</body>
+</html>

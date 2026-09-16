@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">view</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional portId</value>
+    <value>[i] field:0:optional portName</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] recref:0:required portInfo wm.mft.assets.rec.port:PortInfo</value>
+    <value>[o] field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQkKCQlTdHJpbmcgc2VydmVySWQgPSBudWxsOwoJCVN0cmluZyBzZXJ2ZXJOYW1lID0gbnVsbDsK
+CQlTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDEzIik7CgkJSURh
+dGFDdXJzb3IgaW5jdXIgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKCQlpZihpbmN1ci5maXJzdCgi
+cG9ydElkIikpewoJCQlzZXJ2ZXJJZCA9IChTdHJpbmcpIGluY3VyLmdldFZhbHVlKCk7CgkJfQoJ
+CWlmKGluY3VyLmZpcnN0KCJwb3J0TmFtZSIpKXsKCQkJc2VydmVyTmFtZSA9IChTdHJpbmcpaW5j
+dXIuZ2V0VmFsdWUoKTsKCQl9CgkJCgkJYm9vbGVhbiBzdWNjZXNzID0gZmFsc2U7CgkJU2VydmVy
+Q29uZmlnIGNvbmZpZyA9IG51bGw7CgkJLy9hZGRpbmcgdGhlIHNlcnZlciBoZXJlOwoJCXRyeXsK
+CQkJUkJBUHJveHkudmFsaWRhdGVTZXNzaW9uKFJCQVVpSGFuZGxlLkxJU1RFTkVSX1ZJRVcpOwoJ
+CQljb25maWcgPSBTZXJ2ZXJBZG1pblByb3h5LnZpZXdTZXJ2ZXIoc2VydmVySWQsc2VydmVyTmFt
+ZSk7CgkJCXN1Y2Nlc3MgPSAobnVsbCAhPSBjb25maWcpOwoJCX1jYXRjaCAoVGhyb3dhYmxlIHQp
+ewoJCQltZXNzYWdlID0gdC5nZXRMb2NhbGl6ZWRNZXNzYWdlKCk7CgkgICAgfWZpbmFsbHkgewoJ
+ICAgIAlpZiAoIXN1Y2Nlc3MpIHsKCSAgICAJCWlmICggc2VydmVySWQgIT0gbnVsbCApCgkgICAg
+CQkJbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCI4MDE1Iiwgc2VydmVySWQpOwoJ
+ICAgIAkJZWxzZQoJICAgIAkJCW1lc3NhZ2UgPSBNRlRSZXNvdXJjZXMuZ2V0TWVzc2FnZSgiODAx
+NiIsIHNlcnZlck5hbWUpOwoJICAgIAl9CgkgICAgCQoJICAgIAlzZXJ2ZXJJZCA9IG51bGwhPWNv
+bmZpZz9jb25maWcuZ2V0U2VydmVySUQoKToiIjsKCSAgICAJVmFsdWVzRW11bGF0b3IucHV0KHBp
+cGVsaW5lLCAic3VjY2VzcyIsIFN0cmluZy52YWx1ZU9mKHN1Y2Nlc3MpKTsKCSAgICAJaWYobnVs
+bCE9Y29uZmlnKXsKCSAgICAJCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInBvcnRJbmZv
+IixBc3NldFV0aWxzLnNlcnZlckNvbmZpZ1RvSURhdGEoY29uZmlnLCB0cnVlLCB0cnVlLCB0cnVl
+KSk7CiAgICAgICAgCX1lbHNlewogICAgICAgIAkJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5l
+LCAicG9ydEluZm8iLG51bGwpOwogICAgICAgIAl9CgkgICAgCVZhbHVlc0VtdWxhdG9yLnB1dChw
+aXBlbGluZSwgIm1lc3NhZ2UiLG1lc3NhZ2UpOwoJICAgIH0K</value>
+</Values>

@@ -1,0 +1,59 @@
+:root {
+    div:lang(it) {
+        direction: rtl;
+    }
+
+    .utility-wrapper:lang(it){
+        margin-left: 1.063rem;
+        margin-right: unset;
+    }
+
+    .clear-icon:lang(it) {
+        right: unset;
+        left: .25rem;
+    }
+
+    .clear-icon-more-padding:lang(it){
+        right: unset;
+        left: 1.75rem;
+    }
+
+    .clear-icon-more-padding:lang(it){
+        right: unset;
+        left: .25rem;
+    }
+
+    .password-show-icon:lang(it) {
+        right: unset;
+        left: 0.25rem;
+    }
+
+    .dlt-checkbox label:lang(it){
+        float: left;
+        text-align: right;
+        right: 0;
+    }
+
+    .dlt-checkbox input:lang(it){
+        padding: var(--dlt-spacing-3-x, 1.5rem) 0;
+        float: right;
+    }
+
+    .dlt-checkbox label:before{
+        right: 0;
+    }
+
+    .width-100p:lang(it) {
+        justify-content: flex-start;
+    }
+    
+    .dlt-icon-sm:lang(it) {
+        margin-right: unset;
+        margin-left: .3rem;
+    }
+
+    .downloadPanel:lang(it) {
+        left: 23rem;
+        right: unset;
+    }
+}

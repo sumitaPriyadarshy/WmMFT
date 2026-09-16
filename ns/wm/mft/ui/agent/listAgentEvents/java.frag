@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">listAgentEvents</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional invokeDoQuery {"true","false"}</value>
+    <value>[i] recref:0:optional searchCreteria wm.mft.ui.rec:doQuerySerachInput</value>
+    <value>[i] field:0:required queryId</value>
+    <value>[i] field:0:required pageNumber</value>
+    <value>[i] field:0:optional queryIdToCancel</value>
+    <value>[o] field:0:required threadRunning</value>
+    <value>[o] field:0:required rowsRead</value>
+    <value>[o] record:1:required agentActions</value>
+    <value>[o] - field:0:required id</value>
+    <value>[o] - field:0:required name</value>
+    <value>[o] - field:0:required description</value>
+    <value>[o] - field:0:required isActive</value>
+    <value>[o] field:0:required status</value>
+    <value>[o] field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">ClN0cmluZyBtZXNzYWdlID0gTUZUUmVzb3VyY2VzLmdldE1lc3NhZ2UoIjEwMTMiKTsKYm9vbGVh
+biBzdWNjZXNzID0gdHJ1ZTsKdHJ5IHsKCVJCQVByb3h5LnZhbGlkYXRlU2Vzc2lvbihSQkFVaUhh
+bmRsZS5BR0VOVF9BQ1RJT05fVklFVyk7CglpZiAoInRydWUiLmVxdWFsc0lnbm9yZUNhc2UoVmFs
+dWVzRW11bGF0b3IuZ2V0U3RyaW5nKHBpcGVsaW5lLCAiaW52b2tlRG9RdWVyeSIpKSkgewoJCUlE
+YXRhIHNlYXJjaENyZXRlcmlhID0gKElEYXRhKSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUs
+ICJzZWFyY2hDcmV0ZXJpYSIpOwoJCUlEYXRhIHF1ZXJ5SW5wdXQgPSBVSVV0aWxzLnBhcnNlRG9R
+dWVyeVNlYXJjaElucHV0KHNlYXJjaENyZXRlcmlhKTsKCQlpZiAoVmFsdWVzRW11bGF0b3IuZ2V0
+KHF1ZXJ5SW5wdXQsICJzb3J0T3JkZXIiKSA9PSBudWxsKSB7CgkJCUlEYXRhIGRlZmF1bHRTb3J0
+T3JkZXIgPSBJRGF0YUZhY3RvcnkuY3JlYXRlKCk7CgkJCVZhbHVlc0VtdWxhdG9yLnB1dChkZWZh
+dWx0U29ydE9yZGVyLCAiY29sdW1uTmFtZSIsICJFdmVudE5hbWUiKTsKCQkJVmFsdWVzRW11bGF0
+b3IucHV0KHF1ZXJ5SW5wdXQsICJzb3J0T3JkZXIiLCBuZXcgSURhdGFbXSB7IGRlZmF1bHRTb3J0
+T3JkZXIgfSk7CgkJfQoJCVN0cmluZ1tdIHJlc3VsdENvbHMgPSBuZXcgU3RyaW5nW10geyAiRXZl
+bnRJRCIsICJFdmVudE5hbWUiLCAiRGVzY3JpcHRpb24iLCAiQWN0aXZlIiB9OwoJCVZhbHVlc0Vt
+dWxhdG9yLnB1dChxdWVyeUlucHV0LCAicmVzdWx0U2V0Q29sdW1ucyIsIHJlc3VsdENvbHMpOwoK
+CQlJRGF0YSBkb1F1ZXJ5SW5wdXQgPSBJRGF0YUZhY3RvcnkuY3JlYXRlKCk7CgkJVmFsdWVzRW11
+bGF0b3IucHV0KGRvUXVlcnlJbnB1dCwgInF1ZXJ5SW5wdXQiLCBxdWVyeUlucHV0KTsKCQlWYWx1
+ZXNFbXVsYXRvci5wdXQoZG9RdWVyeUlucHV0LCAicXVlcnlUeXBlIiwgTUZURGF0YUNvbnN0YW50
+cy5RVUVSWV9UWVBFX0FHRU5UX0VWRU5UKTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQoZG9RdWVyeUlu
+cHV0LCAicXVlcnlJZFRvQ2FuY2VsIiwgVmFsdWVzRW11bGF0b3IuZ2V0KHBpcGVsaW5lLCAicXVl
+cnlJZFRvQ2FuY2VsIikpOwoJCVNlcnZpY2UuZG9JbnZva2UoIndtLm1mdC51aS5xdWVyaWVzIiwg
+ImRvUXVlcnkiLCBkb1F1ZXJ5SW5wdXQpOwoJfQoJSURhdGEgZ2V0UXVlcnlSZXN1bHRJbnB1dCA9
+IElEYXRhRmFjdG9yeS5jcmVhdGUoKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChnZXRRdWVyeVJlc3Vs
+dElucHV0LCAicXVlcnlJZCIsIFZhbHVlc0VtdWxhdG9yLmdldChwaXBlbGluZSwgInF1ZXJ5SWQi
+KSk7CglWYWx1ZXNFbXVsYXRvci5wdXQoZ2V0UXVlcnlSZXN1bHRJbnB1dCwgInBhZ2VOdW1iZXIi
+LCBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJwYWdlTnVtYmVyIikpOwoJVmFsdWVzRW11
+bGF0b3IucHV0KGdldFF1ZXJ5UmVzdWx0SW5wdXQsICJxdWVyeVR5cGUiLAoJCQlTdHJpbmcudmFs
+dWVPZihNRlREYXRhQ29uc3RhbnRzLlFVRVJZX1RZUEVfQUdFTlRfRVZFTlQpKTsKCVNlcnZpY2Uu
+ZG9JbnZva2UoIndtLm1mdC51aS5xdWVyaWVzIiwgImdldFF1ZXJ5UmVzdWx0cyIsIGdldFF1ZXJ5
+UmVzdWx0SW5wdXQpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAidGhyZWFkUnVubmlu
+ZyIsIFZhbHVlc0VtdWxhdG9yLmdldChnZXRRdWVyeVJlc3VsdElucHV0LCAidGhyZWFkUnVubmlu
+ZyIpKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInJvd3NSZWFkIiwgVmFsdWVzRW11
+bGF0b3IuZ2V0KGdldFF1ZXJ5UmVzdWx0SW5wdXQsICJyb3dzUmVhZCIpKTsKCUlEYXRhW10gZGF0
+YUFycmF5ID0gKElEYXRhW10pIFZhbHVlc0VtdWxhdG9yLmdldChnZXRRdWVyeVJlc3VsdElucHV0
+LCAiZGF0YUFycmF5SURhdGEiKTsKCWlmIChkYXRhQXJyYXkgIT0gbnVsbCkgewoJCVZhbHVlc0Vt
+dWxhdG9yLnB1dChwaXBlbGluZSwgImV2ZW50cyIsIGRhdGFBcnJheSk7Cgl9Cn0gY2F0Y2ggKFRo
+cm93YWJsZSB0KSB7CglzdWNjZXNzID0gZmFsc2U7CgltZXNzYWdlID0gdC5nZXRMb2NhbGl6ZWRN
+ZXNzYWdlKCk7Cn0gZmluYWxseSB7CglWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJzdWNj
+ZXNzIiwgU3RyaW5nLnZhbHVlT2Yoc3VjY2VzcykpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVs
+aW5lLCAibWVzc2FnZSIsIG1lc3NhZ2UpOwp9Cg==</value>
+</Values>

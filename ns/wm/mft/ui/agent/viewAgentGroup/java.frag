@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">viewAgentGroup</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required agentGroupId</value>
+    <value>[i] field:0:required agentGroupName</value>
+    <value>[o] record:0:required agentGroupInfo</value>
+    <value>[o] - field:0:optional success</value>
+    <value>[o] - field:0:optional message</value>
+    <value>[o] - field:0:optional groupData</value>
+    <value>[o] - field:1:optional agentData</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgY3VyID0gbnVsbDsKSURhdGEgYWdlbnRHcm91cEluZm8gPSBJRGF0YUZhY3Rv
+cnkuY3JlYXRlKCk7CmJvb2xlYW4gc3VjY2VzcyA9IHRydWU7ClN0cmluZyBhZ2VudEdyb3VwSWQg
+PSAiIjsKU3RyaW5nIGFnZW50R3JvdXBOYW1lID0gIiI7CkFnZW50R3JvdXAgYWdlbnRHcm91cCA9
+IG51bGw7CklEYXRhIGFnZW50SURhdGEgPSBudWxsOwpTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291
+cmNlcy5nZXRNZXNzYWdlKCIxMDEzIik7Ckxpc3Q8SURhdGE+IGFnZW50SURhdGFMaXN0ID0gbmV3
+IEFycmF5TGlzdDw+KCk7CnRyeSB7CglSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5k
+bGUuQUdFTlRfR1JPVVBfVklFVyk7CgljdXIgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKCWlmIChj
+dXIuZmlyc3QoImFnZW50R3JvdXBJZCIpKSB7CgkJYWdlbnRHcm91cElkID0gKFN0cmluZykgY3Vy
+LmdldFZhbHVlKCk7Cgl9CglpZiAoY3VyLmZpcnN0KCJhZ2VudEdyb3VwTmFtZSIpKSB7CgkJYWdl
+bnRHcm91cE5hbWUgPSAoU3RyaW5nKSBjdXIuZ2V0VmFsdWUoKTsKCX0KCWlmICgobnVsbCAhPSBh
+Z2VudEdyb3VwSWQgJiYgIWFnZW50R3JvdXBJZC5pc0VtcHR5KCkpCgkJCXx8IChudWxsICE9IGFn
+ZW50R3JvdXBOYW1lICYmICFhZ2VudEdyb3VwTmFtZS5pc0VtcHR5KCkpKSB7CgkJYWdlbnRHcm91
+cCA9IEFnZW50c1Byb3h5LnZpZXdBZ2VudEdyb3VwKGFnZW50R3JvdXBJZCwgYWdlbnRHcm91cE5h
+bWUpOwoJCWlmIChhZ2VudEdyb3VwICE9IG51bGwpIHsKCQkJQXNzZXRVdGlscy5nZXRBZ2VudEdy
+b3Vwc0FzSURhdGEoYWdlbnRHcm91cCwgYWdlbnRHcm91cEluZm8pOwoJCQlMaXN0PEFnZW50PiBh
+Z2VudHMgPSBhZ2VudEdyb3VwLmdldEdyb3VwTWVtYmVycygpOwoJCQlpZiAoIWFnZW50cy5pc0Vt
+cHR5KCkpIHsKCQkJCWZvciAoQWdlbnQgYWdlbnQgOiBhZ2VudHMpIHsKCQkJCQlhZ2VudElEYXRh
+ID0gQXNzZXRVdGlscy5nZXRBZ2VudHNBc0lEYXRhKGFnZW50KTsKCQkJCQlpZiAoYWdlbnRJRGF0
+YSAhPSBudWxsKQoJCQkJCQlhZ2VudElEYXRhTGlzdC5hZGQoYWdlbnRJRGF0YSk7CgkJCQl9CgoJ
+CQl9CgkJfQoJfQp9IGNhdGNoIChUaHJvd2FibGUgdCkgewoJc3VjY2VzcyA9IGZhbHNlOwoJbWVz
+c2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpOwp9IGZpbmFsbHkgewoJaWYgKGN1ciAhPSBu
+dWxsKSB7CgkJY3VyLmRlc3Ryb3koKTsKCX0KCVZhbHVlc0VtdWxhdG9yLnB1dChhZ2VudEdyb3Vw
+SW5mbywgInN1Y2Nlc3MiLCBzdWNjZXNzKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChhZ2VudEdyb3Vw
+SW5mbywgIm1lc3NhZ2UiLCBtZXNzYWdlKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChhZ2VudEdyb3Vw
+SW5mbywgImFnZW50SW5mbyIsIGFnZW50SURhdGFMaXN0LnRvQXJyYXkobmV3IElEYXRhW2FnZW50
+SURhdGFMaXN0LnNpemUoKV0pKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgImFnZW50
+R3JvdXBJbmZvIiwgYWdlbnRHcm91cEluZm8pOwp9Cg==</value>
+</Values>

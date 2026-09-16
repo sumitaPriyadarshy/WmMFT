@@ -1,0 +1,44 @@
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0ve6gi6m4g04fm2*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *Host: localhost*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *Content-Length: 132*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *command:login*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *username:sdey*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *password:************
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *clientid:[Find : vg000100k0ve6gd3m4g04fmv]*
+08/26/2026 09:54:36 PM|[HTTP:23616::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k0ve6gi6m4g04fm2*
+08/26/2026 09:54:36 PM|[HTTP:23616:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/26/2026 09:54:36 PM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787761476278_p9VNT1iem1X5BPnEkrdk0ujNCc1Nkp;*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *Host: localhost*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *c2f:1Nkp*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *command:stat*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/26/2026 09:54:36 PM|[HTTP:23617:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/26/2026 10:21:07 PM|[HTTP:23617:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. Azure Message: 
+08/26/2026 10:21:07 PM|Azure Message: 
+08/26/2026 10:21:07 PM|java.lang.RuntimeException: java.net.UnknownHostException: mft1.blob.core.windows.net: nodename nor servname provided, or not known*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787761476278_p9VNT1iem1X5BPnEkrdk0ujNCc1Nkp;*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *Host: localhost*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *c2f:1Nkp*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *command:stat*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/26/2026 10:21:07 PM|[HTTP:23619:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/26/2026 10:39:26 PM|[HTTP:23619:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. Azure Message: 
+08/26/2026 10:39:26 PM|Azure Message: 
+08/26/2026 10:39:26 PM|java.lang.RuntimeException: java.net.UnknownHostException: mft1.blob.core.windows.net: nodename nor servname provided, or not known*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787761476278_p9VNT1iem1X5BPnEkrdk0ujNCc1Nkp;*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *Host: localhost*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *c2f:1Nkp*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/26/2026 10:39:26 PM|[HTTP:23621:sdey:127.0.0.1] READ: *format:stat_dmz*

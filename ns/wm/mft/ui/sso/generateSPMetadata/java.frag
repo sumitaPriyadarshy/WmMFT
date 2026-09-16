@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">generateSPMetadata</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required ssodefaultCertificateId</value>
+    <value>[i] field:1:required ssoencryptCertificateId</value>
+    <value>[i] field:2:required ssosignCertificateId</value>
+    <value>[i] field:3:required ssoIDPMetaUrl</value>
+    <value>[i] field:4:required ssoSPEndpointUrl</value>
+    <value>[i] field:5:required ssoClientId</value>
+    <value>[i] field:6:required ssoIDPInitiatedRedirectUri</value>
+    <value>[o] record:0:required output</value>
+    <value>[o] - field:0:required success</value>
+    <value>[o] - field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CklEYXRhIG91dHB1dCA9IElEYXRhRmFjdG9yeS5jcmVhdGUoKTsKSURhdGFDdXJzb3IgY3VyID0g
+cGlwZWxpbmUuZ2V0Q3Vyc29yKCk7ClN0cmluZyBzc29EZWZhdWx0Q2VydGlmaWNhdGVBbGlhcyA9
+IG51bGw7ClN0cmluZyBzc29TaWduQ2VydGlmaWNhdGVBbGlhcyA9IG51bGw7ClN0cmluZyBzc29F
+bmNyeXB0Q2VydGlmaWNhdGVBbGlhcyA9IG51bGw7ClN0cmluZyBzc29DZXJ0aWZpY2F0ZSA9IG51
+bGw7ClN0cmluZyBzc29JRFBNZXRhVXJsID0gbnVsbDsKU3RyaW5nIHNzb0NsaWVudElkID0gbnVs
+bDsKU3RyaW5nIHNzb1NQRW5kcG9pbnRVcmwgPSBudWxsOwpTdHJpbmcgc3NvSURQSW5pdGlhdGVk
+UmVkaXJlY3RVcmkgPSBudWxsOwpTdHJpbmcgcG9ydCA9IG51bGw7ClN0cmluZyBpbnN0YW5jZUlk
+ID0gTUZURGF0YUNvbnN0YW50cy5TRVJWRVJfSU5TVEFOQ0VJRF9ERUZBVUxUOwppZiAoY3VyLmZp
+cnN0KCJzc29TaWduQ2VydGlmaWNhdGVBbGlhcyIpKSB7Cglzc29TaWduQ2VydGlmaWNhdGVBbGlh
+cyA9IChTdHJpbmcpIGN1ci5nZXRWYWx1ZSgpOwp9CmlmIChjdXIuZmlyc3QoInNzb0RlZmF1bHRD
+ZXJ0aWZpY2F0ZUFsaWFzIikpIHsKCXNzb0RlZmF1bHRDZXJ0aWZpY2F0ZUFsaWFzID0gKFN0cmlu
+ZykgY3VyLmdldFZhbHVlKCk7Cn0KaWYgKGN1ci5maXJzdCgic3NvRW5jcnlwdENlcnRpZmljYXRl
+QWxpYXMiKSkgewoJc3NvRW5jcnlwdENlcnRpZmljYXRlQWxpYXMgPSAoU3RyaW5nKSBjdXIuZ2V0
+VmFsdWUoKTsKfQppZiAoY3VyLmZpcnN0KCJzc29DZXJ0aWZpY2F0ZUlkIikpIHsKCXNzb0NlcnRp
+ZmljYXRlID0gKFN0cmluZykgY3VyLmdldFZhbHVlKCk7Cn0KaWYgKGN1ci5maXJzdCgic3NvSURQ
+TWV0YVVybCIpKSB7Cglzc29JRFBNZXRhVXJsID0gKFN0cmluZykgY3VyLmdldFZhbHVlKCk7Cn0K
+aWYgKGN1ci5maXJzdCgic3NvU1BFbmRwb2ludFVybCIpKSB7Cglzc29TUEVuZHBvaW50VXJsID0g
+KFN0cmluZykgY3VyLmdldFZhbHVlKCk7Cn0KaWYgKGN1ci5maXJzdCgic3NvQ2xpZW50SWQiKSkg
+ewoJc3NvQ2xpZW50SWQgPSAoU3RyaW5nKSBjdXIuZ2V0VmFsdWUoKTsKfQppZiAoY3VyLmZpcnN0
+KCJzc29JRFBJbml0aWF0ZWRSZWRpcmVjdFVyaSIpKSB7CglpZiAoKFN0cmluZykgY3VyLmdldFZh
+bHVlKCkgIT0gIm51bGwiKSB7CgkJc3NvSURQSW5pdGlhdGVkUmVkaXJlY3RVcmkgPSAoU3RyaW5n
+KSBjdXIuZ2V0VmFsdWUoKTsKCX0KfQppZiAoY3VyLmZpcnN0KCJpbnN0YW5jZUlkIikpIHsKCWlu
+c3RhbmNlSWQgPSAoU3RyaW5nKSBjdXIuZ2V0VmFsdWUoKTsKfQppZiAoY3VyLmZpcnN0KCJwb3J0
+Tm8iKSkgewoJcG9ydCA9IChTdHJpbmcpIGN1ci5nZXRWYWx1ZSgpOwoJaWYgKCFNRlREYXRhQ29u
+c3RhbnRzLlNFUlZFUl9JTlNUQU5DRUlEX0RFRkFVTFQuZXF1YWxzKGluc3RhbmNlSWQpKSB7CgkJ
+cG9ydCA9ICJETVpfUG9ydF8iICsgaW5zdGFuY2VJZCArICJfIiArIHBvcnQ7Cgl9Cn0KCnRyeSB7
+CglSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5kbGUuTElTVEVORVJfVklFVyk7CglN
+RlRDZXJ0aWZpY2F0ZURhdGEgY2VydGlmaWNhdGVEYXRhID0gQ29tbW9uUHJveHkudmlld01GVEtl
+eURhdGEoc3NvQ2VydGlmaWNhdGUpOwoKCVN0cmluZyBzcCA9IG5ldyBTdHJpbmcoKTsKCXNwPVNB
+TUxBY2Nlc3Nvci5nZW5lcmF0ZVNQTWV0YWRhdGFVSShzc29TUEVuZHBvaW50VXJsLCBjZXJ0aWZp
+Y2F0ZURhdGEsCgkJCXNzb0RlZmF1bHRDZXJ0aWZpY2F0ZUFsaWFzLCBzc29FbmNyeXB0Q2VydGlm
+aWNhdGVBbGlhcywgc3NvU2lnbkNlcnRpZmljYXRlQWxpYXMsIHNzb0NsaWVudElkKTsKCVZhbHVl
+c0VtdWxhdG9yLnB1dChvdXRwdXQsICJzdWNjZXNzIiwgdHJ1ZSk7CglWYWx1ZXNFbXVsYXRvci5w
+dXQob3V0cHV0LCAibWVzc2FnZSIsIHNwKTsKCn0gY2F0Y2ggKFRocm93YWJsZSBlKSB7CglWYWx1
+ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJtZXNzYWdlIiwgZS5nZXRMb2NhbGl6ZWRNZXNzYWdl
+KCkpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAic3VjY2VzcyIsIGZhbHNlKTsKfQoK
+ZmluYWxseSB7CglWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJvdXRwdXQiLCBvdXRwdXQp
+Owp9Cgo=</value>
+</Values>

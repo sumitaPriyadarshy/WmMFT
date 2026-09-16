@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required userInfo wm.mft.assets.rec.user:UserInfo</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:1:required validationErrors</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQkKCQlTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDEzIik7CgkJ
+SURhdGFDdXJzb3IgY3VyID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7CgkJSURhdGEgdXNlclBpcGUg
+PSAoSURhdGEpIFZhbHVlc0VtdWxhdG9yLmdldChwaXBlbGluZSwgInVzZXJJbmZvIik7IAoJCQoJ
+CWlmICggdXNlclBpcGUgPT0gbnVsbCApCgkJCXRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKE1G
+VFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDAxIiwgInVzZXJJbmZvIikpOwoJCQoJCVVzZXJDb25m
+aWcgdXNlciA9IG51bGw7CgkJCgkJYm9vbGVhbiBzdWNjZXNzID0gZmFsc2U7CgkJU3RyaW5nW10g
+bWVzc2FnZUFycmF5ID0gbnVsbDsKCQl0cnl7CgkJCXVzZXIgPSBBc3NldFV0aWxzLmdldFVzZXJD
+b25maWdGcm9tSURhdGEodXNlclBpcGUsZmFsc2UpOwoJCQlzdWNjZXNzID0gVXNlck1hbmFnZXJQ
+cm94eS51cGRhdGVVc2VyKHVzZXIsIGZhbHNlKTsKCQl9Y2F0Y2ggKFRocm93YWJsZSB0KXsKCSAg
+ICAJbWVzc2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpOwoJICAgIAlpZiAoIHQgaW5zdGFu
+Y2VvZiBNRlRTZXJ2aWNlRXhjZXB0aW9uICkgewoJICAgIAkJTGlzdDxTdHJpbmc+IG1lc3NhZ2VM
+aXN0ID0gKChNRlRTZXJ2aWNlRXhjZXB0aW9uKSB0KS5nZXRFcnJvck1lc3NhZ2VMaXN0KCk7Cgkg
+ICAgCQlpZiAoIG1lc3NhZ2VMaXN0ICE9IG51bGwgKSB7CgkgICAgCQkJbWVzc2FnZUFycmF5ID0g
+bmV3IFN0cmluZ1ttZXNzYWdlTGlzdC5zaXplKCldOyAKCSAgICAJCQltZXNzYWdlTGlzdC50b0Fy
+cmF5KG1lc3NhZ2VBcnJheSk7CgkgICAgCQl9CgkJCX0KCSAgICB9ZmluYWxseSB7CgkgICAgCVZh
+bHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInN1Y2Nlc3MiLCBTdHJpbmcudmFsdWVPZihzdWNj
+ZXNzKSk7CgkgICAgCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgIm1lc3NhZ2UiLG1lc3Nh
+Z2UpOwkKCSAgICAJaWYgKCBtZXNzYWdlQXJyYXkgIT0gbnVsbCApCgkJCQlWYWx1ZXNFbXVsYXRv
+ci5wdXQocGlwZWxpbmUsICJ2YWxpZGF0aW9uRXJyb3JzIixtZXNzYWdlQXJyYXkpOwoJCQlpZiAo
+Y3VyICE9IG51bGwpewoJICAgIAkJY3VyLmRlc3Ryb3koKTsKCSAgICAJfQoJICAgIH0K</value>
+</Values>

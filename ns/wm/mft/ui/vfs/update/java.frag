@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required vfsDetails wm.mft.assets.rec.vfs:VfsDetails</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:optional vfsId</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:1:required validationErrors</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">U3RyaW5nIG1lc3NhZ2UgPSBNRlRSZXNvdXJjZXMuZ2V0TWVzc2FnZSgiMTAxMyIpOwpWaXJ0dWFs
+RmlsZU9iamVjdCB2ZnMgPSBudWxsOwpJRGF0YSB2ZnNEZXRhaWxzID0gbnVsbDsKdmZzRGV0YWls
+cyA9IChJRGF0YSkgVmFsdWVzRW11bGF0b3IuZ2V0KHBpcGVsaW5lLCAidmZzRGV0YWlscyIpOwpi
+b29sZWFuIHN1Y2Nlc3MgPSBmYWxzZTsKClN0cmluZ1tdIG1lc3NhZ2VBcnJheSA9IG51bGw7CnRy
+eSB7CgoJdmZzID0gQXNzZXRVdGlscy5pRGF0YVRvVmZzKHZmc0RldGFpbHMsIHRydWUpOwoKCglz
+ZXRUTlBhcnRuZXJJbmZvRm9yVkZTKHZmc0RldGFpbHMsIHZmcyk7CglpZiAoIXZmcy5pc1ZGU1Zp
+cnR1YWwoKSAmJiBudWxsID09IHZmcy5nZXRWRlNVUkwoKSkgewoJCXZmcy5zZXRWRlNVUkwoIkZJ
+TEU6Ly8iKTsKCX0KCgkvLyBGb3IgVUkgY2FsbHMgY2hlY2sgZm9yIHBlcm1pc3Npb24gZm9yIHRo
+ZSBsb2dnZWQgaW4gdXNlcgoJUkJBUHJveHkudmFsaWRhdGVTZXNzaW9uKHZmcywgUkJBVWlIYW5k
+bGUuVkZTX1VQREFURSk7CgoJc3VjY2VzcyA9IFVzZXJNYW5hZ2VyUHJveHkudXBkYXRlVkZTKHZm
+cyk7Cn0gY2F0Y2ggKFRocm93YWJsZSB0KSB7CgltZXNzYWdlID0gdC5nZXRMb2NhbGl6ZWRNZXNz
+YWdlKCk7CglpZiAodCBpbnN0YW5jZW9mIE1GVFNlcnZpY2VFeGNlcHRpb24pIHsKCQlMaXN0PFN0
+cmluZz4gbWVzc2FnZUxpc3QgPSAoKE1GVFNlcnZpY2VFeGNlcHRpb24pIHQpLmdldEVycm9yTWVz
+c2FnZUxpc3QoKTsKCQlpZiAobWVzc2FnZUxpc3QgIT0gbnVsbCkgewoJCQltZXNzYWdlQXJyYXkg
+PSBuZXcgU3RyaW5nW21lc3NhZ2VMaXN0LnNpemUoKV07CgkJCWZvcihTdHJpbmcgbWVzc2FnZTEg
+OiBtZXNzYWdlTGlzdCkgewoJCQkJbWVzc2FnZSA9IG1lc3NhZ2UgKyAiXG4iICsgbWVzc2FnZTE7
+CgkJCX0KCQkJbWVzc2FnZUxpc3QudG9BcnJheShtZXNzYWdlQXJyYXkpOwoKCQl9Cgl9Cn0gZmlu
+YWxseSB7CglWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJzdWNjZXNzIiwgU3RyaW5nLnZh
+bHVlT2Yoc3VjY2VzcykpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAibWVzc2FnZSIs
+IG1lc3NhZ2UpOwoJaWYgKG51bGwgIT0gbWVzc2FnZUFycmF5KSB7CgkJVmFsdWVzRW11bGF0b3Iu
+cHV0KHBpcGVsaW5lLCAidmFsaWRhdGlvbkVycm9ycyIsIG1lc3NhZ2VBcnJheSk7Cgl9CglWYWx1
+ZXNFbXVsYXRvci5yZW1vdmUocGlwZWxpbmUsICJ2ZnNEZXRhaWxzIik7Cn0K</value>
+</Values>

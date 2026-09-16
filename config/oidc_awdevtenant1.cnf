@@ -1,0 +1,13 @@
+#Application removed the following secrets oidc.clientSecret at 2026/07/17 10:07:15
+#Fri Jul 17 10:07:15 IST 2026
+authorizationUri=https\://idm-aw-us.test.platform.ipaas.ibm.com/auth/realms/awdevtenant1/protocol/openid-connect/auth
+clientId=mft
+enabled=true
+issuerUri=https\://idm-aw-us.test.platform.ipaas.ibm.com/auth/realms/awdevtenant1
+jwkSetUri=https\://idm-aw-us.test.platform.ipaas.ibm.com/auth/realms/awdevtenant1/protocol/openid-connect/certs
+provider=keycloak
+redirectUri=https\://localhost/mft
+scope=openid
+tokenUri=https\://idm-aw-us.test.platform.ipaas.ibm.com/auth/realms/awdevtenant1/protocol/openid-connect/token
+userInfoUri=https\://idm-aw-us.test.platform.ipaas.ibm.com/auth/realms/awdevtenant1/protocol/openid-connect/userinfo
+userNameAttribute=preferred_username

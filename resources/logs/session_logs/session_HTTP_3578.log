@@ -1,0 +1,53 @@
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1ei5ihgpt91cqbg*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *Host: localhost*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *Content-Length: 132*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *command:login*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *username:sdey*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *password:************
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *clientid:[Find : vg000100k1ei5ib3pt91cqad]*
+09/01/2026 06:52:36 PM|[HTTP:3578::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1ei5ihgpt91cqbg*
+09/01/2026 06:52:36 PM|[HTTP:3578:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/01/2026 06:52:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788268956279_PSBargTgQuibDNUy7Q0fR0MBgYIdiS;*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *c2f:IdiS*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 06:52:36 PM|[HTTP:3579:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 06:56:51 PM|[HTTP:3579:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/. java.net.ConnectException: Operation timed out*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788268956279_PSBargTgQuibDNUy7Q0fR0MBgYIdiS;*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *Content-Length: 58*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *c2f:IdiS*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *command:stat*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp*
+09/01/2026 06:56:51 PM|[HTTP:3589:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788268956279_PSBargTgQuibDNUy7Q0fR0MBgYIdiS;*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *c2f:IdiS*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/01/2026 06:59:48 PM|[HTTP:3596:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/01/2026 06:59:51 PM|[HTTP:3599:sdey:127.0.0.1] READ: *GET /ibmmcsp-sftp/123_ren.txt HTTP/1.1*
+09/01/2026 06:59:51 PM|[HTTP:3599:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788268956279_PSBargTgQuibDNUy7Q0fR0MBgYIdiS;*
+09/01/2026 06:59:51 PM|[HTTP:3599:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1eiir4fpt91cqd2*
+09/01/2026 06:59:51 PM|[HTTP:3599:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 06:59:59 PM|[HTTP:3599:sdey:127.0.0.1] WROTE: *150 Opening BINARY mode data connection for  (7376 bytes). ("/ibmmcsp-sftp/123_ren.txt") R E T R*
+09/01/2026 07:06:12 PM|[HTTP:3599:sdey:127.0.0.1] WROTE: *550 com.maverick.ssh.SshException: IO error received from remoteConnection reset ("/ibmmcsp-sftp/123_ren.txt") RETR*
+09/01/2026 07:06:12 PM|[HTTP:3599:sdey:127.0.0.1] Disconnected:*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788268956279_PSBargTgQuibDNUy7Q0fR0MBgYIdiS;*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1eiir4fpt91cqd2*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *Host: localhost*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *c2f:IdiS*
+09/01/2026 07:06:13 PM|[HTTP:3657:sdey:127.0.0.1] READ: *command:logout*

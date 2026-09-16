@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>${WEB_CLIENT_LOGIN_TITLE}</title>
+		<link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/login.css" />
+		<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/login.css" />
+		<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/generic.css" />
+		<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/color.css" />
+		<link rel="stylesheet" type="text/css" href="/WebInterface/delite/css/delite.min.css" />
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-3.6.0.min.js"></script>
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-1.4.1.min.js"></script>
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-3.1.0.min.js"></script>
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-ui-1.13.2.min.js"></script>
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.blockUI.js"></script>
+		 <script type="text/javascript" src="/WebInterface/jQuery/js/helper.js"></script>
+		 <script type="text/javascript" src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+		 <script type="text/javascript" src="/WebInterface/delite/js/delite.min.js"></script>
+		 
+	<script type="text/javascript">
+		if(isCloud){
+			$(document).prop('title', 'WebClient');
+		}
+		var mftSupportedLangs = ['en', 'es', 'ja', 'zh', 'fr', 'de', 'ru', 'he', 'pl', 'pt-BR'];
+		var jsFile = "en.js";
+		if(navigator.languages){ //navigator.languages is not supported by IE
+			for(var i=0; i<navigator.languages.length; i++){
+				if(jQuery.inArray(navigator.languages[i], mftSupportedLangs) != -1){
+					jsFile = navigator.languages[i] + ".js";
+					break;
+				}
+			}
+		} else{ //for IE
+			var browserLocale = navigator.language || navigator.userLanguage;
+			if(jQuery.inArray(browserLocale, mftSupportedLangs) != -1){
+				jsFile = browserLocale + ".js";
+			}
+		}		
+		$.getScript('/WebInterface/jQuery/i18n/' + jsFile, function() {
+		});
+		$(document).ready(function () {
+				redirect();
+			});
+		$(document).ajaxComplete(function () {
+    		redirect()
+		});
+
+		function redirect(){
+			$.growlUI("Error", "errorMsg", 5000, "", false);
+			setTimeout(()=> {window.location.replace("/WebInterface/login.html") },3000);
+		}
+
+	</script>
+	</head>
+	<body class="error-page-body">
+		<div class="error-page">
+			<div class="error-inline">
+			<img class="error-page-icon" src="/WebInterface/delite/icons/dlt-icon-error.svg">
+			<p class="resetLinkError">Password reset link expired. Redirecting to login.</p>
+		</div>
+		  </div>
+	</body>
+</html>

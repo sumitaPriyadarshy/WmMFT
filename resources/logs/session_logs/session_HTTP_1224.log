@@ -1,0 +1,56 @@
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *POST / HTTP/1.1*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *Cookie: CrushAuth=;*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0gv98v5m5p08kda*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *Host: localhost*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *Content-Length: 19*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *c2f:*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] READ: *command:logout*
+08/21/2026 07:05:23 AM|[HTTP:1224::127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/21/2026 07:05:23 AM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k11t9167m4g07bk8*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *Host: localhost*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *Content-Length: 132*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *command:login*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *username:sdey*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *password:************
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *clientid:[Find : vg000100k11t90v2m4g07bj5]*
+08/27/2026 08:56:36 PM|[HTTP:1224::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k11t9167m4g07bk8*
+08/27/2026 08:56:36 PM|[HTTP:1224:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/27/2026 08:56:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787844396389_Q1FTjrTPyGXQ17bbr4y64g5qb9UuCR;*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *c2f:UuCR*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 08:56:36 PM|[HTTP:1225:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 08:56:37 PM|[HTTP:1225:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. File /azureAppend/ not found.*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787844396389_Q1FTjrTPyGXQ17bbr4y64g5qb9UuCR;*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *c2f:UuCR*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *command:stat*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 08:56:37 PM|[HTTP:1226:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. File /azureAppend not found.*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787844396389_Q1FTjrTPyGXQ17bbr4y64g5qb9UuCR;*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *c2f:UuCR*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/27/2026 08:56:37 PM|[HTTP:1227:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787844396389_Q1FTjrTPyGXQ17bbr4y64g5qb9UuCR;*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *Host: localhost*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *c2f:UuCR*
+08/27/2026 08:56:38 PM|[HTTP:1231:sdey:127.0.0.1] READ: *command:logout*

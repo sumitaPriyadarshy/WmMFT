@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">searchCDSAndISUser</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required pageNumber</value>
+    <value>[i] field:0:required pageSize</value>
+    <value>[i] field:0:optional userId</value>
+    <value>[i] field:0:optional searchExisting</value>
+    <value>[i] field:0:required type</value>
+    <value>[i] field:0:optional firstName</value>
+    <value>[i] field:0:optional lastName</value>
+    <value>[o] record:1:required userDetails</value>
+    <value>[o] - field:0:required userName</value>
+    <value>[o] - field:0:required firstName</value>
+    <value>[o] - field:0:required lastName</value>
+    <value>[o] - field:0:required emailAddress</value>
+    <value>[o] - field:0:required directoryService</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:0:required success</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">U3RyaW5nIG1lc3NhZ2UgPSBNRlRSZXNvdXJjZXMuZ2V0TWVzc2FnZSgiMTAxMyIpOwpib29sZWFu
+IHN1Y2Nlc3MgPSB0cnVlOwppbnQgdG90YWxVc2VycyA9IDA7ClN0cmluZyB1c2VySWQgPSBWYWx1
+ZXNFbXVsYXRvci5nZXROb25FbXB0eVN0cmluZyhwaXBlbGluZSwgInVzZXJJZCIpOwpTdHJpbmcg
+dHlwZSA9IFZhbHVlc0VtdWxhdG9yLmdldFN0cmluZyhwaXBlbGluZSwgInR5cGUiKTsKaW50IHBh
+Z2VOdW1iZXIgPSBWYWx1ZXNFbXVsYXRvci5nZXRJbnQocGlwZWxpbmUsICJwYWdlTnVtYmVyIik7
+CmludCBwYWdlU2l6ZSA9IFZhbHVlc0VtdWxhdG9yLmdldEludChwaXBlbGluZSwgInBhZ2VTaXpl
+Iik7Ckxpc3Q8SURhdGE+IGlEYXRhTGlzdCA9IG5ldyBBcnJheUxpc3Q8SURhdGE+KCk7CnRyeSB7
+CgoJSURhdGFbXSBpZGF0YUFycmF5ID0gbnVsbDsKCglpZiAodHlwZSAhPSBudWxsICYmICh0eXBl
+LmVxdWFscygiVSIpIHx8IHR5cGUuZXF1YWxzKCJSIikpKSB7CgkJSURhdGFDdXJzb3IgY3VyID0g
+cGlwZWxpbmUuZ2V0Q3Vyc29yKCk7CgkJY3VyLmluc2VydEFmdGVyKCJwcm92aWRlciIsIkNEUyIp
+OwoJCXNlYXJjaFVzZXIocGlwZWxpbmUpOwoJCWN1ci5kZXN0cm95KCk7CgkJaWRhdGFBcnJheSA9
+IChJRGF0YVtdKSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJ1c2VyRGV0YWlscyIpOwoJ
+CWlEYXRhTGlzdC5hZGRBbGwoQXJyYXlzLmFzTGlzdChpZGF0YUFycmF5KSk7CgoJCWlmICh0eXBl
+LmVxdWFscygiVSIpKSB7CgkJCS8qKgoJCQkgKiBGZXRjaCB0aGUgSVMgVXNlcnMgYWxzbwoJCQkg
+Ki8KCQkJRW51bWVyYXRpb24gbGlzdFVzZXJzID0gVXNlck1hbmFnZXIubGlzdFVzZXJzKCk7CgoJ
+CQl3aGlsZSAobGlzdFVzZXJzLmhhc01vcmVFbGVtZW50cygpKSB7CgkJCQlPYmplY3Qgb2JqID0g
+bGlzdFVzZXJzLm5leHRFbGVtZW50KCk7CgkJCQlTdHJpbmcgdXNlck5hbWUgPSBvYmoudG9TdHJp
+bmcoKTsKCgkJCQlpZiAodXNlcklkICE9IG51bGwgJiYgIXVzZXJJZC5lcXVhbHMoIiIpKSB7CgkJ
+CQkJaWYgKCF1c2VyTmFtZS50b0xvd2VyQ2FzZSgpLmNvbnRhaW5zKHVzZXJJZC50b0xvd2VyQ2Fz
+ZSgpKSkKCQkJCQkJY29udGludWU7CgkJCQl9CgoJCQkJSURhdGEgdXNlcklEYXRhID0gSURhdGFG
+YWN0b3J5LmNyZWF0ZSgpOwoJCQkJVmFsdWVzRW11bGF0b3IucHV0KHVzZXJJRGF0YSwgImZpcnN0
+TmFtZSIsIG9iai50b1N0cmluZygpKTsKCQkJCVZhbHVlc0VtdWxhdG9yLnB1dCh1c2VySURhdGEs
+ICJ1c2VyTmFtZSIsIG9iai50b1N0cmluZygpKTsKCQkJCVZhbHVlc0VtdWxhdG9yLnB1dCh1c2Vy
+SURhdGEsICJsYXN0TmFtZSIsICIiKTsKCQkJCVZhbHVlc0VtdWxhdG9yLnB1dCh1c2VySURhdGEs
+ICJkaXJlY3RvcnlTZXJ2aWNlIiwgImxvY2FsIik7CgoJCQkJaURhdGFMaXN0LmFkZCh1c2VySURh
+dGEpOwoJCQl9CgkJfQoKCX0gZWxzZSBpZiAodHlwZSAhPSBudWxsICYmICh0eXBlLmVxdWFscygi
+RyIpKSkgewoKCQlMaXN0PFN0cmluZz4gZ3JvdXBzID0gVXNlck1hbmFnZXJQcm94eS5saXN0R3Jv
+dXBzKG51bGwsIHBhZ2VOdW1iZXIsIHBhZ2VTaXplKTsKCQlmb3IgKFN0cmluZyBncm91cE5hbWU6
+IGdyb3VwcyApIHsKCgkJCWlmICh1c2VySWQgIT0gbnVsbCAmJiAhdXNlcklkLmVxdWFscygiIikp
+IHsKCQkJCWlmICghZ3JvdXBOYW1lLnRvTG93ZXJDYXNlKCkuY29udGFpbnModXNlcklkLnRvTG93
+ZXJDYXNlKCkpKQoJCQkJCWNvbnRpbnVlOwoJCQl9CgkJCUlEYXRhIHVzZXJJRGF0YSA9IElEYXRh
+RmFjdG9yeS5jcmVhdGUoKTsKCQkJVmFsdWVzRW11bGF0b3IucHV0KHVzZXJJRGF0YSwgImdyb3Vw
+TmFtZSIsIGdyb3VwTmFtZSk7CgkJCVZhbHVlc0VtdWxhdG9yLnB1dCh1c2VySURhdGEsICJkaXN0
+aW5ndWlzaGVkTmFtZSIsICItLSIpOwoJCQlWYWx1ZXNFbXVsYXRvci5wdXQodXNlcklEYXRhLCAi
+ZW1haWxBZGRyZXNzIiwgIi0tIik7CgoJCQlpRGF0YUxpc3QuYWRkKHVzZXJJRGF0YSk7CgkJfQoJ
+fQoKfSBjYXRjaCAoVGhyb3dhYmxlIHQpIHsKCXN1Y2Nlc3MgPSBmYWxzZTsKCW1lc3NhZ2UgPSB0
+LmdldExvY2FsaXplZE1lc3NhZ2UoKTsKfSBmaW5hbGx5IHsKCVZhbHVlc0VtdWxhdG9yLnB1dChw
+aXBlbGluZSwgInN1Y2Nlc3MiLCBTdHJpbmcudmFsdWVPZihzdWNjZXNzKSk7CglWYWx1ZXNFbXVs
+YXRvci5wdXQocGlwZWxpbmUsICJ1c2VyRGV0YWlscyIsIGlEYXRhTGlzdC50b0FycmF5KG5ldyBJ
+RGF0YVtpRGF0YUxpc3Quc2l6ZSgpXSkpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAi
+dG90YWxVc2VycyIsIHRvdGFsVXNlcnMpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAi
+bWVzc2FnZSIsIG1lc3NhZ2UpOwp9Cgo=</value>
+</Values>

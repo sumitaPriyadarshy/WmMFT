@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">listProxy</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required protocol</value>
+    <value>[i] field:0:optional userName</value>
+    <value>[i] field:0:optional userPassword</value>
+    <value>[o] record:0:required list</value>
+    <value>[o] - field:1:required aliasName</value>
+  </array>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgY3VyID0gbnVsbDsKSURhdGEgb3V0cHV0ID0gSURhdGFGYWN0b3J5LmNyZWF0
+ZSgpOwp0cnkgewoJUkJBUHJveHkudmFsaWRhdGVTZXNzaW9uKHRydWUsIFJCQVVpSGFuZGxlLlBS
+T1hZX1NFUlZFUl9WSUVXKTsKCVN0cmluZyBwcm90b2NvbCA9IChTdHJpbmcpIFZhbHVlc0VtdWxh
+dG9yLmdldChwaXBlbGluZSwgInByb3RvY29sIik7CglTdHJpbmcgdXNlck5hbWUgPSAoU3RyaW5n
+KSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJ1c2VyTmFtZSIpOwoJU3RyaW5nIHVzZXJQ
+YXNzd29yZCA9IChTdHJpbmcpIFZhbHVlc0VtdWxhdG9yLmdldChwaXBlbGluZSwgInVzZXJQYXNz
+d29yZCIpOwoJcHJvdG9jb2wgPSBUYXNrVXRpbHMuZm9ybWF0UmVtb3RlRGVzdGluYXRpb25QYXRo
+KHByb3RvY29sLCB1c2VyTmFtZSwgdXNlclBhc3N3b3JkKTsKCUxpc3Q8U3RyaW5nPiBwcm94aWVz
+ID0gT3V0Ym91bmRQcm94eS5saXN0QWxsUHJveGllcyhwcm90b2NvbCk7CgoJaWYgKHByb3hpZXMg
+IT0gbnVsbCAmJiBwcm94aWVzLnNpemUoKSAhPSAwKSB7CgoJCVN0cmluZ1tdIGFyciA9IG5ldyBT
+dHJpbmdbcHJveGllcy5zaXplKCldOwoJCWludCBpID0gMDsKCQlmb3IgKFN0cmluZyBhbGlhcyA6
+IHByb3hpZXMpIHsKCQkJYXJyW2krK10gPSBhbGlhczsKCQl9CgkJVmFsdWVzRW11bGF0b3IucHV0
+KG91dHB1dCwgImFsaWFzTmFtZSIsIGFycik7CgoJfQoJVmFsdWVzRW11bGF0b3IucmVtb3ZlKHBp
+cGVsaW5lLCAidXNlck5hbWUiKTsKCVZhbHVlc0VtdWxhdG9yLnJlbW92ZShwaXBlbGluZSwgInVz
+ZXJQYXNzd29yZCIpOwp9IGNhdGNoIChUaHJvd2FibGUgdCkgewoJVmFsdWVzRW11bGF0b3IucHV0
+KHBpcGVsaW5lLCAic3VjY2VzcyIsICJmYWxzZSIpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVs
+aW5lLCAibWVzc2FnZSIsIHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpKTsKfSBmaW5hbGx5IHsKCWlm
+IChjdXIgIT0gbnVsbCkgewoJCWN1ci5kZXN0cm95KCk7Cgl9CglWYWx1ZXNFbXVsYXRvci5wdXQo
+cGlwZWxpbmUsICJzdWNjZXNzIiwgInRydWUiKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGlu
+ZSwgImxpc3QiLCBvdXRwdXQpOwp9Cg==</value>
+</Values>

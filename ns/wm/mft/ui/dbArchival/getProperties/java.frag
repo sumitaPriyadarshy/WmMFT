@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getProperties</value>
+  <array name="sig" type="value" depth="1">
+    <value>[o] record:1:required properties</value>
+    <value>[o] - field:0:required schemaName</value>
+    <value>[o] - field:0:required retentionPeriodInDays</value>
+    <value>[o] - field:0:required scheduleIntervalInDays</value>
+    <value>[o] - field:0:required startDate</value>
+    <value>[o] - field:0:required startTime</value>
+    <value>[o] - field:0:required runAsUser</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:0:required success</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">cHVibGljIHN0YXRpYyBmaW5hbCB2b2lkIGdldFByb3BlcnRpZXMoSURhdGEgcGlwZWxpbmUpIHsK
+CWJvb2xlYW4gc3VjY2VzcyA9IHRydWU7CglTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5n
+ZXRNZXNzYWdlKCIxMDEzIik7CglJRGF0YSBpUHJvcGVydGllcyA9IElEYXRhRmFjdG9yeS5jcmVh
+dGUoKTsKCVN0cmluZyBzY2hlbWFOYW1lID0gIiI7CglTdHJpbmcgcmV0ZW50aW9uUGVyaW9kSW5E
+YXlzID0gIiI7CglTdHJpbmcgc2NoZWR1bGVJbnRlcnZhbEluRGF5cyA9ICIiOwoJU3RyaW5nIHN0
+YXJ0RGF0ZSA9ICIiOwoJU3RyaW5nIHN0YXJ0VGltZSA9ICIiOwoJU3RyaW5nIHJ1bkFzVXNlciA9
+ICIiOwoJCgl0cnkgewoJCU1hcDxTdHJpbmcsIFN0cmluZz4gZGJBcmNoaXZhbFByb3BzID0gQ29t
+bW9uUHJveHkuZ2V0TUZUQXBwUHJvcGVydGllcygiRGF0YWJhc2VBcmNoaXZhbCIpOwoJCXNjaGVt
+YU5hbWUgPSBkYkFyY2hpdmFsUHJvcHMuZ2V0KFBST1BfU0NIRURVTEVfQVJDSElWQUxfU0NIRU1B
+TkFNRSk7CgkJcmV0ZW50aW9uUGVyaW9kSW5EYXlzID0gZGJBcmNoaXZhbFByb3BzLmdldChQUk9Q
+X1NDSEVEVUxFX0FSQ0hJVkFMX1JFVEVOVElPTl9EQVlTKTsKCQkKCQkvL2dldCBhcmNoaXZhbCBz
+Y2hlZHVsZXIgZGV0YWlscwoJCU1hcDxTdHJpbmcsIFN0cmluZz4gc2NoZWR1bGVyUHJvcHMgPSBD
+b21tb25Qcm94eS5nZXRNRlRBcHBQcm9wZXJ0aWVzKCJTY2hlZHVsZURhdGFiYXNlQXJjaGl2YWwi
+KTsKCQlzY2hlZHVsZUludGVydmFsSW5EYXlzID0gc2NoZWR1bGVyUHJvcHMuZ2V0KFBST1BfU0NI
+RURVTEVfQVJDSElWQUxfSU5URVJWQUxfREFZUyk7CgkJc3RhcnREYXRlID0gc2NoZWR1bGVyUHJv
+cHMuZ2V0KFBST1BfU0NIRURVTEVfQVJDSElWQUxfU1RBUlRfREFURSk7CgkJc3RhcnRUaW1lID0g
+c2NoZWR1bGVyUHJvcHMuZ2V0KFBST1BfU0NIRURVTEVfQVJDSElWQUxfU1RBUlRfVElNRSk7CgkJ
+cnVuQXNVc2VyID0gc2NoZWR1bGVyUHJvcHMuZ2V0KFBST1BfU0NIRURVTEVfQVJDSElWQUxfUlVO
+X0FTX1VTRVIpOwoJfSBjYXRjaCAoVGhyb3dhYmxlIHQpIHsKCQlzdWNjZXNzID0gZmFsc2U7CgkJ
+bWVzc2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpOwoJfSBmaW5hbGx5IHsKCQlWYWx1ZXNF
+bXVsYXRvci5wdXQoaVByb3BlcnRpZXMsIFBST1BfU0NIRURVTEVfQVJDSElWQUxfU0NIRU1BTkFN
+RSwgc2NoZW1hTmFtZSk7CgkJVmFsdWVzRW11bGF0b3IucHV0KGlQcm9wZXJ0aWVzLCBQUk9QX1ND
+SEVEVUxFX0FSQ0hJVkFMX1JFVEVOVElPTl9EQVlTLCByZXRlbnRpb25QZXJpb2RJbkRheXMpOwoJ
+CQoJCVZhbHVlc0VtdWxhdG9yLnB1dChpUHJvcGVydGllcywgUFJPUF9TQ0hFRFVMRV9BUkNISVZB
+TF9JTlRFUlZBTF9EQVlTLCBzY2hlZHVsZUludGVydmFsSW5EYXlzKTsKCQlWYWx1ZXNFbXVsYXRv
+ci5wdXQoaVByb3BlcnRpZXMsIFBST1BfU0NIRURVTEVfQVJDSElWQUxfU1RBUlRfREFURSwgc3Rh
+cnREYXRlKTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQoaVByb3BlcnRpZXMsIFBST1BfU0NIRURVTEVf
+QVJDSElWQUxfU1RBUlRfVElNRSwgc3RhcnRUaW1lKTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQoaVBy
+b3BlcnRpZXMsIFBST1BfU0NIRURVTEVfQVJDSElWQUxfUlVOX0FTX1VTRVIsIHJ1bkFzVXNlcik7
+CgkJCgkJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAicHJvcGVydGllcyIsIGlQcm9wZXJ0
+aWVzKTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJzdWNjZXNzIiwgc3VjY2Vzcyk7
+CgkJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAibWVzc2FnZSIsIG1lc3NhZ2UpOwoJfQo=
+</value>
+</Values>

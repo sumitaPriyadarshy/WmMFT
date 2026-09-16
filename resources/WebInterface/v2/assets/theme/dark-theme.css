@@ -1,0 +1,41 @@
+ /* ====================================================
+       Delite White labeling
+   ------------------------------------------------------
+   Auto generated on 2024-04-03 05:09:35 from Delite theme builder.
+   Refer this next to our dlt-tokens.css sheet to override it.
+ */
+ 
+ :root{
+    --dlt-color-global-primary-default: #6cc7cf;  /* Primary color */                 
+    --dlt-color-global-primary-highlighted:  ; /* Darker primary color */
+    --dlt-color-global-secondary-default: #272437; /* Secondary color */ 
+    --dlt-color-global-secondary-highlighted: ; /* Lighter primary color */
+    --dlt-color-global-accent-default:#a96cf9; /* Emphasis color */
+    --dlt-color-global-accent-highlighted: ; /* Darker emphasis color */
+    --dlt-color-global-gradient-start:#a96cf9; /* Emphasis color */
+    --dlt-color-global-gradient-end: #8e3cf7; /* Darker emphasis color */
+    
+    --dlt-color-system-message-warning: #e07800;
+    --dlt-color-system-message-error: #c72d56;
+    --dlt-color-system-message-info: #1776bf;
+    --dlt-color-system-message-success: #71a112;
+
+    --dlt-color-text-interactive-secondary: #058192;
+    /* All the following ones are grey shades */
+    --dlt-color-global-neutral-980: #ffffff;
+    --dlt-color-global-neutral-900: #f9fafb;
+    --dlt-color-global-neutral-800: #f0f2f4;
+    --dlt-color-global-neutral-700: #e7ebee;
+    --dlt-color-global-neutral-600: #d2d9e0;
+    --dlt-color-global-neutral-400: #935378;
+    --dlt-color-global-neutral-300: #7d3663;
+    --dlt-color-global-neutral-100: #3c0132; /* Core dark */
+
+    /* Border Radius */
+    --dlt-border-radii-default: 0px;
+
+    body{
+        background-color: #01010e;
+        color: #fff;
+       }
+} 

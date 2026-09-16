@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">listFlowServices</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional contextUrl</value>
+    <value>[i] field:0:optional userName</value>
+    <value>[i] field:0:optional jwt</value>
+    <value>[i] field:0:optional projectName</value>
+    <value>[o] field:0:optional success</value>
+    <value>[o] field:0:optional message</value>
+  </array>
+  <value name="encodeutf8">true</value>
+  <value name="body">CklEYXRhQ3Vyc29yIGN1ciA9IG51bGw7CklEYXRhIG91dHB1dCA9IG51bGw7CklEYXRhQ3Vyc29y
+IG91dHB1dEN1ciA9IG51bGw7ClN0cmluZyBtZXNzYWdlID0gIiI7ClN0cmluZyBzdWNjZXNzID0g
+InRydWUiOwp0cnkgewoJdHJ5IHsKCQlSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5k
+bGUuQUNUSU9OX1BQX1ZJRVcpOwoJfSBjYXRjaCAoRXhjZXB0aW9uIGUpIHsKCQl0cnkgewoJCQlS
+QkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5kbGUuQUNUSU9OX1NFX1ZJRVcpOwoJCX0g
+Y2F0Y2ggKEV4Y2VwdGlvbiBleCkgewoJCQlSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlI
+YW5kbGUuQUNUSU9OX01GX1ZJRVcpOwoJCX0KCX0KCVN0cmluZyBjb250ZXh0VXJsID0gVmFsdWVz
+RW11bGF0b3IuZ2V0Tm9uRW1wdHlTdHJpbmcocGlwZWxpbmUsICJjb250ZXh0VXJsIik7CglTdHJp
+bmcgdXNlck5hbWUgPSBWYWx1ZXNFbXVsYXRvci5nZXROb25FbXB0eVN0cmluZyhwaXBlbGluZSwg
+InVzZXJOYW1lIik7CglTdHJpbmcgand0ID0gVmFsdWVzRW11bGF0b3IuZ2V0Tm9uRW1wdHlTdHJp
+bmcocGlwZWxpbmUsICJqd3QiKTsKCVN0cmluZyBwcm9qZWN0TmFtZSA9IFZhbHVlc0VtdWxhdG9y
+LmdldE5vbkVtcHR5U3RyaW5nKHBpcGVsaW5lLCAicHJvamVjdE5hbWUiKTsKCglMaXN0PFN0cmlu
+Zz4gZmxvd1NlcnZpY2VMaXN0ID0gQ29tbW9uUHJveHkubGlzdEZsb3dTZXJ2aWNlcyhjb250ZXh0
+VXJsLCB1c2VyTmFtZSwgand0LCBwcm9qZWN0TmFtZSk7CglpZihmbG93U2VydmljZUxpc3QgIT0g
+bnVsbCkgewoJCVN0cmluZ1tdIGFycmF5ID0gZmxvd1NlcnZpY2VMaXN0LnN0cmVhbSgpLnRvQXJy
+YXkoU3RyaW5nW106Om5ldyk7CgkJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAic2Vydmlj
+ZXMiLCBhcnJheSk7CgkJcmV0dXJuOwoJfQoKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwg
+InNlcnZpY2VzIiwgbmV3IFN0cmluZ1swXSk7Cn0gY2F0Y2ggKFRocm93YWJsZSB0KSB7CglzdWNj
+ZXNzID0gImZhbHNlIjsKCW1lc3NhZ2UgPSB0LmdldExvY2FsaXplZE1lc3NhZ2UoKTsKfSBmaW5h
+bGx5IHsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInN1Y2Nlc3MiLCBzdWNjZXNzKTsK
+CVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgIm1lc3NhZ2UiLCBtZXNzYWdlKTsKfQo=</value>
+</Values>

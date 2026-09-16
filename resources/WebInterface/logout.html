@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Logout</title>
+  <script type="text/javascript">
+		var delete_cookie = function(name) {
+			document.cookie = name + '= false; Path=/;';
+		};
+  </script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+
+    body {
+      line-height: 1;
+    }
+
+    ol, ul {
+      list-style: none;
+    }
+
+    blockquote, q {
+      quotes: none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #F5F5F5;
+      font-family: Arial, sans-serif;
+    }
+
+    .content-container {
+      width: 30rem;
+      background-color: #FFFFFF;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 1rem;
+    }
+
+    .content {
+      border: 1px solid #3572b0;
+      height: 100%;
+      border-left: 40px solid #3572b0;
+      padding: 1rem;
+      line-height: 2rem;
+    }
+
+    .content-header {
+      display: block;
+      font-weight: bold;
+    }
+
+    .content-link {
+      display: block;
+      color: #326ca6;
+      text-decoration: none;
+    }
+
+    .content-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="content-container">
+    <div class="content">
+      <strong class="content-header">You are logged out now</strong>
+      <a class="content-link" href="\nosso">Login again with username and password</a>
+      <a class="content-link" href="\" onclick="javascript:delete_cookie('nosso');">Login again with Single Sign On</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

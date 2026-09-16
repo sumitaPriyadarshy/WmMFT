@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">pingServer</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required Locale</value>
+    <value>[o] record:0:required output</value>
+    <value>[o] - field:0:required running</value>
+    <value>[o] - field:0:required code</value>
+    <value>[o] - field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CgkJSURhdGFDdXJzb3IgY3VyID0gbnVsbDsKICAgICAgICBJRGF0YSBvdXRwdXQgPSBudWxsOwog
+ICAgICAgIElEYXRhQ3Vyc29yIG91dHB1dEN1ciA9IG51bGw7CiAgICAgICAgSURhdGEgc3ZjUmVz
+cCA9IG51bGw7CgkJU3RyaW5nIHN2Y05hbWUgPSAid20ubWZ0LnBvcnRhbC5hZG1pbjpwaW5nTUZU
+U2VydmVyIjsKCQl0cnkgewogICAgICAgICAgICBjdXIgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsK
+ICAgICAgICAgICAgb3V0cHV0ID0gSURhdGFGYWN0b3J5LmNyZWF0ZSgpOwogICAgICAgICAgICBv
+dXRwdXRDdXIgPSBvdXRwdXQuZ2V0Q3Vyc29yKCk7CgkJCQoJCQkvL2lmIHRoaXMgc3lzdGVtIHBy
+b3BlcnR5IGhhcyBzb21lIGluaXRpYWxpemF0aW9uIGV4Y2VwdGlvbiBtZXNzYWdlIHNldCwgCgkJ
+CS8vdGhpcyB3aWxsIGJlIHNob3duIGluIGxvZ2luIHNjcmVlbiBkdXJpbmcgbG9naW4KCQkJaWYo
+IVN5c3RlbS5nZXRQcm9wZXJ0eSgibWZ0LmluaXQuZXhjZXB0aW9uLm1lc3NhZ2UiLCAiIikuaXNF
+bXB0eSgpKSB7CgkJCQlvdXRwdXRDdXIuaW5zZXJ0QWZ0ZXIoInJ1bm5pbmciLCAiZmFsc2UiKTsK
+CSAgICAgICAgICAgCW91dHB1dEN1ci5pbnNlcnRBZnRlcigibWVzc2FnZSIsIFN5c3RlbS5nZXRQ
+cm9wZXJ0eSgibWZ0LmluaXQuZXhjZXB0aW9uLm1lc3NhZ2UiKSk7CgkJCX0gZWxzZSB7CgkJCQlp
+ZiAoIVNlcnZlckFkbWluUHJveHkuaXNEbXpNb2RlKCkpIHsKCQkJCQlTZXJ2ZXJBZG1pblByb3h5
+LmNoZWNrQXBwU3RhdHVzKCk7CgkJCQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJydW5uaW5nIiwg
+InRydWUiKTsKCQkJCQlvdXRwdXRDdXIuaW5zZXJ0QWZ0ZXIoImNvZGUiLCAiMTAwIik7CgkJCQl9
+ZWxzZSB7CgkJCQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJydW5uaW5nIiwgImZhbHNlIik7CgkJ
+CQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJjb2RlIiwgIjEwMSIpOwoJCQkJCW91dHB1dEN1ci5p
+bnNlcnRBZnRlcigibWVzc2FnZSIsIE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxNTA1IikpOwoJ
+CQkJfQoJCQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJsb2dpbkF1dG9Db21wbGV0ZSIsIFN0cmlu
+Zy52YWx1ZU9mKFNlcnZlckFkbWluUHJveHkuaXNMb2dpbkF1dG9Db21wbGV0ZSgpKSk7CgkJCX0K
+CQl9IGNhdGNoIChUaHJvd2FibGUgdCkgewoJCQlvdXRwdXRDdXIuaW5zZXJ0QWZ0ZXIoInJ1bm5p
+bmciLCAiZmFsc2UiKTsKICAgICAgICAgICAJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJjb2RlIiwg
+Ijk5OTkiKTsKICAgICAgICAJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJtZXNzYWdlIiwgdC5nZXRM
+b2NhbGl6ZWRNZXNzYWdlKCkpOwoJCX1maW5hbGx5ewoJCQljdXIuaW5zZXJ0QWZ0ZXIoIm91dHB1
+dCIsIG91dHB1dCk7CiAgICAgICAgCWlmKGN1ciAhPSBudWxsKSBjdXIuZGVzdHJveSgpOwogICAg
+ICAgIAlpZihvdXRwdXRDdXIgIT0gbnVsbCkgb3V0cHV0Q3VyLmRlc3Ryb3koKTsKICAgIAl9CgkJ
+Cg==</value>
+</Values>

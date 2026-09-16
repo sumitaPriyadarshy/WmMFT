@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getMFTAppProperties</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required mftAppPropertiesType</value>
+    <value>[o] record:0:required output</value>
+    <value>[o] - field:0:required mftAppPropertiesStr</value>
+    <value>[o] - recref:0:optional svcResponse wm.mft.portal.rec:svcResponse</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQlJRGF0YUN1cnNvciBjdXIgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsKCQlJRGF0YSBvdXRwdXQg
+PSBJRGF0YUZhY3RvcnkuY3JlYXRlKCk7CgkJU3RyaW5nIG1mdEFwcFByb3BlcnRpZXNTdHIgPSBu
+dWxsOwoJCVN0cmluZyBtZnRBcHBQcm9wZXJ0aWVzVHlwZSA9IG51bGw7CgkJSURhdGFDdXJzb3Ig
+b3V0cHV0Q3VyID0gb3V0cHV0LmdldEN1cnNvcigpOwoJCUlEYXRhIHN2Y1Jlc3AgPSBudWxsOwoJ
+CWJvb2xlYW4gc3VjY2VzcyA9IGZhbHNlOwoJCVN0cmluZyBzdmNOYW1lID0gIndtLm1mdC5wb3J0
+YWwuYXVkaXQuZ2V0TUZUQXBwUHJvcGVydGllcyI7CgkJdHJ5ewoJCQlNYXA8U3RyaW5nLFN0cmlu
+Zz4gbWFwID0gbmV3IEhhc2hNYXA8U3RyaW5nLCBTdHJpbmc+KCk7CgkJCWlmICggY3VyLmZpcnN0
+ICggIm1mdEFwcFByb3BlcnRpZXNUeXBlIiApICl7CgkJCQltZnRBcHBQcm9wZXJ0aWVzVHlwZSA9
+IChTdHJpbmcpY3VyLmdldFZhbHVlKCk7CgkJCQltZnRBcHBQcm9wZXJ0aWVzVHlwZSA9IEJhc2U2
+NFV0aWwuZGVjb2RlT2JqZWN0KG1mdEFwcFByb3BlcnRpZXNUeXBlKTsKCSAgICAJfQoJCQkKCQkJ
+bWFwID0gQ29tbW9uUHJveHkuZ2V0TUZUQXBwUHJvcGVydGllcyhtZnRBcHBQcm9wZXJ0aWVzVHlw
+ZSk7CgkJCQoJCQlpZihtYXAgIT0gbnVsbCAmJiAhbWFwLmlzRW1wdHkoKSl7CgkJCQltZnRBcHBQ
+cm9wZXJ0aWVzU3RyID0gQmFzZTY0VXRpbC5lbmNvZGVPYmplY3QobWFwKTsKICAgICAgICAJfQoJ
+CQlzdWNjZXNzID0gdHJ1ZTsKCQl9Y2F0Y2ggKFRocm93YWJsZSB0KSB7CgkJCW91dHB1dEN1ci5p
+bnNlcnRBZnRlcigiZXJyb3IiLCB0LmdldExvY2FsaXplZE1lc3NhZ2UoKSk7CgkJCXN2Y1Jlc3Ag
+PSBQb3J0YWxVdGlscy5jYXRjaEVycm9yKHQsIHN2Y05hbWUsIFNoYXJlZENvbnN0YW50cy5FUlJP
+UixzdmNSZXNwKTsKCQl9ZmluYWxseXsKCQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJtZnRBcHBQ
+cm9wZXJ0aWVzU3RyIiwgbWZ0QXBwUHJvcGVydGllc1N0cik7CgkJCW91dHB1dEN1ci5pbnNlcnRB
+ZnRlcigic3ZjUmVzcG9uc2UiLCBzdmNSZXNwKTsKCQkJb3V0cHV0Q3VyLmluc2VydEFmdGVyKCJz
+dWNjZXNzIiwgc3VjY2Vzcyk7CgkJCWN1ci5pbnNlcnRBZnRlcigib3V0cHV0Iiwgb3V0cHV0KTsK
+ICAgICAgICAJaWYoY3VyICE9IG51bGwpIGN1ci5kZXN0cm95KCk7CiAgICAgICAgCWlmKG91dHB1
+dEN1ciAhPSBudWxsKSBvdXRwdXRDdXIuZGVzdHJveSgpOwogICAgCX0K</value>
+</Values>

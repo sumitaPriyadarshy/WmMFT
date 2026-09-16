@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">changeStatus</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:1:optional templateIds</value>
+    <value>[i] field:0:optional active {"True","False"}</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">IAogICAgICAgIFN0cmluZ1tdIGlkcyA9IG51bGw7CiAgICAgICAgU3RyaW5nIHN0YXR1cyA9IG51
+bGw7CiAgICAgICAgYm9vbGVhbiBzdWNjZXNzID0gdHJ1ZTsKICAgICAgICBTdHJpbmcgbWVzc2Fn
+ZSA9ICIiOwogICAgICAgIHRyeSB7CiAgICAgICAgICAgIFJCQVByb3h5LnZhbGlkYXRlU2Vzc2lv
+bihSQkFVaUhhbmRsZS5BQ1RJT05fVEVfVVBEQVRFKTsKICAgICAgICAgICAgaWRzID0gKFN0cmlu
+Z1tdKSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJ0ZW1wbGF0ZUlkcyIpOwogICAgICAg
+ICAgICBpZiAoaWRzICE9IG51bGwgJiYgaWRzLmxlbmd0aCA+IDApIHsKICAgICAgICAgICAgICAg
+IHN0YXR1cyA9IFZhbHVlc0VtdWxhdG9yLmdldFN0cmluZyhwaXBlbGluZSwgImFjdGl2ZSIpOwog
+ICAgICAgICAgICAgICAgYm9vbGVhbiBzdGF0dXNBc0Jvb2xlYW4gPSBmYWxzZTsKICAgICAgICAg
+ICAgICAgIGlmIChzdGF0dXMgPT0gbnVsbCB8fCBzdGF0dXMudHJpbSgpLmxlbmd0aCgpID09IDAp
+CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oTUZUUmVzb3Vy
+Y2VzLmdldE1lc3NhZ2UoIjE1MTQiKSk7CiAKICAgICAgICAgICAgICAgIHRyeSB7CiAgICAgICAg
+ICAgICAgICAgICAgc3RhdHVzQXNCb29sZWFuID0gQm9vbGVhbi5wYXJzZUJvb2xlYW4oc3RhdHVz
+KTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKEV4Y2VwdGlvbiBlKSB7CiAgICAgICAgICAgICAg
+ICAgICAgdGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oTUZUUmVzb3VyY2VzLmdldE1lc3NhZ2Uo
+IjE1MTUiKSk7CiAgICAgICAgICAgICAgICB9CiAKICAgICAgICAgICAgICAgIEV2ZW50c1Byb3h5
+LmNoYW5nZUFjdGlvblRlbXBsYXRlU3RhdHVzSW5CYXRjaChBcnJheXMuYXNMaXN0KGlkcyksIHN0
+YXR1c0FzQm9vbGVhbik7CiAgICAgICAgICAgIH0KICAgICAgICB9IGNhdGNoIChFeGNlcHRpb24g
+dCkgewogICAgICAgICAgICBzdWNjZXNzID0gZmFsc2U7CiAgICAgICAgICAgIG1lc3NhZ2UgPSB0
+LmdldExvY2FsaXplZE1lc3NhZ2UoKTsKICAgICAgICB9IGZpbmFsbHkgewogICAgICAgICAgICBW
+YWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJzdWNjZXNzIiwgU3RyaW5nLnZhbHVlT2Yoc3Vj
+Y2VzcykpOwogICAgICAgICAgICBWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJtZXNzYWdl
+IiwgbWVzc2FnZSk7CiAgICAgICAgfQo=</value>
+</Values>

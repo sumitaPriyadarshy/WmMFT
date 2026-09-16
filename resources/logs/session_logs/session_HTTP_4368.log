@@ -1,0 +1,50 @@
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1g20b6spt91c02m*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *Host: localhost*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *Content-Length: 132*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *command:login*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *username:sdey*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *password:************
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *clientid:[Find : vg000100k1g20an6pt91c01j]*
+09/02/2026 08:48:36 AM|[HTTP:4368::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1g20b6spt91c02m*
+09/02/2026 08:48:36 AM|[HTTP:4368:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/02/2026 08:48:36 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788319116551_tNLcMYuUpMdeCAkUKCNHWuyUQ4Xbpr;*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *c2f:Xbpr*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *command:stat*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/02/2026 08:48:36 AM|[HTTP:4369:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 09:10:10 AM|[HTTP:4369:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/. Connection has been dropped as it reached max idle time of 60 seconds.*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788319116551_tNLcMYuUpMdeCAkUKCNHWuyUQ4Xbpr;*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *Content-Length: 58*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *c2f:Xbpr*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *command:stat*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp*
+09/02/2026 09:10:10 AM|[HTTP:4435:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788319116551_tNLcMYuUpMdeCAkUKCNHWuyUQ4Xbpr;*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *c2f:Xbpr*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/02/2026 09:10:19 AM|[HTTP:4436:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 09:10:22 AM|[HTTP:4438:sdey:127.0.0.1] READ: *GET /ibmmcsp-sftp/123_ren.txt HTTP/1.1*
+09/02/2026 09:10:22 AM|[HTTP:4438:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788319116551_tNLcMYuUpMdeCAkUKCNHWuyUQ4Xbpr;*
+09/02/2026 09:10:22 AM|[HTTP:4438:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1g386u2pt91c076*
+09/02/2026 09:10:22 AM|[HTTP:4438:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788319116551_tNLcMYuUpMdeCAkUKCNHWuyUQ4Xbpr;*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *TRANSFER_ID: vg000100k1g386u2pt91c076*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *c2f:Xbpr*
+09/02/2026 09:10:24 AM|[HTTP:4442:sdey:127.0.0.1] READ: *command:logout*

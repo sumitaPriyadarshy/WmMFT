@@ -1,0 +1,9 @@
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *POST / HTTP/1.1*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *Cookie: CrushAuth=;*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k0rftp1nokbm4g00*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *Host: localhost*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *Content-Length: 19*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *c2f:*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] READ: *command:logout*
+08/27/2026 12:44:37 PM|[HTTP:6::127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/27/2026 12:44:37 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*

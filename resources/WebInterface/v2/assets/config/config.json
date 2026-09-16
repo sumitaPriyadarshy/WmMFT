@@ -1,0 +1,8 @@
+{
+    "version": "2.0.0",
+    "buildDate": 1683123645830,
+    "default-lang": "en-us",
+    "api": {
+        "pathPrefix": "/WebInterface"
+    }
+}

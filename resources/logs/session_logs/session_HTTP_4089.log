@@ -1,0 +1,47 @@
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k16f9sf24g01bhc0*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *Host: localhost*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *Content-Length: 132*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *command:login*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *username:sdey*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *password:************
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *clientid:[Find : vg000100k16f9s744g01bhct]*
+08/29/2026 03:28:36 PM|[HTTP:4089::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k16f9sf24g01bhc0*
+08/29/2026 03:28:36 PM|[HTTP:4089:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/29/2026 03:28:36 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787997516274_vubTxBLGEQW5hQilonbvTpDxg6Nvay;*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *Host: localhost*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *c2f:Nvay*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *command:stat*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/29/2026 03:28:36 PM|[HTTP:4090:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/29/2026 03:28:37 PM|[HTTP:4090:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. File /azureAppend/ not found.*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787997516274_vubTxBLGEQW5hQilonbvTpDxg6Nvay;*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *Host: localhost*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *c2f:Nvay*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *command:stat*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/29/2026 03:28:37 PM|[HTTP:4091:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. File /azureAppend not found.*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787997516274_vubTxBLGEQW5hQilonbvTpDxg6Nvay;*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *Host: localhost*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *c2f:Nvay*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/29/2026 03:28:37 PM|[HTTP:4092:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787997516274_vubTxBLGEQW5hQilonbvTpDxg6Nvay;*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *Host: localhost*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *c2f:Nvay*
+08/29/2026 03:28:38 PM|[HTTP:4096:sdey:127.0.0.1] READ: *command:logout*

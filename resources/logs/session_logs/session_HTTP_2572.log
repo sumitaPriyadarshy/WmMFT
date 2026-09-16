@@ -1,0 +1,20 @@
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *Host: localhost*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *Content-Length: 110*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *command:login*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *username:sdey*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *password:************
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *clientid:[Find : vg000100k155dhj24g01a7ed]*
+08/29/2026 07:12:23 AM|[HTTP:2572::127.0.0.1] READ: *TRANSFER_ID:dummy*
+08/29/2026 07:12:23 AM|[HTTP:2572:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/29/2026 07:12:23 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787967743835_1bgwpfm0VMo3JQ21UNNHnsVfYCNjmt;*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *Host: localhost*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *c2f:Njmt*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/29/2026 07:12:28 AM|[HTTP:2576:sdey:127.0.0.1] READ: *format:stat_dmz*

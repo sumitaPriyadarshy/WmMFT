@@ -1,0 +1,41 @@
+<http pattern="/**/*.jsp" use-expressions="false"
+	  authentication-manager-ref="authenticationManager"
+	  entry-point-ref="mzngAuthenticationEntryPoint">                    
+	  <anonymous enabled="false"/>
+	  <headers>
+		<!--frame-options policy="SAMEORIGIN"/-->
+		<frame-options policy="ALLOW-FROM" strategy="static" value="http://otherServerHost:otherServerPort" />
+		<!--content-security-policy policy-directives="frame-ancestors 'self'"/-->
+		<content-security-policy policy-directives="frame-ancestors 'self' http://otherServerHost:otherServerPort"/>
+	  </headers>
+	<csrf token-repository-ref="csrfTokenRepository" request-matcher-ref="skipHttpAuthCsrfMatcher"/>
+	
+	<custom-filter ref="ssoProcessingFilter" after="PRE_AUTH_FILTER"/>
+	<custom-filter ref="samlTokenProcessingFilter" before="CAS_FILTER"/>
+	<custom-filter ref="jwTokenProcessingFilter" after="CAS_FILTER"/>
+	<custom-filter ref="credentialContainerFilter" before="EXCEPTION_TRANSLATION_FILTER"/>
+</http>
+
+<http pattern="/hub/(login|reset_password)\.html.*" request-matcher="regex"
+	  entry-point-ref="mzngAuthenticationEntryPoint">
+	<headers>
+		<!--frame-options policy="SAMEORIGIN"/-->
+		<frame-options policy="ALLOW-FROM" strategy="static" value="http://otherServerHost:otherServerPort" />
+		<!--content-security-policy policy-directives="frame-ancestors 'self'"/-->
+		<content-security-policy policy-directives="frame-ancestors 'self' http://otherServerHost:otherServerPort"/>
+	</headers>
+</http>
+
+<http pattern="/**/*.html" use-expressions="false"
+	  authentication-manager-ref="authenticationManager"
+	  entry-point-ref="mzngAuthenticationEntryPoint">
+	  <intercept-url pattern="/**/*.html"
+					 access="IS_AUTHENTICATED_ANONYMOUSLY"/>                     
+	  <anonymous enabled="false"/>
+	  <headers>
+		<!--frame-options policy="SAMEORIGIN"/-->
+		<frame-options policy="ALLOW-FROM" strategy="static" value="http://otherServerHost:otherServerPort" />
+		<!--content-security-policy policy-directives="frame-ancestors 'self'"/-->
+		<content-security-policy policy-directives="frame-ancestors 'self' http://otherServerHost:otherServerPort"/>
+	  </headers>
+</http>

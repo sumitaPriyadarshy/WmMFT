@@ -1,0 +1,28 @@
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *Content-Length: 64*
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *Host: localhost:2380*
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *command:login*
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *username:sdey*
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *password:************
+08/21/2026 08:13:24 AM|[HTTP:1920::0.0.0.0] READ: *clientid:probe3*
+08/21/2026 08:13:24 AM|[HTTP:1920:sdey:0.0.0.0] WROTE: *Set-Cookie: mainServerInstance=; path=/;HttpOnly
+08/21/2026 08:13:24 AM|Set-Cookie: CrushAuth=*****; path=/;HttpOnly*
+08/21/2026 08:13:24 AM|[HTTP:1920:sdey:0.0.0.0] Disconnected:*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k12ij5jam4g07fq5*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *Host: localhost*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *Content-Length: 132*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *command:login*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *username:sdey*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *password:************
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *clientid:[Find : vg000100k12ij5j9m4g07fq4]*
+08/28/2026 07:22:58 AM|[HTTP:1920::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k12ij5jam4g07fq5*
+08/28/2026 07:22:58 AM|[HTTP:1920:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/28/2026 07:22:58 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1787881978658_I7QxMPnjH2adMxfmgTVy7XssACr7C8;*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k12ij5jam4g07fq5*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *Host: localhost*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *Content-Length: 23*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *c2f:r7C8*
+08/28/2026 07:23:03 AM|[HTTP:1921:sdey:127.0.0.1] READ: *command:logout*

@@ -1,0 +1,115 @@
+/**
+. = class
+# = id
+**/
+/* @import url("css/roboto/roboto-fontface.css");
+* {
+	font-family: Roboto;
+	font-style: inherit;
+	font-size: 12px;
+} */
+
+.mainNavigation {
+	background-color: #F4F4F4;
+}
+
+#headerContent {
+	background-color: var(--MFT-body-background-layer1);
+    /* margin: 0px 16px 0px 16px; */
+}
+
+.header-separator{
+	border-bottom: 1px solid #cccccb;
+    height: 1px;
+}
+
+#header {
+	height: 48px;
+	/* padding: 10px 0px 0px 30px; */
+	margin: 0px 0px 0px 0px;
+}
+
+#headerImages div.logo {
+	margin-left: 0px;
+	border: 0px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.header-language{
+	margin-top:15px;
+}
+
+div#headerText {
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: regular;
+	margin-left: 8px;
+	margin-top: 10px;
+}
+
+.ui-dialog .ui-widget-header {
+	background-color: white !important;
+}
+
+.ui-widget-header {
+	background-color: white;
+	background-image: none;
+	border: white;
+}
+
+.ui-dialog .ui-dialog-title {
+	color: black;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+.ui-draggable .ui-dialog-titlebar{
+	cursor: move;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#ui-datepicker-div{
+	background: #ffffff;
+	/* position: inherit !important;
+	top: 2px !important;
+	left: 2px !important; */
+}
+
+.ui-datepicker .ui-datepicker-prev { position:absolute; top: 5px; width: 24px; height: 24px; background-image: url(/WebInterface/jQuery/images/rewind.png) !important; background-repeat:no-repeat}
+.ui-datepicker .ui-datepicker-next { position:absolute; top: 5px; width: 24px; height: 24px; background-image: url(/WebInterface/jQuery/images/forward.png) !important; background-repeat:no-repeat}
+
+/* .ui-button .ui-icon {
+	background: url(/WebInterface/delite/icons/dlt-icon-close-primary.svg) no-repeat -2px -1px !important;
+	width: 14px !important;
+	height: 14px !important;
+	border: none !important;
+	background-size: 19px 17px !important
+} */
+
+.ui-widget {
+	font-size: 1em;
+	border: none;
+	background-color: white;
+	height: auto !important;
+}
+#PoweredByText,#CopyrightText {
+	display: none;
+}
+
+#SAGCopyrightText {
+	color: #666666;
+	line-height: 1.3;
+}
+
+
+::-webkit-scrollbar {
+	height: 6px;
+	width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background-color: #6e6e6e;
+  }
+  
+#mainContent{
+	margin: 0px 16px 16px 16px;
+}

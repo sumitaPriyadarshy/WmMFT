@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">list</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:optional invokeDoQuery {"true","false"}</value>
+    <value>[i] recref:0:optional searchCreteria wm.mft.ui.rec:doQuerySerachInput</value>
+    <value>[i] field:0:required queryId</value>
+    <value>[i] field:0:required pageNumber</value>
+    <value>[i] field:0:optional queryIdToCancel</value>
+    <value>[o] field:0:required threadRunning</value>
+    <value>[o] field:0:required rowsRead</value>
+    <value>[o] record:1:required action</value>
+    <value>[o] - field:0:required id</value>
+    <value>[o] - field:0:required name</value>
+    <value>[o] - field:0:required description</value>
+    <value>[o] - field:0:required isActive</value>
+    <value>[o] field:0:required status</value>
+    <value>[o] field:0:required message</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CmJvb2xlYW4gc3VjY2VzcyA9IHRydWU7ClN0cmluZyBtZXNzYWdlID0gIiI7CnRyeSB7CglSQkFQ
+cm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5kbGUuQUNUSU9OX01GX1ZJRVcpOwoJaWYgKCAi
+dHJ1ZSIuZXF1YWxzSWdub3JlQ2FzZShWYWx1ZXNFbXVsYXRvci5nZXRTdHJpbmcocGlwZWxpbmUs
+ICJpbnZva2VEb1F1ZXJ5IikpKSB7IC8vIFNpbmNlIHF1ZXJ5SW5wdXQgaWQgbm90IHByb3ZpZGVk
+LCBpbnZva2UgZG9RdWVyeQoJCUlEYXRhIHNlYXJjaENyZXRlcmlhID0gKElEYXRhKSBWYWx1ZXNF
+bXVsYXRvci5nZXQocGlwZWxpbmUsICJzZWFyY2hDcmV0ZXJpYSIpOwoJCUlEYXRhIHF1ZXJ5SW5w
+dXQgPSBVSVV0aWxzLnBhcnNlRG9RdWVyeVNlYXJjaElucHV0KHNlYXJjaENyZXRlcmlhKTsKCQkK
+CQlpZiAoIFZhbHVlc0VtdWxhdG9yLmdldChxdWVyeUlucHV0LCAic29ydE9yZGVyIikgPT0gbnVs
+bCApIHsKCQkJSURhdGEgZGVmYXVsdFNvcnRPcmRlciA9IElEYXRhRmFjdG9yeS5jcmVhdGUoKTsK
+CQkJVmFsdWVzRW11bGF0b3IucHV0KGRlZmF1bHRTb3J0T3JkZXIsICJjb2x1bW5OYW1lIiwgIkFj
+dGlvbk5hbWUiKTsKCQkJVmFsdWVzRW11bGF0b3IucHV0KHF1ZXJ5SW5wdXQsICJzb3J0T3JkZXIi
+LCBuZXcgSURhdGFbXSB7ZGVmYXVsdFNvcnRPcmRlcn0pOwoJCX0KCQlTdHJpbmdbXSByZXN1bHRD
+b2xzID0gbmV3IFN0cmluZ1tdIHsiQWN0aW9uSUQiLCAiQWN0aW9uTmFtZSIsICJBY3Rpb25EZXNj
+cmlwdGlvbiIsICJBY3RpdmUifTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQocXVlcnlJbnB1dCwgInJl
+c3VsdFNldENvbHVtbnMiLCByZXN1bHRDb2xzKTsKCQkKCQlJRGF0YSBkb1F1ZXJ5SW5wdXQgPSBJ
+RGF0YUZhY3RvcnkuY3JlYXRlKCk7CgkJVmFsdWVzRW11bGF0b3IucHV0KGRvUXVlcnlJbnB1dCwg
+InF1ZXJ5SW5wdXQiLCBxdWVyeUlucHV0KTsKCQlWYWx1ZXNFbXVsYXRvci5wdXQoZG9RdWVyeUlu
+cHV0LCAicXVlcnlUeXBlIiwgTUZURGF0YUNvbnN0YW50cy5RVUVSWV9UWVBFX01PTklUT1JfRVZF
+TlQpOwoJCVZhbHVlc0VtdWxhdG9yLnB1dChkb1F1ZXJ5SW5wdXQsICJxdWVyeUlkVG9DYW5jZWwi
+LCBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJxdWVyeUlkVG9DYW5jZWwiKSk7CgkJU2Vy
+dmljZS5kb0ludm9rZSgid20ubWZ0LnVpLnF1ZXJpZXMiLCAiZG9RdWVyeSIsIGRvUXVlcnlJbnB1
+dCk7Cgl9IAoJCglJRGF0YSBnZXRRdWVyeVJlc3VsdElucHV0ID0gSURhdGFGYWN0b3J5LmNyZWF0
+ZSgpOwoJVmFsdWVzRW11bGF0b3IucHV0KGdldFF1ZXJ5UmVzdWx0SW5wdXQsICJxdWVyeUlkIiwg
+VmFsdWVzRW11bGF0b3IuZ2V0KHBpcGVsaW5lLCAicXVlcnlJZCIpKTsKCVZhbHVlc0VtdWxhdG9y
+LnB1dChnZXRRdWVyeVJlc3VsdElucHV0LCAicGFnZU51bWJlciIsIFZhbHVlc0VtdWxhdG9yLmdl
+dChwaXBlbGluZSwgInBhZ2VOdW1iZXIiKSk7CglWYWx1ZXNFbXVsYXRvci5wdXQoZ2V0UXVlcnlS
+ZXN1bHRJbnB1dCwgInF1ZXJ5VHlwZSIsIFN0cmluZy52YWx1ZU9mKE1GVERhdGFDb25zdGFudHMu
+UVVFUllfVFlQRV9NT05JVE9SX0VWRU5UKSk7CglTZXJ2aWNlLmRvSW52b2tlKCJ3bS5tZnQudWku
+cXVlcmllcyIsICJnZXRRdWVyeVJlc3VsdHMiLCBnZXRRdWVyeVJlc3VsdElucHV0KTsKCQoJVmFs
+dWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAidGhyZWFkUnVubmluZyIsIFZhbHVlc0VtdWxhdG9y
+LmdldChnZXRRdWVyeVJlc3VsdElucHV0LCAidGhyZWFkUnVubmluZyIpKTsKCVZhbHVlc0VtdWxh
+dG9yLnB1dChwaXBlbGluZSwgInJvd3NSZWFkIiwgVmFsdWVzRW11bGF0b3IuZ2V0KGdldFF1ZXJ5
+UmVzdWx0SW5wdXQsICJyb3dzUmVhZCIpKTsKCQoJSURhdGFbXSBkYXRhQXJyYXkgPSAoSURhdGFb
+XSkgVmFsdWVzRW11bGF0b3IuZ2V0KGdldFF1ZXJ5UmVzdWx0SW5wdXQsICJkYXRhQXJyYXlJRGF0
+YSIpOwoJaWYgKCBkYXRhQXJyYXkgIT0gbnVsbCApIHsKCQlWYWx1ZXNFbXVsYXRvci5wdXQocGlw
+ZWxpbmUsICJhY3Rpb25zIiwgZGF0YUFycmF5KTsKCX0KCn0gY2F0Y2ggKEV4Y2VwdGlvbiB0KSB7
+CglzdWNjZXNzID0gZmFsc2U7CgltZXNzYWdlID0gdC5nZXRMb2NhbGl6ZWRNZXNzYWdlKCk7Cn0g
+ZmluYWxseSB7CglWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJzdWNjZXNzIiwgU3RyaW5n
+LnZhbHVlT2Yoc3VjY2VzcykpOwoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAibWVzc2Fn
+ZSIsIG1lc3NhZ2UpOwp9Cg==</value>
+</Values>

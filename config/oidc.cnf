@@ -1,0 +1,13 @@
+enabled=true
+provider=ibm-mcsp-tenant
+clientId=19995864-3f94-46fe-ade7-fc49a97bf439
+clientSecret=07mdHJEGiaacaV8S9cUaM1XDyYQ0mjU0
+# IBM MCSP OAuth2 endpoints
+authorizationUri=https://console-ibm-stg.verify.ibm.com/oauth2/authorize
+tokenUri=https://console-ibm-stg.verify.ibm.com/oauth2/token
+userInfoUri=https://console-ibm-stg.verify.ibm.com/oauth2/userinfo
+jwkSetUri=https://console-ibm-stg.verify.ibm.com/oauth2/jwks
+issuerUri=https://console-ibm-stg.verify.ibm.com/oauth2
+redirectUri=https://localhost/mft
+scope=openid
+userNameAttribute=preferred_username

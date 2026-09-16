@@ -1,0 +1,44 @@
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k183158k4g01bm5l*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *Host: localhost*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *Content-Length: 132*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *command:login*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *username:sdey*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *password:************
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *clientid:[Find : vg000100k18314v34g01bm5i]*
+08/30/2026 06:32:36 AM|[HTTP:5003::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k183158k4g01bm5l*
+08/30/2026 06:32:36 AM|[HTTP:5003:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+08/30/2026 06:32:36 AM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788051756439_ooug8Vta3yAyjxkdvBLjDH8njsf5No;*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *Host: localhost*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *Content-Length: 60*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *c2f:f5No*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *command:stat*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/30/2026 06:32:36 AM|[HTTP:5004:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/30/2026 07:33:16 AM|[HTTP:5004:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend/. Azure Message: 
+08/30/2026 07:33:16 AM|Azure Message: 
+08/30/2026 07:33:16 AM|java.lang.RuntimeException: java.net.UnknownHostException: mft1.blob.core.windows.net*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788051756439_ooug8Vta3yAyjxkdvBLjDH8njsf5No;*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *Host: localhost*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *Content-Length: 57*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *c2f:f5No*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *command:stat*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *path:/azureAppend*
+08/30/2026 07:33:16 AM|[HTTP:5015:sdey:127.0.0.1] READ: *format:stat_dmz*
+08/30/2026 07:34:02 AM|[HTTP:5015:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /azureAppend. Azure Message: 
+08/30/2026 07:34:02 AM|Azure Message: 
+08/30/2026 07:34:02 AM|java.lang.RuntimeException: java.net.UnknownHostException: mft1.blob.core.windows.net: nodename nor servname provided, or not known*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788051756439_ooug8Vta3yAyjxkdvBLjDH8njsf5No;*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *Host: localhost*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *Content-Length: 69*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *c2f:f5No*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *command:getXMLListing*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *path:/azureAppend/*
+08/30/2026 07:34:02 AM|[HTTP:5028:sdey:127.0.0.1] READ: *format:stat_dmz*

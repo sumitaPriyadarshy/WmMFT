@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required eventInfo wm.mft.assets.rec.event:MonitorFolderEvent</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:1:required validationErrors</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">ClN0cmluZyBtZXNzYWdlID0gTUZUUmVzb3VyY2VzLmdldE1lc3NhZ2UoIjEwMTMiKTsKSURhdGFD
+dXJzb3IgY3VyID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7CgpJRGF0YSBldmVudFBpcGUgPSAoSURh
+dGEpIFZhbHVlc0VtdWxhdG9yLmdldChwaXBlbGluZSwgImV2ZW50SW5mbyIpOwpib29sZWFuIHZh
+bGlkYXRlSW5wdXQgPSB0cnVlOwppZiAoImZhbHNlIi5lcXVhbHNJZ25vcmVDYXNlKFZhbHVlc0Vt
+dWxhdG9yLmdldFN0cmluZyhwaXBlbGluZSwgInZhbGlkYXRlSW5wdXQiKSkpIHsKCXZhbGlkYXRl
+SW5wdXQgPSBmYWxzZTsKfQpNb25pdG9yRm9sZGVyQWN0aW9uIGFjdGlvbiA9IG51bGw7Cgpib29s
+ZWFuIHN1Y2Nlc3MgPSBmYWxzZTsKU3RyaW5nW10gbWVzc2FnZUFycmF5ID0gbnVsbDsKdHJ5IHsK
+CWlmIChldmVudFBpcGUgPT0gbnVsbCkKCQl0aHJvdyBuZXcgU2VydmljZUV4Y2VwdGlvbihNRlRS
+ZXNvdXJjZXMuZ2V0TWVzc2FnZSgiMTAwMSIsICJldmVudEluZm8iKSk7CglhY3Rpb24gPSBBc3Nl
+dFV0aWxzLmdldE1vbml0b3JGb2xkZXJBY3Rpb25Gcm9tSURhdGEoZXZlbnRQaXBlKTsKCWlmICgg
+YWN0aW9uLmdldERlc2NyaXB0aW9uKCkgIT0gbnVsbCAmJiBhY3Rpb24uZ2V0RGVzY3JpcHRpb24o
+KS5sZW5ndGgoKSA+IDI1NiApIHsKCQl0aHJvdyBuZXcgU2VydmljZUV4Y2VwdGlvbihNRlRSZXNv
+dXJjZXMuZ2V0TWVzc2FnZSgiODEwNCIpKTsKCX0KCUV2ZW50c1Byb3h5LnVwZGF0ZU1vbml0b3JG
+b2xkZXJBY3Rpb24oYWN0aW9uLCB2YWxpZGF0ZUlucHV0KTsKCXN1Y2Nlc3MgPSB0cnVlOwp9IGNh
+dGNoIChFeGNlcHRpb24gdCkgewoJbWVzc2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgpOwoJ
+aWYgKHQgaW5zdGFuY2VvZiBNRlRTZXJ2aWNlRXhjZXB0aW9uKSB7CgkJTGlzdDxTdHJpbmc+IG1l
+c3NhZ2VMaXN0ID0gKChNRlRTZXJ2aWNlRXhjZXB0aW9uKSB0KS5nZXRFcnJvck1lc3NhZ2VMaXN0
+KCk7CgkJaWYgKG1lc3NhZ2VMaXN0ICE9IG51bGwpIHsKCQkJbWVzc2FnZUFycmF5ID0gbmV3IFN0
+cmluZ1ttZXNzYWdlTGlzdC5zaXplKCldOwoJCQltZXNzYWdlTGlzdC50b0FycmF5KG1lc3NhZ2VB
+cnJheSk7CgkJfQoJfQp9IGZpbmFsbHkgewoJVmFsdWVzRW11bGF0b3IucHV0KHBpcGVsaW5lLCAi
+c3VjY2VzcyIsIFN0cmluZy52YWx1ZU9mKHN1Y2Nlc3MpKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChw
+aXBlbGluZSwgIm1lc3NhZ2UiLCBtZXNzYWdlKTsKCWlmIChtZXNzYWdlQXJyYXkgIT0gbnVsbCkK
+CQlWYWx1ZXNFbXVsYXRvci5wdXQocGlwZWxpbmUsICJ2YWxpZGF0aW9uRXJyb3JzIiwgbWVzc2Fn
+ZUFycmF5KTsKCWlmIChjdXIgIT0gbnVsbCkgewoJCWN1ci5kZXN0cm95KCk7Cgl9Cn0K</value>
+</Values>

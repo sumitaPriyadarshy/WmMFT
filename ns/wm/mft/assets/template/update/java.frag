@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">update</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] recref:0:required templateInfo wm.mft.assets.rec.user:UserTemplate</value>
+    <value>[o] field:0:required success</value>
+    <value>[o] field:0:required message</value>
+    <value>[o] field:1:required validationErrors</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQkKCQlTdHJpbmcgbWVzc2FnZSA9IE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDEzIik7CgkJ
+SURhdGFDdXJzb3IgY3VyID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7CgkJCgkJSURhdGEgdGVtcGxh
+dGVQaXBlID0gKElEYXRhKSBWYWx1ZXNFbXVsYXRvci5nZXQocGlwZWxpbmUsICJ0ZW1wbGF0ZUlu
+Zm8iKTsKCQkKCQlVc2VyVGVtcGxhdGUgdGVtcGxhdGUgPSBudWxsOwoJCQoJCWJvb2xlYW4gc3Vj
+Y2VzcyA9IGZhbHNlOwoJCVN0cmluZ1tdIG1lc3NhZ2VBcnJheSA9IG51bGw7CgkJdHJ5ewoJCQlp
+ZiAoIHRlbXBsYXRlUGlwZSA9PSBudWxsICkKCQkJCXRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9u
+KE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCIxMDAxIiwgInRlbXBsYXRlSW5mbyIpKTsKCQkJdGVt
+cGxhdGUgPSBBc3NldFV0aWxzLmdldFRlbXBsYXRlRnJvbUlEYXRhKHRlbXBsYXRlUGlwZSk7CgkJ
+CXN1Y2Nlc3MgPSBVc2VyTWFuYWdlclByb3h5LnVwZGF0ZVRlbXBsYXRlKHRlbXBsYXRlKTsKCQl9
+Y2F0Y2ggKFRocm93YWJsZSB0KXsKCQkJbWVzc2FnZSA9IHQuZ2V0TG9jYWxpemVkTWVzc2FnZSgp
+OwoJCQlpZiAoIHQgaW5zdGFuY2VvZiBNRlRTZXJ2aWNlRXhjZXB0aW9uICkgewoJICAgIAkJTGlz
+dDxTdHJpbmc+IG1lc3NhZ2VMaXN0ID0gKChNRlRTZXJ2aWNlRXhjZXB0aW9uKSB0KS5nZXRFcnJv
+ck1lc3NhZ2VMaXN0KCk7CgkgICAgCQlpZiAoIG1lc3NhZ2VMaXN0ICE9IG51bGwgKSB7CgkgICAg
+CQkJbWVzc2FnZUFycmF5ID0gbmV3IFN0cmluZ1ttZXNzYWdlTGlzdC5zaXplKCldOyAKCSAgICAJ
+CQltZXNzYWdlTGlzdC50b0FycmF5KG1lc3NhZ2VBcnJheSk7CgkgICAgCQl9CgkJCX0KCSAgICB9
+ZmluYWxseSB7CgkgICAgCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInN1Y2Nlc3MiLCBT
+dHJpbmcudmFsdWVPZihzdWNjZXNzKSk7CgkJCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwi
+bWVzc2FnZSIsbWVzc2FnZSk7CQoJCQlpZiAoIG1lc3NhZ2VBcnJheSAhPSBudWxsICkKCQkJCVZh
+bHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgInZhbGlkYXRpb25FcnJvcnMiLG1lc3NhZ2VBcnJh
+eSk7CgoJCQlpZiAoY3VyICE9IG51bGwpewoJICAgIAkJY3VyLmRlc3Ryb3koKTsKCSAgICAJfSAg
+ICAgICAJCgkgICAgfQo=</value>
+</Values>

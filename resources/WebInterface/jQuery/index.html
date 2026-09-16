@@ -1,0 +1,1646 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>WebClient</title>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/jqueryFileTree.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/jquery.cluetip.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/jquery.colorbox.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/jQuery/css/latest/jquery-ui-1.13.2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/Resources/css/token-input-facebook.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/Resources/css/jHtmlArea/jHtmlArea.css"/>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/h5utils.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-migrate-3.1.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/jQueryRotate.2.2.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery-ui-1.13.2.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/crushftp.dragout.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/helper.js"></script>
+    <script type="text/javascript" src="/WebInterface/delite/js/delite.min.js"></script>
+    <script type="text/javascript">
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.getElementById("newLoader").style.visibility = "visible";
+                document.querySelector("body").style.visibility = "hidden";
+                document.getElementById("fileListWrapperID").style.display = "none";
+            } else {
+                document.getElementById("newLoader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+                document.getElementById("fileListWrapperID").style.display = "block";
+                if(isCloud) document.querySelector(".shareAllUploadedDlitBtn")?.remove();
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        if(isCloud){
+			$(document).prop('title', 'WebClient');
+		}
+        //This is to make .getScript() work in IE
+        var ua = window.navigator.userAgent;
+        var isIE = /MSIE|Trident/.test(ua);
+        if (isIE) {
+            jQuery.extend({
+                getScript: function (url, callback) {
+                    var head = document.getElementsByTagName("head")[0];
+                    var script = document.createElement("script");
+                    var done = false; // Handle Script loading
+
+                    script.src = url;
+                    script.onload = script.onreadystatechange = function () { // Attach handlers for all browsers
+                        if (!done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {
+                            done = true;
+                            if (callback) {
+                                callback();
+                            }
+                            script.onload = script.onreadystatechange = null; // Handle memory leak in IE
+                        }
+                    };
+
+                    head.appendChild(script);
+                    return undefined; // We handle everything using the script element injection
+                }
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        var mftSupportedLangs = ['en', 'es', 'ja', 'zh', 'fr', 'de', 'ru', 'he', 'pl', 'pt-BR'];
+        var selectedLanguage = localStorage.getItem("language");
+        var jsFile = "en.js";
+
+        if (selectedLanguage === null) {	//if user has not chosen any language, use browser's language
+            if (navigator.languages) { //navigator.languages is not supported by IE
+                for (var i = 0; i < navigator.languages.length; i++) {
+                    if (jQuery.inArray(navigator.languages[i], mftSupportedLangs) != -1) {
+                        jsFile = navigator.languages[i] + ".js";
+                        selectedLanguage = navigator.languages[i];
+                        break;
+                    }
+                }
+            } else { //for IE
+                var browserLocale = navigator.language || navigator.userLanguage;
+                if (jQuery.inArray(browserLocale, mftSupportedLangs) != -1) {
+                    jsFile = browserLocale + ".js";
+                    selectedLanguage = browserLocale;
+                }
+            }
+            if (!jsFile) { //If browser locale is not in our supported language list, use English
+                selectedLanguage = "en";
+            }
+        } else {
+            //Use user selected locale
+            jsFile = selectedLanguage + ".js";
+        }
+        selectedLanguage = selectedLanguage || 'en';
+        var xhrObj = new XMLHttpRequest();
+        xhrObj.open('GET', "/WebInterface/jQuery/i18n/" + jsFile, false);
+        xhrObj.send('');
+        var se = document.createElement('script');
+        se.type = "text/javascript";
+        se.text = xhrObj.responseText;
+        document.getElementsByTagName('head')[0].appendChild(se);
+    </script>
+
+    <script>
+        function slide(direction){
+            var container = document.getElementById('topNavItem');
+            scrollCompleted = 0;
+            var slideVar = setInterval(function(){
+                if(direction == 'left'){
+                    topNavItem.scrollLeft -= 100;
+                } else {
+                    topNavItem.scrollLeft += 100;
+                }
+                scrollCompleted += 10;
+                if(scrollCompleted >= 100){
+                    window.clearInterval(slideVar);
+                }
+            }, 50);
+        }
+
+        function copyLink() {
+            // Change icon to copied
+            if (!navigator.clipboard) return
+            var imgSrc = document.getElementById("copyDirectLink").src;
+            if(imgSrc.includes("dlt-icon-copy"))
+            document.getElementById("copyDirectLink").src= "/WebInterface/delite/icons/dlt-icon-check.svg";
+                else
+            document.getElementById("copyDirectLink").src = "/WebInterface/delite/icons/dlt-icon-copy.svg";
+            /* Get the text field */
+            var copyText = document.getElementById("txtDirectLink");
+            
+            /* Select the text field */
+            copyText.select();
+            
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+            
+            /* Alert the copied text */
+            // alert("Copied the text: " + copyText.value);
+            setTimeout("setCopyIcon()", 1000);
+        }
+
+        function setCopyIcon() {
+            document.getElementById("copyDirectLink").src = "/WebInterface/delite/icons/dlt-icon-copy.svg";
+        }
+
+        $(document).on("mousedown", function(e) {
+            if(document.getElementById("renamePanelID") !== null && e.target.className !== 'saveButton' && e.target.className !== 'dlt-text-input renameField') {
+                $("div.renamePanel").remove();
+                $("span.previewIcon").show();
+                $("a.filePreviewLink").show();
+                $("span.expandButton").show();
+                $("a.folderPreviewLink").show();
+                $("#myMenu").find(".paste").removeAttr("disable").removeClass("disabledMenu");
+                $("td.disabledMenu").removeClass("disabledMenu");
+            }
+            if(e.target.className === 'dlt-text-input renameField') {
+                var inp = document.getElementById('invalid-rename');
+                inp.selectionStart = inp.selectionEnd;
+            }
+            if(document.getElementById("mainContent") && e.target.className !== "account-display-font") {
+                document.getElementById("accountItem").classList.remove("dlt-dislpay");
+            }
+        });
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        function changeView(){
+            if(document.getElementById("accountItem").classList.contains("dlt-dislpay")) {
+                document.getElementById("accountItem").classList.remove("dlt-dislpay");
+            } else {
+                document.getElementById("accountItem").classList.add("dlt-dislpay");
+            }
+        }
+        function launchWebclient2(){
+           window.open(window.location.origin+"/Webinterface/v2/index.html", "_blank");
+        }
+        function showHidePassword(elementId, iconId) {
+            const passwordInput = document.getElementById(elementId);
+            const toggleButton = document.querySelector(".dlt-button");
+            const toggleIcon = document.getElementById(iconId);
+            const parentButton = toggleIcon.parentElement;
+        
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.classList.remove("dlt-icon-password-show");
+                toggleIcon.classList.add("dlt-icon-password-hide"); // Assuming this class exists for hidden icon
+                parentButton.setAttribute('title','Hide Password');
+
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.classList.remove("dlt-icon-password-hide");
+                toggleIcon.classList.add("dlt-icon-password-show");
+                parentButton.setAttribute('title','Show Password');
+            }
+        }
+    </script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jqueryFileTree.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.contextmenu.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.cluetip.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.xml2json.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.meio.mask.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.cssRule.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.doubleTap.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/mimeTypes.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/crushFTP.folderPreview.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.metadata.v2.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/jquery.media.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/jHtmlArea-0.7.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/crushftp.sessionChecker.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/browserSelector.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/jquery.tokeninput.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/js/jquery.notify.js"></script>
+    <script type="text/javascript" src="/WebInterface/custom.js"></script>
+    <script type="text/javascript">
+        var maxShareDays = "%expireMaxDayNum%";
+        var originalShareDays = '%expireDayNum%';
+        var defaultExternalPermissionStr = "%defaultExternalPermissionStr%";
+        var shareMethod = "%defaultShareMethod%";
+        var isDMZ = "%isDMZ%";
+        var csrf = "%ajxrf%";
+
+        $(document).ready(function () {
+            if (csrf != "") {
+                localStorage.setItem("ajxrf", csrf);
+            }
+            $('#filesContainer').fileTree({
+                root: '/',
+                overrideFromHash: true,
+                expandSpeed: 1000,
+                collapseSpeed: 1000,
+                multiFolder: true,
+                customData: true
+            }, function (link) {
+                window.open(link);
+            });
+        });
+    </script>
+    <script>
+        $(document).on('keydown', function(e) {
+            // ESCAPE key pressed
+            if (e.keyCode == 27) {
+                $.unblockUI();
+            }
+        });
+    </script>
+    <!-- DND Stuff -->
+    <link rel="stylesheet" href="/WebInterface/Resources/DND/css/jquery.fileupload-ui.css"/>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/tmpl-3.13.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/load-image-2.24.0.all.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/canvas-to-blob-3.16.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.iframe-transport-10.0.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.fileupload-10.0.0.min.js"></script>
+    <script type="text/javascript"
+            src="/WebInterface/jQuery/js/latest/jquery.fileupload-process-10.0.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.fileupload-image-10.0.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.ui.widget-10.0.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/jQuery/js/latest/jquery.fileupload-ui-10.0.0.min.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/DND/js/jquery.fileupload-CrushFTP-ui.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/DND/js/crushftp.DNDUpload.js"></script>
+    <script type="text/javascript" src="/WebInterface/Resources/DND/js/crushftp.DNDWebInterface.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/WebInterface/delite/css/carbon.css" />
+    <link rel="stylesheet" type="text/css" href="/WebInterface/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/login.css" />
+    <link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/generic.css" />
+	<link rel="stylesheet" type="text/css" href="/WebInterface/delite/latest/color.css" />
+    <!-- Applet Custom Browse Stuff -->
+    <link rel="stylesheet" href="/WebInterface/Resources/css/localFileBrowser.css"/>
+    <script type="text/javascript" src="/WebInterface/Resources/js/crushftp.WI.FileBrowser.js"></script>
+    <style type="text/css">
+        @-moz-document url-prefix() {
+            #javaAppletDiv.ffAppletVerify {
+                height: 145px !important;
+            }
+        }
+    </style>
+</head>
+<div id="newLoader" class="loader"></div>
+<body>
+<div class="mainContentHolder">
+    <div class="headerContent" id="headerContent">
+        <div id="header" style="padding: 0px;margin:-1px;">
+            <div id="headerImages">
+                <div class="logo" onclick="hashListener.setHash('/')"></div>
+                <div class="directoryPreview"></div>
+            </div>
+            <button class="dlt-button dlt-button-icon account-icon v2_link_button" onclick="launchWebclient2()">
+                <span style="padding-right: 8px;">Try new theme</span>
+                <i id="profileIcon" class="icon--small icon--white dlt-icon-launch icon--white"></i>
+            </button>
+            <div id="accountMenu" class="dropdown" style="float: right;margin-right: 23px;">
+                <button id="accountIcon" class="dlt-button dlt-button-icon dropdown-toggle account-icon user_menu_button" onclick="changeView()">
+                    <i id="profileIcon" class="dlt-icon dlt-icon-profile icon--white icon--medium"></i>
+                </button>
+                <div id="accountItem" class="overflow-menu dropdown-menu show" style="right: 4px;height: auto;top: 57px;">
+                    <div class="user-menu">
+                        <div class="user-menu__container">
+                            <div class="user-menu__item-header">
+                                <a id="userNameDisplay" class="account-display-font" style="font-weight: 500;">UserName</a>
+                            </div>
+                            <hr class="custom-hr">
+                            <div class="user-menu__item-header">
+                                <a onclick="javascript:performAction('userOptions');" class="account-display-font">User preferences</a>
+                                <!-- <button class="user-menu__item" onclick="javascript:performAction('userOptions');">
+                                    User preferences
+                                </button> -->
+                            </div>
+                            <div class="user-menu__item-header">
+                                <a href="javascript:doLogout();" class="account-display-font">Logout</a>
+                                <!-- <button class="user-menu__item" onclick="javascript:doLogout();">
+                                    Logout
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                  <!-- <div class="triangle-up" style="position: absolute;right: 10px;top: -10px;"></div>
+                  <div class="solid-line"></div>
+                  <a onclick="javascript:performAction('userOptions');" class="account-display-font">User preferences</a>
+                  <a href="javascript:doLogout();" class="account-display-font">Logout</a> -->
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div class="header-separator"></div>
+    <div id="container">
+    </div>
+    <div id="javaAppletDivU">
+    </div>
+    <div id="mainContent">
+        <div id="mainNavAnchor">
+        </div>
+        <div class="mainNavigation dlt-tab-bar" id="mainNavigation" style="display:hidden;">
+            <div class="menu-wrapper" style="display: flex; justify-content: space-between;">
+                <!-- <button id="leftMenuNavigator" class="dlt-button dlt-button-icon" style="height: 3rem; padding-top: 8px; display: none;" title="Left" onclick="slide('left')">
+                    <img style="height: 28px;" src="/WebInterface/delite/icons/dlt-icon-chevron-left.svg"/></a>
+                 </button> -->
+                <div id="topNavItem">
+                    <ul class="topnav dlt-tab-nav" role="tablist">
+                    </ul>
+                </div>
+
+                <div class="layoutActionElement">
+                    <div class="filterPanel" id="filterPanel" style="display: flex;">
+                        <div>
+                            <button id="selectionLink" class="selectionLink dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-checkAll"></i>
+                            </button>
+                            <button href="#" id="pageSizeSelectionLink" class="pageSizeSelectionLink dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-filter"></i>
+                                <span id="PageSizeSelectionLinkText" style="display:none;color: #F5F5F5;text-decoration-color: transparent">Show {0} items</span>
+                            </button>
+                            <!-- <span><a href="#" class="selectionLink"><span id="SelectItemOptionLinkText"></span></a></span> -->
+                       <!-- <span><a href="#" class="pageSizeSelectionLink"><span id="PageSizeSelectionLinkText"
+                                                                              style="display:none;color: #F5F5F5;text-decoration-color: transparent">Show {0} items</span></a></span> -->
+                        </div>
+                        <div style="display: flex;justify-content: start;width: fit-content;">
+                            <div class="dlt-form-item filterArea" style="width: 100%;">
+                                <div class="dlt-form-group">
+                                    <button style="position: absolute; z-index: 1;" class="dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-search"></i>
+                                    </button>
+                                    <input style="padding: 0 2rem;" type="text" class="dlt-text-input dlt-text-input-white" size="30" maxlength="30" value="" id="filter" name="filter" placeholder="Search" />
+                                    <!-- <button class="clear-icon clearFilterLink" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button> -->
+                                    <button class="dlt-button dlt-button-icon dlt-menu-button-icon clear-icon clearFilterLink" type="button">
+                                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button id="rightMenuNavigator" class="dlt-button dlt-button-icon margin-left-6" style="height: 3rem; padding-top: 8px; display: none;" title="right" onclick="slide('right')">
+                    <img style="height: 28px;" src="/WebInterface/delite/icons/dlt-icon-chevron-right.svg"/></a>
+                </button> -->
+            </div>
+            <div class="clear">
+            </div>
+            <div class="clear dropzone ui-widget-content ui-corner-all" id="dropItemsPanel">
+                <h1 id="browserUploaderDragDropHoverLabelText">Drop files here to upload</h1>
+            </div>
+        </div>
+        <div id="javaAppletDiv" class="ffAppletVerify" style="left:-5000px;z-index:1001;position:fixed;width:99%;">
+        </div>
+        <div id="fileQueueInfo" class="ui-corner-all">
+            <!-- The file upload form used as target for the file upload widget -->
+            <form id="fileupload" name="META_uploadForm" action="/WebInterface/function/" method="POST"
+                  enctype="multipart/form-data">
+                <div id="globalProgressBar" class="uploadProgressInfoMain ui-corner-all"
+                     style="display:none;">
+                    <div>
+                        <span class="progressBarText"></span>
+                        <div class="progressbarMain"></div>
+                    </div>
+                    <div>
+                        <span class="uploadProgressBarMainButtons">
+                            <a href="#" class="skip globalProgressbarSkipLabelByClass">Skip</a>
+                            <a href="#" class="pause globalProgressbarPauseLabelByClass">Pause</a>
+                            <a href="#" class="stop globalProgressbarStopLabelByClass">Stop</a>
+                        </span>
+                        <span class="progressInfoText">
+                            <span class="uploadInfo"></span>
+                        </span>
+                    </div>
+                    <span class="status"></span>
+                </div>
+                <span style="clear:both;display:block;height:1px;"></span>
+                <div id="fileUploadBarHolder">
+                    <div id="fileUploadBar" class="row fileupload-buttonbar">
+                        <!-- <a id="viewFileQueue" class="viewFileQueueLink open uploadBarShowHideFilesSetTitleClass"
+                           title="Show/Hide selected files" href="#"></a> -->
+                        <button id="viewFileQueue" class="dlt-button dlt-button-icon viewFileQueueLink open uploadBarShowHideFilesSetTitleClass" title="Show/Hide selected files">
+                            <img class="width-24" src="/WebInterface/delite/icons/dlt-icon-expand.svg"/>
+                        </button>
+
+                        <a id="browseTypeSelector" title="Switch to Advanced Upload" href="#"
+                           class="uploadWindowUploadTypeSwitchSetTitleClass browseTypeselectionLink normal vtip dynTitle"></a>
+                        <span class="ui-button ui-button-custom custom_upload_button" id="browseFileButtonPanel" style="margin-top:0px;display: none;border-radius: 0px;">
+                            <a style="display: none;" href="javascript:void(0);"></a>
+                            <button id="browseFileButton" class="dlt-button dlt-button-tertiary" title="Add files">Add files</button>
+                            <input type="file" id="fileButton" name="file_1_SINGLE_FILE_POST" multiple/>
+                        </span>
+                        <span id="AdvancedBrowseResumeOption" style="display:none;margin-top:5px;">
+                            <input id="resumeUpload_AppletConfig" type="checkbox"/>
+                            <label for="resumeUpload_AppletConfig" class="advancedUploadResumeLabelByClass"
+                                   style="display:inline-table;">Resume</label>
+                        </span>
+                        <span style="clear:both;"></span>
+                    </div>
+                </div>
+                <div id="fileRepo">
+                    <div class="dlt-modal-window__header fileListHeader ui-corner-all">
+                        <button id="uploadPopupCloseIcon" class="dlt-button dlt-button-icon dlt-modal-window__close dlt-icon-sm" 
+                        onclick="$('#browseFileButtonPanel').css('display', 'none');$('#startStopUpload').find('#uploadIconCancel').trigger('click'), $('#mainContent').find('span.refreshButton').trigger('click');$('#browseFileButtonPanel').css('display', 'none');$('#fileQueueInfo').removeClass('borderBox');return false;">
+                            <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                        </button>
+                        <h3 id="filesToUploadQueueWindowHeader" class="dlt-modal-window__title margin-left-36">
+                            Files to upload
+                        </h3>
+                        <button id="uploadPopupCollapseIcon" class="dlt-button dlt-button-icon position-absolute top-4" 
+                        onclick="$('#fileUploadBar').find('#viewFileQueue').removeClass('display-none');$('#fileUploadBar').find('#viewFileQueue').trigger('click');return false;">
+                            <img class="width-24" src="/WebInterface/delite/icons/dlt-icon-collapse.svg"/>
+                        </button>
+                    </div>
+                    <div class="fileListPanelInfoText ui-corner-all">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="text-align:left; display: flex;">
+                                    <!-- Replace secondary class with dlt-button-icon once icons available -->
+                                    <!-- <button class="dlt-button dlt-button-icon start startUploading">
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-upload.svg"/>
+                                    </button>
+                                    <button class="dlt-button dlt-button-icon cancelUploading" onclick="$('#browseFileButtonPanel').css('display', 'none');">
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-cancel-upload.svg"/>
+                                    </button> -->
+                                    <button class="dlt-button dlt-button-icon cancelUploading uploadedAll margin-left-6" title="Clear uploaded">
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/></a>
+                                    </button>
+                                    <button class="dlt-button dlt-button-icon shareAllUploadedDlitBtn"  title="Share uploaded">
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-share.svg"/></a>
+                                    </button>
+                                    <button class="overwriteAllLinkBtn dlt-button dlt-button-icon" style="float:none;" title="Overwrite all">
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-replace.svg"/></a>
+                                    </button>
+                                    <!-- <button class="remvoeErrorAllLinkBtn dlt-button dlt-button-icon cancelUploading" style="float:none;display:none;">
+                                        <i class="upload"></i>
+                                        <a href="#"></a>
+                                       <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-cross-circle.svg"/></a>
+                                    </button> -->
+                                </td>
+                                <td style="text-align:right;">
+    								<span class="stats">
+    									<label class="uploadWindowSummaryFilesByClass">Files : </label><span
+                                            class="totalFiles"></span>
+    									<label class="uploadWindowSummarySizeByClass">, Upload size : </label><span
+                                            class="totalSize"></span>
+    								</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <span class="clear"></span>
+                    </div>
+                    <ul class="files dropzone ui-corner-all">
+                        <!-- <li class="top_border"></li> -->
+                    </ul>
+                    <div class="dlt-modal-window__footer" id="startStopUpload">
+                        <button id="uploadIconCancel" class="dlt-button dlt-button-secondary cancelUploading">
+                            Cancel
+                        </button>
+                        <button id="startUploadIcon" class="dlt-button dlt-button-primary startUploading">
+                        Start upload
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <span style="clear:both;display:block;height:1px;"></span>
+        <div id="uploadInfoForm" title="Upload Details">
+            <form method="post" target="dummyIframe" action="/WebInterface/function/?command=discard">
+                <div class="formContent">
+                </div>
+            </form>
+        </div>
+        <div class="clear">
+        </div>
+        <!-- <div style="display: flex; justify-content: space-between; padding-bottom: 16px;padding-top: 4px;">
+            <div class="layoutActionElement">
+                <div class="filterPanel" id="filterPanel">
+                    <span style="display: flex;justify-content: start;width: fit-content;">
+                        <div class="dlt-form-item filterArea" style="width: 100%;">
+                                <div class="dlt-form-group">
+                                    <input autocomplete="off" type="text" class="dlt-text-input" size="30" maxlength="30" value="" id="filter" name="filter" placeholder="Search" />
+                                    <button class="clear-icon clearFilterLink" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                </div>
+                        </div>
+                        <div>
+                            <button id="selectionLink" class="selectionLink dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-checkAll"></i>
+                            </button>
+                            <button href="#" id="pageSizeSelectionLink" class="pageSizeSelectionLink dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-filter"></i>
+                                <span id="PageSizeSelectionLinkText" style="display:none;color: #F5F5F5;text-decoration-color: transparent">Show {0} items</span>
+                            </button>
+                            <span><a href="#" class="selectionLink"><span id="SelectItemOptionLinkText"></span></a></span>
+                       <span><a href="#" class="pageSizeSelectionLink"><span id="PageSizeSelectionLinkText"
+                                                                              style="display:none;color: #F5F5F5;text-decoration-color: transparent">Show {0} items</span></a></span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="pageLinksTop layoutActionElement">
+                <span id="GoToBottomLinkText">$(localizations)[0].GoToBottomLinkText</span>
+                <button class="goToBottom dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                    <i class="icon--small icon--primary dlt-menu-icon dlt-icon-chevron-down"></i>
+                </button>
+                <span class="goToBottom"><span id="GoToBottomLinkText">$(localizations)[0].GoToBottomLinkText</span><img src="/WebInterface/delite/icons/dlt-icon-chevron-down-coloured.svg"> </span>
+                <div class="pagination"></div>
+            </div>
+        </div> -->
+        <div id="growlContainer" style="display: none;">
+            <div id="growl" style="border: 1px dashed #cd0a0a;color: #cd0a0a;background: none">
+                <a class="ui-notify-close" href="#"><span class="ui-icon ui-icon-close" style="float: right">
+            </span></a>
+<!--                <span style="float: left; margin: 2px 5px 0 0;" class="ui-icon ui-icon-alert">-->
+<!--            </span>-->
+                <div style="display: inline-flex">
+                <p class="move-error">
+                    #{title}</p>
+                <p class="move-error">
+                    #{text}</p>
+                </div>
+            </div>
+        </div>
+        <div class="clear layoutActionElement">
+        </div>
+        <div class="comments layoutActionElement" id="comments">
+        </div>
+        <div style="display: none;" id="htmlListingFile"></div>
+        <div class="dlt-form-group" id="searchResultNotification" style="display: none">
+            <span id="SearchResultDisplayText">Search Result:</span> 
+            <a href="javascript:void(0);">
+                <button id="clearAdvancedFilter" class="dlt-button dlt-button-icon dlt-menu-button-icon margin-right-6" type="button">
+                    <i class="icon--small icon--white dlt-menu-icon dlt-icon-remove-filter"></i>
+                </button>
+            </a>
+        </div>
+        <div class="breadCrumbsPanel breadcrumb" class="breadCrumbsPanel">
+            <div class="mainProcessIndicator">
+                <img src="/WebInterface/jQuery/images/process_indicator.gif" alt="Loading..." />
+            </div>
+            <div class="breadCrumbsSection">
+                <ul id="crumbs">
+                    <li><a href="#">Home</a></li>
+                    <li><a>The page you are on right now</a></li>
+                </ul>
+                <div class="itemCount layoutActionElement" id="itemCount">
+                </div>
+            </div>
+    
+        </div>
+        <div id="fileListWrapperID" class="fileListWrapper" style="padding-top: 8px; display: none;">
+            <div id="filesListing">
+                <div class="clear">
+                </div>
+                <div id="selectionOfItemsOptions" class="select-listings" style="display: none;">
+                    <div>
+                        <span class="options" id="ItemsSelectionDisplayText">All <strong>{count}</strong> items on this page are selected.</span>
+                        <!-- Commented as part of CAT-1744  ~prajai -->
+                        <!-- <a href="javascript:void(0);" class="options"><span id="ItemsSelectionSelectAllItemsInDir">Select all <strong>{total_items}</strong> items in <strong>{list_type}</strong> (including hidden items)
+                        </span></a> -->
+                        <span class="actions" id="ItemsSelectionSelectedAllItemsInDir">
+        			All <strong>{total_items}</strong> items in <strong>{list_type}</strong> (including hidden items) are selected
+        			</span>
+                    </div>
+                    <div style="margin-right: 4px;">
+                        <a class="actions" href="javascript:void(0);" id="ItemsSelectionClearSelection">Clear
+                            selection</a>
+                    </div>
+                </div>
+                <div class="dropzone">
+                    <div id="thumbnailView">
+                        <table cellpadding="0" cellspacing="0" id="filesContainer" class='jqueryFilesTable tablesorter tablesorter cdk-table table table-hover table-sm table-row-highlight'>
+                            <tbody role="rowgroup">
+                            <tr>
+                                <td id="waitText">Please wait..</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="noFilesAvailable">
+                    </div>
+                    <ul id="filesContainerDiv">
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="pageLinksBottom layoutActionElement" style="display: flex; justify-content: center;">
+            <div id="footerInfo" style="text-align: center; margin-top: 12px;">
+                <span class="copyright" id="SessionSeconds"></span>
+                        <!-- <button class="goToBottom dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                            <i class="icon--small icon--primary dlt-menu-icon dlt-icon-chevron-up"></i>
+                        </button>
+                        <span id="BackToTopLinkText">$(localizations)[0].BackToTopLinkText</span> -->
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <div id="footer">
+            <div class="footerContent" id="footerContent"></div>
+            <div style="clear:both;"></div>
+        </div>
+        <ul id="myMenu" class="contextMenu">
+        </ul>
+        <ul id="checkBoxMenu" class="contextMenu">
+            <li class="toggle"><a href="#toggle" id="MainCheckboxContextMenuToggleText">Toggle</a></li>
+            <li class="checkall"><a href="#checkall" id="MainCheckboxContextMenuCheckAllText">Check All</a></li>
+            <li class="uncheckall"><a href="#uncheckall" id="MainCheckboxContextMenuUncheckAllText">Un-check All</a>
+            </li>
+        </ul>
+        <ul id="selectionMenu" class="contextMenu">
+            <!-- <li class="toggle"><a href="#toggle" id="SelectCheckboxContextMenuToggleText">Toggle</a></li> -->
+            <li class="checkall"><a href="#checkall" id="SelectCheckboxContextMenuCheckAllText">All items</a></li>
+            <li class="uncheckall"><a href="#uncheckall" id="SelectCheckboxContextMenuUncheckAllText">None</a></li>
+            <li class="checkallFiles"><a href="#checkallfiles" id="SelectCheckboxContextMenuCheckAllFilesText">All
+                files</a></li>
+            <li class="checkallFolders"><a href="#checkallfolders" id="SelectCheckboxContextMenuCheckAllFoldersText">All
+                folders</a></li>
+            <li class="checkItemsWithDot"><a href="#checkitemswithdot"
+                                             id="SelectCheckboxContextMenuCheckItemsWithDotText">Items starting with
+                "."</a></li>
+            <li class="checkToday"><a href="#checktoday" id="SelectCheckboxContextMenuCheckTodayText">Modified today</a>
+            </li>
+            <li class="checkWeek"><a href="#checkweek" id="SelectCheckboxContextMenuCheckWeekText">Modified this
+                week</a></li>
+            <li class="checkMonth"><a href="#checkmonth" id="SelectCheckboxContextMenuCheckMonthText">Modified this
+                month</a></li>
+            <li class="checkLastTwoMonth"><a href="#check2months" id="SelectCheckboxContextMenuCheck2MonthsText">Modified
+                in last 60 days</a></li>
+            <li class="checkLastThreeMonth"><a href="#check3months" id="SelectCheckboxContextMenuCheck3MonthsText">Modified
+                in last 90 days</a></li>
+        </ul>
+        <ul id="pagingSizeMenu" class="contextMenu" style="width:220px;">
+            <li class="100items"><a href="#100" id="pagingSize100Text">100</a></li>
+            <li class="200items"><a href="#200" id="pagingSize200Text">200</a></li>
+            <li class="500items"><a href="#500" id="pagingSize500Text">500</a></li>
+            <li class="1000items"><a href="#1000" id="pagingSize1000Text">1000</a></li>
+            <li class="2000items"><a href="#2000" id="pagingSize2000Text">2000</a></li>
+            <li class="allitems"><a href="#all" id="pagingSizeAllText">All (slower on large directories)</a></li>
+        </ul>
+        <!-- <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    
+                </td>
+            </tr>
+        </table> -->
+        <div id="footerInfo" style="text-align: center;">
+            <span class="copyright" id="SessionSeconds"></span>
+                    <!-- <button class="goToBottom dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-chevron-up"></i>
+                    </button>
+                    <span id="BackToTopLinkText">$(localizations)[0].BackToTopLinkText</span> -->
+        </div>
+        <div id="popupContent" style="visibility:hidden; position:absolute; width:1px; height:1px;">
+            <!-- Share file-->
+            <div id="shareOptionDiv" style="height: 100%;">
+                <div class="dlt-modal-window__header margin-bottom-16">
+                    <button id="closeShareDiv"  class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm"
+                        onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                    </button>
+                    <h3 id="ShareWindowHeaderText" class="dlt-modal-window__title">
+                        Share files
+                    </h3>
+                </div>
+                <table>
+                    <div id="hideShareOptionAfterSend" style="height: calc(100% - 50px);">
+                        <form id="frmShareWindow" method="post" target="dummyIframe"
+                            action="/WebInterface/function/?command=discard">
+                            <fieldset class="field_unset" style="max-height: 55vh !important;height: unset !important;">
+                                <div class="shareModalContent">
+                                <div class="dlt-form-item margin-bottom-16">
+                                    <div class="dlt-form-item">
+                                        <label class="dlt-form-label" for="txtFilesToShare"
+                                            id="ShareWindowFilesSharingLabelText">Files</label>
+                                        <div class="dlt-form-group">
+                                            <textarea id="txtFilesToShare" disabled="disabled" name="txtFilesToShare" cols="56"
+                                                rows="2" placeholder="Describe your Keystore"
+                                                class="dlt-text-input dlt-textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reset-text-align-left notShareUsername" id="shareTypeRow">
+                                    <label class="dlt-radio-button-group-label" for="emailFrom"
+                                        id="ShareWindowShareTypeLabelText">Type</label>
+                                    <div class="dlt-radio-button-group flx_config publishType">
+                                        <div class="dlt-radio-button">
+                                            <input type="radio" autocomplete="off" class="box" id="chkCopy" value="copy"
+                                                name="publishType" %fileShareOptionsDisabled% />
+                                            <label for="chkCopy" id="ShareWindowShareTypeLabelCopyText">Copy</label>
+                                        </div>
+                                        <div class="dlt-radio-button">
+                                            <input type="radio" autocomplete="off" class="box" id="chkReference" value="reference"
+                                                name="publishType" %fileShareOptionsDisabled% />
+                                            <label for="chkReference" id="ShareWindowShareTypeLabelReferenceText">Reference</label>
+                                        </div>
+                                        <div class="dlt-radio-button">
+                                            <input type="radio" autocomplete="off" class="box" id="chkMove" value="move"
+                                                name="publishType" %fileShareOptionsDisabled% />
+                                            <label for="chkMove" id="ShareWindowShareTypeLabelMoveText">Move</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dlt-modal-window__content flx_config notShareUsername sendEmail"
+                                    style="margin-bottom: 16px; margin-top: unset;">
+                                    <div class="dlt-checkbox">
+                                        <input checked="checked" autocomplete="off" type="checkbox" class="box" id="sendEmail"
+                                            value="sendEmail" name="sendEmail" />
+                                        <label for="sendEmail" id="ShareWindowSendEmailLabelText">
+                                            Send Email
+                                        </label>
+                                    </div>
+                                    <div class="dlt-checkbox directLink">
+                                        <input checked="checked" autocomplete="off" type="checkbox" class="box" id="direct_link"
+                                            name="direct_link" />
+                                        <label for="direct_link" id="ShareWindowDirectLinkLabelText">
+                                            Direct link to file
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="flx_config margin-bottom-16 notShareUsername expireDateRow" id="shareExpirationRow">
+                           
+                                    <div class="dlt-form-number-item" style="margin-right: 18px;">
+                                        <label class="dlt-form-label ShareWindowExpiresLabelText" id="ShareWindowExpiresLabelText"
+                                            for="txtdays">Default validity(days)</label>
+                                        <div class="dlt-form-group">
+                                            <input type="text" class="dlt-number-input width_unset required" id="txtdays" min="1"
+                                                max="365" value="%expireDayNum%" name="txtdays" onfocusout="validateNoOfDays()"
+                                                %fileShareOptionsDisabled% />
+                                        </div>
+                                    </div>
+                                    <div class="dlt-form-item customFlex">
+                                        <label id="shareDate" class="dlt-form-label" for="datepicker-1">Date</label>
+                                        <div class="dlt-form-group">
+                                            <input type="text" autocomplete="off" class="dlt-date-picker width_unset required"
+                                                id="txtDate" name="txtDate" onfocusout="validateNoOfDays()"
+                                                %fileShareOptionsDisabled% />
+                                        </div>
+                                    </div>
+                                    <div class="dlt-time-picker-item">
+                                        <label id="shareTime" class="dlt-form-label" for="timepicker-12">Time</label>
+                                        <div class="dlt-form-group">
+                                            <div>
+                                                <input type="text" autocomplete="off" class="dlt-time-picker width_unset required dlt-input-text-white"
+                                                    alt="time" id="txtTime" value="23:59" name="txtTime" placeholder="hh:mm"
+                                                    time-format="H:i" %fileShareOptionsDisabled% />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flx_config margin-bottom-16 notShareUsername emailFrom">
+                                    <div class="dlt-form-item" style="margin-right: 18px;">
+                                        <label class="dlt-form-label" for="emailFrom" id="ShareWindowFromLabelText">From</label>
+                                        <div class="dlt-form-group">
+                                            <input %fileShareFromEmailDisabled% type="text"
+                                                class="dlt-text-input width_unset email required" id="emailFrom" name="emailFrom"
+                                                value='%user_email_placeholder%' />
+                                            <button class="clear-icon" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                        </div>
+                                    </div>
+                                    <div class="dlt-form-item">
+                                        <label class="dlt-form-label" for="emailTo" id="ShareWindowToLabelText">To</label>
+                                        <div class="dlt-form-group">
+                                            <input type="text" class="dlt-text-input width_unset email required" id="emailTo"
+                                                name="emailTo" />
+                                            <button class="clear-icon" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flx_config margin-bottom-16 notShareUsername emailTo">
+                                    <div class="dlt-form-item" style="margin-right: 18px;">
+                                        <label class="dlt-form-label" for="emailCc" id="ShareWindowCCLabelText">CC</label>
+                                        <div class="dlt-form-group">
+                                            <input type="text" class="dlt-text-input width_unset email" id="emailCc"
+                                                name="emailCc" />
+                                            <button class="clear-icon" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                        </div>
+                                    </div>
+                                    <div class="dlt-form-item">
+                                        <label class="dlt-form-label" for="emailBcc" id="ShareWindowBCCLabelText">BCC</label>
+                                        <div class="dlt-form-group">
+                                            <input type="text" class="dlt-text-input width_unset email" id="emailBcc"
+                                                name="emailBcc" />
+                                            <button class="clear-icon" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dlt-form-item margin-bottom-16 notShareUsername emailSubject"
+                                    style="margin-right: 10px;">
+                                    <label class="dlt-form-label" for="emailSubject"
+                                        id="ShareWindowSubjectLabelText">Subject</label>
+                                    <div class="dlt-form-group">
+                                        <input data-modal-prime-focus type="text" value="%FileShareEmailSubject%"
+                                            class="required dlt-text-input" id="emailSubject" name="emailSubject"
+                                            %fileShareOptionsDisabled% />
+                                        <button class="clear-icon" type="button">
+                                            <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="reset-text-align-left notShareUsername emailBody">
+                                    <label for="emailBody" id="ShareWindowBodyLabelText" class="dlt-form-label">Body</label>
+                                </div>
+                                <div class="notShareUsername emailBody">
+                                    <textarea %fileShareEmailTextReadOnly% style="width:100%;height:200px;" class="box required"
+                                        id="emailBody" name="emailBody">%FileShareEmailBody%</textarea>
+                                </div>
+                                <div class="notShareUsername" style="padding-top: 16px;text-align: left;">
+                                    <label class="dlt-form-label" id="ShareWindowAccessLabelText"
+                                        for="fullaccess">Permissions</label>
+                                    <div class="dlt-modal-window__content flx_config"
+                                        style="margin-bottom: 24px;margin-top: unset;">
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsView"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionViewClick()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsView" id="ShareWindowViewLabelText">View</label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsDownload"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionView_Check()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsDownload" id="ShareWindowDownloadLabelText">
+                                                Download
+                                            </label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsUpload"
+                                                value="sharePermissions" name="sharePermissions" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsUpload" id="ShareWindowUploadLabelText">
+                                                Upload
+                                            </label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsDelete"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionView_Check()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsDelete" id="ShareWindowDeleteLabelText">
+                                                Delete
+                                            </label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsRename"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionView_Check()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsRename" id="ShareWindowRenameLabelText">
+                                                Rename
+                                            </label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsCreateFolder"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionView_Check()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsCreateFolder" id="ShareWindowCreateFolderLabelText">
+                                                Create Folder
+                                            </label>
+                                        </div>
+                                        <div class="dlt-checkbox">
+                                            <input type="checkbox" autocomplete="off" id="sharePermissionsDeleteFolder"
+                                                value="sharePermissions" name="sharePermissions"
+                                                onclick="sharePermissionView_Check()" %fileShareOptionsDisabled% />
+                                            <label for="sharePermissionsDeleteFolder" id="ShareWindowDeleteFolderLabelText">
+                                                Delete Folder
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </fieldset>
+                            <div class="dlt-modal-window__footer">
+                                <button type='button' class="dlt-button dlt-button-secondary" id="ShareWindowCancelButtonText"
+                                    value="Cancel" data-modal-close onclick="$.unblockUI(); return false;">
+                                    Cancel
+                                </button>
+                                <button type='button' id="ShareWindowSendButtonText" class="ShareWindowSendButtonText dlt-button dlt-button-primary" 
+                                    value="Send" data-modal-prime-focus>
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </table>
+            </div>
+            <!-- User options -->
+            <div id="userOptions">
+                <script>
+                    document.getElementById("accountItem").classList.remove("dlt-dislpay");
+                </script>
+                <div class="dlt-modal-window__header">
+                    <button id="closesPreferences" data-modal-close class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm" onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                    </button>
+                    <h3 id="UserOptionsWindowHeaderText" class="dlt-modal-window__title">
+                        Preferences
+                    </h3>
+                </div>
+                <div class="buttonPanel">
+                    <div class="dlt-checkbox reset-text-align-left" for="hideItemsStartingWithDot">
+                        <input type="checkbox" id="hideItemsStartingWithDot" name="hideItemsStartingWithDot" onclick="hideItemsStartingWithDot($(this).is(':checked'));">
+                        <label for="hideItemsStartingWithDot" id="UserOptionsWindowHideItemsStartWithDotLabelText">Hide '.' Items</label>
+                    </div>
+                    <div class="dlt-checkbox reset-text-align-left">
+                        <input onclick="hideCheckBoxColumn($(this).is(':checked'));" type="checkbox" id="hideCheckBoxColumn"
+                        name="hideCheckBoxColumn"/>
+                        <label for="hideCheckBoxColumn" id="UserOptionsWindowHideCheckboxLabelText">Hide Checkbox Column</label>
+                    </div>
+                    <!-- <div class="dlt-checkbox reset-text-align-left">
+                        <input onclick="hideFilter($(this).is(':checked'));" type="checkbox" id="hideFilter" name="hideFilter"/>
+                        <label for="hideFilter" id="UserOptionsWindowHideFilterLabelText">Hide Filter Section</label>
+                    </div> -->
+                    <div class="dlt-checkbox reset-text-align-left">
+                        <input onclick="autoUploadFlagSet($(this).is(':checked'));" type="checkbox" id="autoUploadFlag"
+                           name="autoUploadFlag"/>
+                    <label for="autoUploadFlag" id="UserOptionsWindowAutostartUploadLabelText">Auto upload</label>
+                    </div>
+                    <!-- <div class="dlt-checkbox reset-text-align-left">
+                        <input onclick="autoAppletFlagSet($(this).is(':checked'));" type="checkbox" id="autoAppletFlag"
+                           name="autoAppletFlag"/>
+                    <label for="autoAppletFlag" id="UserOptionsWindowLoadJavaAppletLabelText">When loading the
+                        interface, load the Java applet.</label>
+                    </div>
+                    <div class="dlt-checkbox reset-text-align-left">
+                        <input onclick="noCompressionFlagSet($(this).is(':checked'));" type="checkbox" id="noCompressionFlag" name="noCompressionFlag"/>
+                        <label for="noCompressionFlag" id="UserOptionsWindowDisableCompressionLabelText">Disable compression on the Java applet.</label>
+                    </div>
+                    <div id="changepasswordPanel">
+                        <h2 class="popupHeader" style="margin-top:15px;" id="UserOptionsWindowChangePasswordHeaderText">
+                            Change your password
+                        </h2>
+                        <div class="buttonPanel">
+                            <label style="width:120px;display:inline-block;" for="current_password"
+                                   id="UserOptionsWindowChangePasswordCurPassLabelText">Current Password: </label><input
+                                id="current_password" type="password"/>
+                            <br/>
+                            <br/>
+                            <label style="width:120px;display:inline-block;" for="new_password1"
+                                   id="UserOptionsWindowChangePasswordNewPassLabelText">New Password: </label><input
+                                id="new_password1" type="password"/>
+                            <br/>
+                            <br/>
+                            <label style="width:120px;display:inline-block;" for="new_password2"
+                                   id="UserOptionsWindowChangePasswordConfirmPassLabelText">Confirm
+                                Password: </label><input id="new_password2" type="password"/>
+                            <div style="text-align:right;margin-top:10px;">
+                                <input id="btnChangePassword" class="UserOptionsWindowChangePasswordButtonText"
+                                       onclick="changePassword();" value="Change Password" type="button"/>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <br/>
+                            <div>
+                                <input id="btnGeneratePassword"
+                                       class="UserOptionsWindowChangePasswordGenerateRandomButtonText"
+                                       value="Generate random password" type="button"/>
+                                <div id="passwordGeneratePanel">
+                                    <br/>
+                                    <br/>
+                                    <input id="generated_password" type="text"/>
+                                    <a href="javascript:void();" class="usePassword"
+                                       id="UserOptionsWindowChangePasswordGenerateRandomUseItLinkText">Use this</a>&nbsp;
+                                    <a href="javascript:void();" class="cancelPassword"
+                                       id="UserOptionsWindowChangePasswordGenerateRandomCancelLinkText">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="header-language">
+                    <h4 id="languageText" style="padding-bottom: 16px;text-align: left;">Language</h4>
+                    <select id='language' name='language' class='language-select'>
+                        <option value='zh'>Chinese</option>
+                        <option value='en'>English</option>
+                        <option value='fr'>French</option>
+                        <option value='de'>German</option>
+                        <option value='ja'>Japanese</option>
+                        <option value='pl'>Polish</option>
+                        <option value='pt-BR'>Portuguese - Brazil</option>
+                        <option value='ru'>Russian</option>
+                        <option value='es'>Spanish</option>
+                        <!--						<option value='tr'>Turkish</option>-->
+                    </select>
+                </div>
+            </div>
+            <script>
+                $('#language').prop('title', $(localizations)[0].Expand);
+                $("#language").val(selectedLanguage).change();
+                $('#language').click(function(){
+                    var title= $('#language').prop('title');
+                  if(title===$(localizations)[0].Expand){
+                    $('#language').prop('title', $(localizations)[0].Collapse);
+                  } else {
+                    $('#language').prop('title', $(localizations)[0].Expand);
+                    }
+                });
+                $('#language').on("blur",function(){
+                    $('#language').prop('title', $(localizations)[0].Expand);
+                });
+            </script>
+            <!-- Create folder-->
+            <div id="createFolder">
+                <div class="dlt-modal-window__header">
+                    <button id="closeCreateFolder" data-modal-close  class="dlt-button dlt-button-icon dlt-menu-button-icon dlt-modal-window__close" type="button" onclick="$.unblockUI();">
+                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                    </button>
+                    <!-- <button id="closeCreateFolder" data-modal-close class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm" onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                    </button> -->
+                    <h3 id="CreateFolderWindowHeaderText" class="dlt-modal-window__title">
+                        Create folder
+                    </h3>
+                </div>
+                <!-- <div class="dlt-modal-window__backdrop" data-modal-close></div> -->
+                <div id="createFolderDetails" class="dlt-modal-window__content">
+                    <div class="dlt-form-item margin-bottom-8">
+                        <!-- <label class="dlt-form-label" for="text-input-11">New folder</label> -->
+                        <div class="dlt-form-group">
+                            <input id="txtNewFolder" data-modal-prime-focus type="text" required="" class="dlt-text-input"/>
+                            <button id="clearFolderName" class="dlt-button dlt-button-icon dlt-menu-button-icon clear-icon" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                            </button>
+                            <!-- <button id="clearFolderName" class="clear-icon" type="button">
+                                    <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                            </button> -->
+                        </div>
+                        <span id="txtNewFolderError" class="error-message-alignment">Folder name either contains invalid characters, begins or ends with period (.). Valid characters are: 0-9, a-z, A-Z, . , _ , -.</span>
+                        <span id="txtEmptyNewFolderError" class="error-message-alignment">Folder name cann't be empty.</span>
+                        <span id="duplicateFolderNameError" class="error-message-alignment">Folder/file with the same name already exists. Provide different name.</span>
+                        <span id="folderNameCannotHaveOnlyDotError" class="error-message-alignment">Name cannot have only '.'.</span>
+                    </div>
+                    <div class="dlt-checkbox reset-text-align-left margin-left-6" for="chkNavigateAfterMkdir">
+                        <input type="checkbox" id="chkNavigateAfterMkdir">
+                        <label id="CreateFolderWindowNavigateToFolderCheckboxText" for="chkNavigateAfterMkdir">Navigate to the folder after creation</label>
+                    </div>
+                    <div class="dlt-modal-window__footer">
+                        <button id="cancelCreateFolder" class="dlt-button dlt-button-secondary" data-modal-close onclick="$.unblockUI();">
+                            Cancel
+                        </button>
+                        <button id="btnSubmitCreateNew" class="dlt-button dlt-button-primary"  disabled value="Create" data-modal-prime-focus onclick="makedir();">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="copyDirectLinkDiv">
+                <div class="dlt-modal-window__header">
+                    <button id="closeCopyDirectLink" data-modal-close  class="dlt-button dlt-button-icon dlt-menu-button-icon dlt-modal-window__close" type="button" onclick="$.unblockUI();">
+                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                    </button>
+                    <!-- <button id="closeCopyDirectLink" data-modal-close class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm" onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                    </button> -->
+                    <h3 id="CopyLinkWindowHeaderText" class="dlt-modal-window__title">
+                        Copy direct link.
+                    </h3>
+                </div>
+                <div class="dlt-form-group" style="margin-top: 16px;">
+                    <input id="txtDirectLink" type="text" class="dlt-text-input" style="width: 500px;max-width:700px;max-height:300px;text-overflow:ellipsis;">
+                    <!-- <button type="button" class="search-icon" onclick="copyLink()">
+                        <img id="copyDirectLink" src="/WebInterface/delite/icons/dlt-icon-copy.svg"/>
+                    </button> -->
+                </div>
+            </div>
+            <div id="keywordsDiv">
+                <img class="closeButton" alt="close" src="/WebInterface/jQuery/images/cancel.png"
+                     onclick="$.unblockUI();"/>
+                <h2 class="popupHeader" style="cursor:move;" id="KeywordsWindowHeaderText">
+                    Keywords
+                </h2>
+                <div class="buttonPanel">
+                    <hr/>
+                    <textarea style="width: 99%" id="txtKeywords" rows="6"></textarea>
+                    <div style="clear:both;margin:10px;"></div>
+                    <a class="button cancel" href="javascript:void(0);"><span
+                            id="KeywordsWindowCancelLinkText">Cancel</span></a>
+                    <a class="button update" href="javascript:void(0);"><span
+                            id="KeywordsWindowUpdateLinkText">Update</span></a>
+                </div>
+            </div>
+            <div id="iconChangeDiv">
+                <img class="closeButton" alt="close" src="/WebInterface/jQuery/images/cancel.png"
+                     onclick="$.unblockUI();"/>
+                <h2 class="popupHeader" style="cursor:move;" id="ChangeIconWindowHeaderText">
+                    Change icon
+                </h2>
+                <div class="buttonPanel">
+                    <hr/>
+                    <div id="ChangeIconWindowInstructionsText">
+                        Choose a small image to set as icon for selected file.
+                    </div>
+                    <br/>
+                    <span id="ChangeIconWindowSelectedFilesLabelText">Selected file : </span>
+                    <div id="changeIconWindowSelectedFiles">
+
+                    </div>
+                    <br/>
+                    <form id="changeIconForm" name="changeIconForm" action="/WebInterface/function/"
+                          enctype="multipart/form-data" method="post" target="iframeUploadIcon">
+                        <input type="hidden" class="variable" name="uploadPath" id="uploadPath"/>
+                        <input type="hidden" class="variable" name="changeIconItem" id="changeIconItem"/>
+                        <input type="hidden" name="the_action" id="the_action" value="STOR"/>
+                        <input type="hidden" name="the_action2" id="the_action2" value="changeIcon"/>
+                        <input type="file" class="variable" name="changeIconFile" id="changeIconFile"/>
+                    </form>
+
+                    <div style="clear:both;margin:10px;"></div>
+                    <a class="button cancel" href="javascript:void(0);"><span
+                            id="ChangeIconWindowCancelLinkText">Cancel</span></a>
+                    <a class="button update" href="javascript:void(0);"><span
+                            id="ChangeIconWindowUpdateLinkText">Save</span></a>
+                </div>
+            </div>
+            <iframe name="iframeUploadIcon" id="iframeUploadIcon" src="javascript:false;" width="1" height="1"
+                    style="left:-5000px;display:none;"></iframe>
+            <!-- Search -->    
+            <div id="searchDiv">
+                <div class="dlt-modal-window__header margin-bottom-16">
+                    <!-- <button id="SearchWindowCloseIcon" data-modal-close class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm" onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                    </button> -->
+                    <button id="SearchWindowCloseIcon" data-modal-close  class="dlt-button dlt-button-icon dlt-menu-button-icon dlt-modal-window__close" type="button" onclick="$.unblockUI();">
+                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                    </button>
+                    <h3 id="SearchWindowHeaderText" class="dlt-modal-window__title">
+                        Search
+                    </h3>
+                </div>
+                <form method="post" id="searchForm" enctype="multipart/form-data">
+                    <input value="search" id="command" name="command" type="hidden"/>
+                    <div class="flx_config" style="padding-bottom: 16px;">
+                        <div class="dlt-form-group" style="padding-right: 16px;">
+                            <input id="EnterYourSearchKeyword" data-modal-prime-focus type="text" required="" name="keyword" class="dlt-text-input"/>
+                            <!-- <button id="clearInputKeyword" class="clear-icon" type="button"  style="right: 1.25rem;">
+                                    <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg"/>
+                            </button> -->
+                            <button id="clearInputKeyword" class="dlt-button dlt-button-icon dlt-menu-button-icon clear-icon" style="right: 1.25rem;" type="button">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                            </button>
+                        </div>
+                        <div class="dlt-checkbox">
+                            <input id="exact" name="exact" type="checkbox" />
+                            <label for="exact" id="SearchWindowExactLabelText">
+                                Exact</label>
+                        </div>
+                    </div>
+                    <div class="dlt-radio-button-group margin-bottom-16">
+                        <legend class="dlt-radio-button-group-label reset-text-align-left" id="SearchWindowTypeLabelText">Type</legend>
+                        <input id="type1" name="type1" type="checkbox" style="display: none;"/>
+                        <div class="flx_config"> 
+                            <div class="dlt-radio-button">
+                                <input type="radio" id="file" name="type1_action" value="file">
+                                <label for="file" id="SearchFormItemTypeOptionFileText">
+                                    File</label>
+                            </div>
+                            <div class="dlt-radio-button">
+                                <input type="radio" id="folder" name="type1_action" value="folder">
+                                <label for="folder" id="SearchFormItemTypeOptionFolderText">
+                                    Folder</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="padding_bottom reset-text-align-left margin-bottom-16">
+                        <label class="dlt-radio-button-group-label SearchWindowByClassModifiedLabelText" for="text-input-11">Modified</label>
+                        <div class="flx_config">
+                            <div class="dlt-form-item" style="margin-right: 10px;">
+                                <input id="date1" name="date1" type="checkbox" style="display: none;"/>
+                                <input id="date1_action" name="date1_action" value="after" style="display: none;"/>
+                                <label id="SearchFormModifiedOptionAfterText" class="dlt-form-label">After</label>
+                                <div class="dlt-form-group">
+                                    <input name="date1_value" id="date1_value" type="text" maxlength="10" size="10" class="dlt-date-picker SearchWindowByClassDateFormatLabelText searchDefaultModifiedAfter"
+                                    placeholder="mm/dd/yyyy">
+                                    <i class="dlt-icon-calendar datepicker-icon"></i>
+                                </div>
+                                <span id="EnterProperAfterDate" style="display:none;color:red;text-align:left;">Enter date in MM/DD/YYYY format</span>
+                            </div>
+                            <div class="dlt-form-item">
+                                <input id="date2" name="date2" type="checkbox" style="display: none;"/>
+                                <input id="date2_action" name="date2_action" value="before" style="display: none;"/>
+                                <label class="dlt-form-label" id="SearchFormModifiedOptionBeforeText">Before</label>
+                                <div class="dlt-form-group">
+                                <input name="date2_value" id="date2_value" type="text" maxlength="10" size="10" class="dlt-date-picker SearchWindowByClassDateFormatLabelText searchDefaultModifiedBefore"
+                                    placeholder="mm/dd/yyyy">
+                                <i class="dlt-icon-calendar datepicker-icon"></i>
+                                </div>
+                                <span id="EnterProperBeforeDate" style="display:none;color:red;text-align:left;">Enter date in MM/DD/YYYY format</span>
+                          </div>
+                        </div>
+                        <span id="BeforeDateCannotbeLessthanAfter" style="display:none;color:red;text-align:left;">Before date cannot be less than after date</span>
+                    </div>
+                    <div class="padding_bottom reset-text-align-left">
+                        <input id="size1" name="size1" type="checkbox" style="display: none;"/>
+                        <label for="size1" id="SearchWindowSizeLabelText" class="dlt-radio-button-group-label">Size (Kilobytes)</label>
+                        <div class="flx_config">
+                            <div class="dlt-form-item" style="margin-right: 10px;">
+                                <div class="dlt-form-group">
+                                    <select id="size1_action" name="size1_action" class='size-select' title="Expand">
+                                        <option value="bigger than">Greater than</option>
+                                        <option value="smaller than">Lesser than</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="dlt-form-item">
+                                <div class="dlt-form-group">
+                                <input id="size1_value" name="size1_value" type="text" class="dlt-date-picker searchDefaultSize" onkeypress="return isNumber(event)">
+                                <i class="dlt-icon-calendar datepicker-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dlt-modal-window__footer">
+                        <button type="button" id="SearchWindowCancelButtonText" class="dlt-button dlt-button-secondary" onclick="$.unblockUI();return false;">
+                            Cancel
+                        </button>
+                        <button id="SearchWindowSearchButtonText" class="dlt-button dlt-button-primary" onclick="return startSearch();"
+                            type="submit" disabled >
+                            Start
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="browserFileUpload" style="text-align: left">
+                <img class="closeButton" id="hideUploadPanel" alt="close" src="/WebInterface/jQuery/images/cancel.png"/>
+                <h2 style="text-align: center;cursor:move;" id="BrowserUploaderWindowHeaderText">
+                    Upload file
+                </h2>
+                <div class="customtabs">
+                    <a id="uploadDetailsTabAnchor" href="javascript:void(0)" onclick="cancelDrop();"
+                       rel="divUploadPanel"><span id="BrowserUploaderUploadDetailsTabHeaderText">Upload
+    					Details</span></a> <a href="javascript:void(0);" onclick="return uploadTabOK(this);"
+                                              rel="divTab2"><span id="BrowserUploaderUploadFilesTabHeaderText">Upload Files</span></a>
+                </div>
+                <div class="tab_content">
+                    <div id="divUploadPanel">
+                        <div id="customUploadForm">
+                            <a href="javascript:void(0);" class="spinner" style="color: White; display: block;
+    							height: 17px; padding-left: 18px;">Loading form..</a>
+                        </div>
+                    </div>
+                    <div id="divTab2">
+                        <div id="nativeBrowseOptionsDiv">
+                            <div class="autoReplyOptionPanel">
+    							<span id="lblAutoUpload">
+    							</span>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td style="width:20px;">
+                                            <span class="slowUploadIcon vtip"
+                                                  id="browserUploaderNativeUploadTipSetTitle"
+                                                  title="Upload files using browser uploader"></span>
+                                        </td>
+                                        <td>
+                                            <div id="uploadPanel">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="advancedBrowseOptionsDiv">
+                            <table>
+                                <tr>
+                                    <td style="width:20px;vertical-align:top;">
+                                        <span class="fastUploadIcon vtip" id="browserUploaderAdvancedUploadTipSetTitle"
+                                              title="Upload files using advanced uploader"></span>
+                                    </td>
+                                    <td>
+    									<span id="advancedBrowseOptions" style="display:none;">
+    										<label for="chkUploadResume"><input type="checkbox" id="chkUploadResume"/>
+    											<span id="BrowserUploaderResumeCheckboxText">Resume</span>
+    										</label>
+    									</span>
+                                        <input type="button"
+                                               class="advancedBrowse BrowserUploaderAdvancedBrowseButtonText"
+                                               value="Advanced Browse.."/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="javaAppletDivHolder"
+                             style="visibility:hidden;position:absolute; width:99%; height:135px;">
+                            <br/>
+                            <center><b>Drag and Drop Items Here</b></center>
+                        </div>
+                        <div id="FileUploadSummary">
+                            <ul class="filesSelected">
+                            </ul>
+                            <div style="clear: both;" id="progressPanel">
+                            </div>
+                            <div style="clear: both" id="submitAction">
+                                <div class="attention" id="BrowserUploaderSelectedFileAttentionRequiredText"
+                                     style="display: none;">
+                                    Attention Required
+                                </div>
+                                <a href="javascript:void(0);" id="BrowserUploaderClearCompletedLinkText"
+                                   class="clearCompleted">Cancel</a> <a
+                                    id="BrowserUploaderStartUploadingLinkText" href="javascript:void(0);" class="upload"
+                                    style="float:right;">Start Uploading</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filesBasket" style="text-align: left">
+                <div id="FileBasketList">
+                    <div class="filterPanel filterArea" id="filterPanelBasket" style="margin:0px; display: inline-flex;">
+                        <div class="dlt-form-item" style="width: 30%;">
+                            <div class="dlt-form-group">
+                                <button style="position: absolute; z-index: 1;" class="dlt-button dlt-button-icon dlt-menu-button-icon" type="button">
+                                    <i class="icon--small icon--primary dlt-menu-icon dlt-icon-search"></i>
+                                </button>
+                                <input autocomplete="off" type="text" class="dlt-text-input" size="30" maxlength="30" value="" id="filterBasket" name="filterBasket" placeholder="Search" style="padding: 0 2rem;"/>
+                                <!-- <button class="clear-icon clearFilterLink" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button> -->
+                                <button id="clearFilterLink" class="clearFilterLink dlt-button dlt-button-icon dlt-menu-button-icon clear-icon" title="clear" type="button">
+                                    <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="submitActionBasket" class="basket-buttons">
+                            <button class="clearBasket dlt-button dlt-button-icon dlt-menu-button-icon" type="button" title="Clear Basket" onclick="javascript:void(0);">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-clear-basket"></i>
+                            </button>
+                            <!-- <button class="dlt-button dlt-button-icon dlt-menu-button-icon" type="button" onclick="javascript:void(0);">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-share"></i>
+                            </button> -->
+                            <button class="download dlt-button dlt-button-icon dlt-menu-button-icon" type="button" title="Download Basket" onclick="javascript:void(0);">
+                                <i class="icon--small icon--primary dlt-menu-icon dlt-icon-download"></i>
+                            </button>
+                        </div>
+                        <!-- <div id="submitActionBasket" class="basket-buttons">
+                            <button href="javascript:void(0);" style="width: auto; height: 2rem; margin-right: 8px; background: unset;"
+                               class="clearCompleted dlt-button dlt-button-secondary" id="BasketClearAllLinkText">Clear all</button>
+                            <button href="javascript:void(0);"
+                               class="shareBasketItems dlt-button  dlt-button-primary" style="float:right;" id="BasketShareItemsLinkText">Share Items</button>
+                            <button href="javascript:void(0);"
+                                    class="download dlt-button dlt-button-primary" style="float:right;" >Download Basket</button>
+                        </div> -->
+                    </div>
+                    <div class="viewSelectorPanel" id="viewSelectorPanelBasket" style="float: right;">
+                    </div>
+                    <div class="clear"></div>
+                    <div style="height:10px;"></div>
+                    <div class="basketFilterInfo" style="margin-right:15px;color:#777;float:left;"></div>
+                    <div class="totalItemCount" style="float:left;"></div>
+                    <div class="clear"></div>
+                    <div style="height:10px;"></div>
+                    <div class="filesSelectedInBasket">
+                        <a href="javascript:void(0);" style="float:right;" class="clearFilterLink"><span id="clearLogs">Clear Log</span></a>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- <div style="text-align:right;">
+                        <input type="checkbox" id="chkDownloadResume"/>
+                        <label for="chkDownloadResume" id="DownloadResumeTextLabelBasket">Resume</label>
+                    </div> -->
+                    <div style="clear: both;"></div>
+                    <!-- <div id="submitActionBasket" class="basket-buttons">
+                        <button href="javascript:void(0);" style="width: auto; height: 2rem; margin-right: 8px; background: unset;"
+                           class="clearCompleted dlt-button dlt-button-secondary" id="BasketClearAllLinkText">Clear all</button>
+                        <button href="javascript:void(0);"
+                           class="shareBasketItems dlt-button  dlt-button-primary" style="float:right;" id="BasketShareItemsLinkText">Share Items</button>
+                        <button href="javascript:void(0);"
+                                class="download dlt-button dlt-button-primary" style="float:right;" id="BasketDownloadLinkText">Download Basket</button>
+                    </div> -->
+                </div>
+            </div>
+            <div id="pasteFormPanel">
+                <img class="closeButton" alt="close" src="/WebInterface/jQuery/images/cancel.png"
+                     onclick="$.unblockUI();"/>
+                <h2 style="text-align:center;height:20px;" id="PasteFormHeaderText">
+                    Paste
+                </h2>
+                <div class="pasteForm">
+                </div>
+            </div>
+            <div id="welcomeFormPanel">
+                <h2 style="text-align:center;height:20px;" id="WelcomeFormHeaderText">
+                    Welcome
+                </h2>
+                <div class="welcomeForm">
+                </div>
+            </div>
+            <div id="manageSyncPanel" style="padding: 0px;marging:0px;">
+            </div>
+            <div id="manageSharesPanel" style="padding: 0px;marging:0px;">
+            </div>
+            <div class="slideshow"></div>
+            <div id="slideshowDiv">
+                <img class="closeButton" alt="close" src="/WebInterface/jQuery/images/cancel.png"
+                     onclick="closeSlideshow();"/>
+                <h2 style="text-align:center;height:20px;" id="SlideshowPopupHeaderText">
+                    Slideshow
+                </h2>
+                <div class="content">
+                </div>
+            </div>
+            <div id="mediaPreviewDiv">
+                <img id="mediaPreviewCloseButton" class="closeButton" alt="close"
+                     src="/WebInterface/jQuery/images/cancel.png"/>
+                <h2 class="popupHeader" style="cursor:move;" id="MediaPreviewPopupHeaderText">
+                    Media Preview
+                </h2>
+                <div class="content" style="margin:10px">
+                </div>
+            </div>
+            <!--Change password-->
+            <div id="changePasswordDiv">
+                <div class="changepassword-window">
+                    <!-- <button id="closeChangePasswordDialog" data-modal-close
+                        class="dlt-button dlt-icon-button-custom dlt-modal-window__close dlt-icon-sm" onclick="$.unblockUI();">
+                        <img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" />
+                    </button> -->
+                    <button id="closeChangePasswordDialog" data-modal-close  class="dlt-button dlt-button-icon dlt-menu-button-icon dlt-modal-window__close" type="button" onclick="$.unblockUI();">
+                        <i class="icon--small icon--primary dlt-menu-icon dlt-icon-close"></i>
+                    </button>
+                    <h3 id="changePasswordHeader" class="dlt-modal-window__title">
+                        Change password
+                    </h3>
+                </div>
+                <div class="changePassword__content">
+    				<form class="changePassword-form" autocomplete="off" id="changePasswordForm" name="changePasswordForm" method="post" target="dummyIframe"
+                    action="/WebInterface/function/?command=discard">
+                        <div class="changePassword-field">
+                            <div class="dlt-form-item" style="width: 100%;">
+                                <label class="dlt-form-label" id="currentPasswordLabel">Current password</label>
+                                <div class="dlt-form-group">
+                                    <input type="password" class="dlt-text-input" name="existingPassword" id="existingPassword" value="" autocomplete="new-password"/>
+                                    <button class="dlt-button dlt-button-icon dlt-menu-button-icon icon-position" type="button" title="Show Password" onclick="showHidePassword('existingPassword','existingPasswordIcon')">
+                                        <i id="existingPasswordIcon" class="icon--small icon--primary dlt-icon-password-show"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="changePassword-field margin-bottom-2">
+                            <div class="dlt-form-item" style="width: 100%;">
+                                <label class="dlt-form-label" id="newPasswordLabel">New password</label>
+                                <div class="dlt-form-group">
+                                    <input type="password" class="dlt-text-input" name="passwordWithExisting" id="passwordWithExisting" value="" autocomplete="new-password"/>
+                                    <button class="dlt-button dlt-button-icon dlt-menu-button-icon icon-position" type="button" title="Show Password" onclick="showHidePassword('passwordWithExisting','passwordWithExistingIcon')">
+                                        <i id="passwordWithExistingIcon" class="icon--small icon--primary dlt-icon-password-show"></i>
+                                    </button>
+                                </div>
+                                <img class='passwordComplexityTooltip' src='/WebInterface/delite/icons/dlt-icon-info.svg' class='warning-icon'>
+                                <div id="passwordComplexityError" class="password-error-message">
+                                    <i class="dlt-icon-error icon--small icon--primary icon-style"></i>
+								    <span class="error-message">Password complexity doesnt match</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="changePassword-field">
+                            <div class="dlt-form-item" style="width: 100%;">
+                                <label class="dlt-form-label" id="confirmPasswordLabel">Confirm password</label>
+                                <div class="dlt-form-group">
+                                    <input type="password" class="dlt-text-input" name="confirmPasswordWithExisting" id="confirmPasswordWithExisting" value="" autocomplete="new-password"/>
+                                    <!-- <button class="clear-icon clear-icon-more-padding clear-icon-confirmPasswordWithExisting" type="button"><img style="height: 18px;" src="/WebInterface/delite/icons/dlt-icon-close-primary.svg" class="dlt-icon-close"/></button>
+                                    <button title="Show password" type="button" class="password-show-icon" onclick="toggleShowHide.call(this)">
+                                        <img src="/WebInterface/delite/icons/dlt-icon-password-show.svg" class="dlt-icon-password-show"/>
+                                    </button> -->
+                                    <button class="dlt-button dlt-button-icon dlt-menu-button-icon icon-position" type="button" title="Show Password" onclick="showHidePassword('confirmPasswordWithExisting','confirmPasswordWithExistingIcon')">
+                                        <i id="confirmPasswordWithExistingIcon" class="icon--small icon--primary dlt-icon-password-show"></i>
+                                    </button>
+                                </div>
+                                <div id="confirmPasswordWithExistingError" class="password-error-message">
+                                    <i class="dlt-icon-error icon--small icon--primary icon-style"></i>
+								    <span class="error-message">The passwords do not match</span>
+                                </div>
+                                <div id="newAndSamePasswordMatchError" class="password-error-message">
+                                    <i class="dlt-icon-error icon--small icon--primary icon-style"></i>
+                                    <span class="error-message">New password cannot be same as old password</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit clearfix">
+                                <button value="Proceed" class="login__button" id="proceedLabel">Proceed</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // function toggleShowHide(){
+        //      var imgSrc = $(this).find("img");
+        //        if(imgSrc.attr('src').includes("dlt-icon-password-hide"))
+        //                 imgSrc.attr('src', "/WebInterface/delite/icons/dlt-icon-password-show.svg");
+        //             else
+        //             imgSrc.attr('src',"/WebInterface/delite/icons/dlt-icon-password-hide.svg");
+        // }
+    </script>
+    <!-- The template to display files available for upload -->
+    <script id="template-upload" type="text/x-jquery-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+			<li size="{%=file.size%}" id="file-upload-template-{%=i%}" class="file_upload_content_border template-upload {% if (file.error) { %} error_file_upload {% }  %} {% if (file.fromApplet) { %} appletItem {% }  %}{% if (file.isDropped) { %} isDroppedItem {% }  %}" path="{%=escape(file.path)%}" fileName="{%=escape(file.name)%}" fullPath="{%=file.FullPath%}" privs="{%=escape(file.privs)%}">
+				<div class="previewIconUpload block"><span></span></div>
+                {% if (file.isGroup) { %}
+                    <span title="Items in this group" class="groupCount">{%=unescape(file.totalCount)%}</span>
+                    <div class="name block wrap">{%=unescape(file.path)%} : {%=file.name%}</div>
+                {% } else { %}
+				    <div class="name block wrap">{%=$(localizations)[0].uploadTo%}{%=unescape(file.path)%}{% if (file.altName) { %}{%=file.altName%}{% } else { %}{%=file.name%}{% } %}</div>
+                {% } %}
+				<input id="uploadPath{%=i%}" type="hidden" name="uploadPath" value="{%=file.path%}" />
+				<input id="theName{%=i%}" type="hidden" name="the_action" value="STOR" />
+                <input id="theFileAltName{%=i%}" type="hidden" name="alt_name" value="{%=file.altName%}" />
+				{% if ((/*@cc_on!@*/false || !!document.documentMode) && file.size > 4294960000 && ($("#browseTypeSelector").hasClass("normal"))) { %}
+                    <div class="size block" style="color:red" title="The file size exceeds the Internet Explorer limit of 4 GB. Continue the upload either by using the Advanced Upload option or switching to a different browser.">{%=$.CrushFTP.formatBytes(file.size)%}</div>
+                {% } else { %}
+				    <div class="size block">{%=$.CrushFTP.formatBytes(file.size)%}</div>
+                {% } %}
+				<!--div class="cancel block" style="display:none;">
+					<a href="javascript:void(0);" class="clearCompleted cancel" style="float:none;">{%=$(localizations)[0].cancel%}</a>
+				</div-->
+                <button class="dlt-button dlt-button-icon cancelUpload block" style="float:right;margin-top: 5px;" title="Cancel">
+                    <!-- <i class="clearCompleted"></i> -->
+                    <a href="javascript:void(0);" class="clearCompleted" style="float:none;"></a>
+                </button>
+                <div class="pausePnl block" style="display:none;float:right;margin-top: 5px;">
+                    <a href="javascript:void();" class="pause pauseUpload">{%=$(localizations)[0].pause%}</a>
+                </div>
+				{% if (!file.error) { %}
+					<div class="start block" style="display:none;">
+						<a href="javascript:void(0);" class="upload start"></a>
+					</div>
+                    <button class="dlt-button dlt-button-icon startUpload block {%=file.warning%} {%=file.alert%}" style="float:right;margin-top: 5px;margin-right:4px" title="Upload">
+                        <a href="javascript:void(0);" class="startUpload upload" style="display: hidden"></a>
+                    </button>
+				{% } else { %}
+					{% if ($(localizations)[0]['errors.' + file.error]=="true") { %}
+						<!-- <div class="start block" style="display:none;">
+							<a href="javascript:void(0);" class="upload start"></a>
+						</div> -->
+                        <button class="dlt-button dlt-button-secondary startUpload block" style="float:right;margin-right:4px" title="Upload">
+                            <a href="javascript:void(0);" class="upload startUpload"></a>
+                        </button>
+					{% } else { %}
+						<div class="noCount" style="display:none;"></div>
+					{% } %}
+				{% } %}
+				{% if (file.error) { %}
+                    <div><span class="error {%=file.error%}" style="dsiplay: flex">
+                        <i class="dlt-icon dlt-icon-error icon--danger icon--small"></i>{%=$(localizations)[0].errorLabel%}{%=$(localizations)[0]['errors.' + file.error] || file.error%}
+                    </span> </div>  
+					{% } else { %}
+                    <div class="formEdit block" style="float:right;margin-top: 5px;display:none;"><a href="javascript:void(0);" class="editForm">{%=$(localizations)[0].details%}</a></div>
+                    <span class='uploadedMark' title='uploaded' style="margin-top: 5px;"></span>
+				{% }  %}
+				<div class="clear"></div>
+                <div class="progressInfo" style="display:none;height: 100%; padding-top: 16px;">
+                    <div class="progressbar"></div>
+                </div>
+			</li>
+		{% } %}
+
+    </script>
+    <!-- The template to display files available for download -->
+    <script id="template-download" type="text/x-tmpl">
+		{% for (var i=0, file; file=o.files[i]; i++) { %}
+			<li size="{%=file.size%}" class="file_upload_content_border template-download {% if (file.error) { %} error_file_upload ui-state-error-text {% }  %}" fullPath="{%=file.FullPath%}">
+				<div class="preview"><label class="noPreviewNote ui-state-disabled">No<br>Preview</label><span class="fade"></span></div>
+				<div class="name">{%=file.name%}</div>
+				<div class="path">Upload to : {%=file.path%}</div>
+				<div class="size">Size : {%=o.formatFileSize(file.size)%}</div>
+				{% if (file.error) { %}
+                    <div> <span class="error"><i class="dlt-icon dlt-icon-error icon--danger icon--small"></i>
+                        Error :	{%=$(localizations)[0]['errors.' + file.error] || file.error%}
+                    </span> </div>
+				{% }  %}
+				<div class="delete" style="float:right;margin-top:17px;">
+					<a href="javascript:void(0);" class="clearCompleted" style="float:none;">{%=$(localizations)[0].cancel%}</a>
+				</div>
+				<div class="progress progress-success progress-striped active"><div class="bar" style="width:0%;"></div></div>
+				{% if (!o.options.autoUpload) { %}
+					<div class="start" style="float:right;margin-top:17px;">
+						<a href="javascript:void(0);" class="upload start"></a>
+					</div>
+				{% } %}
+				<div class="clear"></div>
+			</li>
+		{% } %}
+
+    </script>
+
+    <!--<script>-->
+    <!--$(document).ready(function() {-->
+    <!--%fromAddressConfiguration%-->
+    <!--});-->
+    <!--</script>-->
+
+    <iframe id="dummyIframe" name="dummyIframe" src="javascript:false;" style="display:none;"></iframe>
+    <div id="loadingIndicator"></div>
+    <div id="fileExistConfirm" style="display: none;">
+        <div class="ui-priority-primary">These items exist in target location :</div>
+        <ul class="ui-widget">
+        </ul>
+    </div>
+    <script>
+        // document.getElementById("languageText").innerHTML = $(localizations)[0].languageText;
+        // document.getElementById("loadingIndicator").innerHTML = $(localizations)[0].loadingIndicatorText;
+        // document.getElementById("waitText").innerHTML = $(localizations)[0].loadingIndicatorText;
+    </script>
+</body>
+</html>

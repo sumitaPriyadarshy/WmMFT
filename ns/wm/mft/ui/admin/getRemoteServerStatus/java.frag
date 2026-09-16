@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getRemoteServerStatus</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required serverURL</value>
+    <value>[i] field:0:required userid</value>
+    <value>[i] field:0:required password</value>
+    <value>[i] field:0:optional keystore</value>
+    <value>[i] field:0:optional key_pass</value>
+    <value>[i] field:0:optional keystore_pass</value>
+    <value>[i] recref:0:optional S3 wm.mft.assets.rec.remoteEndPoint:S3</value>
+    <value>[o] record:0:required output</value>
+    <value>[o] - field:0:optional success</value>
+    <value>[o] - field:0:optional connectionstatus</value>
+    <value>[o] - field:0:optional connectioninfo</value>
+    <value>[o] - field:0:optional errorMessage</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">ClN0cmluZyBzZXJ2ZXJVUkwgPSBudWxsOwpJRGF0YSBvdXRwdXQgPSBJRGF0YUZhY3RvcnkuY3Jl
+YXRlKCk7CklEYXRhIHN2Y1Jlc3AgPSBudWxsOwpTdHJpbmcgY29ubmVjdGlvbnN0YXR1cyA9IE1G
+VFJlc291cmNlcy5nZXRNZXNzYWdlKCIxNTA4Iik7ClN0cmluZyBjb25uZWN0aW9uaW5mbyA9ICIi
+OwpTdHJpbmcgc3RhdHVzTWVzc2FnZSA9ICIiOwpib29sZWFuIHN1Y2Nlc3MgPSB0cnVlOwp0cnkg
+ewoJCgkvL1JlbW90ZSBzZXJ2ZXIgc3RhdHVzIGNoZWNrIGlzIGRvbmUgZnJvbSB0aHJlZSBwbGFj
+ZXMuIFdpbGwgYWxsb3cgaWYgdGhlIHVzZXIgaGFzIHBlcm1pc3Npb24KCS8vdG8gdmlldyBhbnkg
+b2YgVkZTLCBQb3N0IFByb2Nlc3Mgb3IgU2NoZWR1bGVkIGV2ZW50Cgl0cnkgewoJCVJCQVByb3h5
+LnZhbGlkYXRlU2Vzc2lvbihSQkFVaUhhbmRsZS5WRlNfVVBEQVRFKTsKCX0gY2F0Y2ggKEV4Y2Vw
+dGlvbiBlMSkgewoJCXRyeSB7CgkJCVJCQVByb3h5LnZhbGlkYXRlU2Vzc2lvbihSQkFVaUhhbmRs
+ZS5BQ1RJT05fUFBfVklFVyk7CgkJfSBjYXRjaCAoRXhjZXB0aW9uIGUyKSB7CgkJCXRyeSB7CgkJ
+CQlSQkFQcm94eS52YWxpZGF0ZVNlc3Npb24oUkJBVWlIYW5kbGUuQUNUSU9OX1NFX1ZJRVcpOwoJ
+CQl9IGNhdGNoIChFeGNlcHRpb24gZTMpIHsKCQkJCXRocm93IGUzOwoJCQl9CgkJfQoJfQoJCglT
+dHJpbmcgZm9ybWF0dGVkVVJMID0gZ2V0Rm9ybWF0dGVkVVJMKHBpcGVsaW5lKTsKCVByb3BlcnRp
+ZXMgY2xpZW50Q29uZmlnID0gZ2V0S2V5U3RvcmVQcm9wZXJ0aWVzKHBpcGVsaW5lKTsKCWNsaWVu
+dENvbmZpZy5wdXRBbGwoZ2V0UHJveHlDb25maWcocGlwZWxpbmUpKTsKCWNsaWVudENvbmZpZy5w
+dXRBbGwoZ2V0U0ZUUENpcGhlclByZWZlcmVuY2VzKHBpcGVsaW5lKSk7CglpZiAoZm9ybWF0dGVk
+VVJMLnN0YXJ0c1dpdGgoIlMzOi8vIikpIHsKCQljbGllbnRDb25maWcucHV0QWxsKGdldFMzQ2xp
+ZW50Q29uZmlnKHBpcGVsaW5lKSk7Cgl9Cgl0cnkgewoJCVNlcnZlckFkbWluUHJveHkuZ2V0UmVt
+b3RlU2VydmVyU3RhdHVzKGZvcm1hdHRlZFVSTCwgY2xpZW50Q29uZmlnKTsKCX0gY2F0Y2ggKEV4
+Y2VwdGlvbiBlKSB7CgkJc3VjY2VzcyA9IGZhbHNlOwoJCXRocm93IGU7Cgl9IGZpbmFsbHkgewoJ
+CVZlY3RvciByZXNwb25zZSA9IChWZWN0b3IpIGNsaWVudENvbmZpZy5nZXQoIltQUk9YWV9DT05O
+RUNUSU9OXSIpOwoJCWlmIChyZXNwb25zZSAhPSBudWxsICYmIHJlc3BvbnNlLmdldCgwKSAhPSBu
+dWxsKSB7CgkJCWNvbm5lY3Rpb25zdGF0dXMgPSByZXNwb25zZS5nZXQoMCkudG9TdHJpbmcoKS5y
+ZXBsYWNlKCJbUFJPWFlfQ09OTkVDVElPTl0iLCAiIik7CgkJCWNvbm5lY3Rpb25pbmZvID0gcmVz
+cG9uc2UuZ2V0KDEpLnRvU3RyaW5nKCkucmVwbGFjZSgiW1BST1hZX0NPTk5FQ1RJT05dIiwgIiIp
+OwoJCQlpZiAocmVzcG9uc2Uuc2l6ZSgpID4gMikgLy8gTm90IHN1cmUgaG93IHRoaXMgaXMgd29y
+a2luZy4gRm9yIHN1Y2Nlc3NmdWxsIGNvbm5lY3Rpb24sIHRoaXMgdmVjdG9yCgkJCQkJCQkJCQkv
+LyBoYXMgb25seSAyIGVudHJpZXMKCQkJCXN0YXR1c01lc3NhZ2UgPSByZXNwb25zZS5nZXQoMiku
+dG9TdHJpbmcoKS5yZXBsYWNlKCJbUFJPWFlfQ09OTkVDVElPTl0iLCAiIik7CgkJfQoJfQp9IGNh
+dGNoIChUaHJvd2FibGUgdCkgewoJaWYgKHN0YXR1c01lc3NhZ2UuZXF1YWxzKCIiKSkgewoJCXN0
+YXR1c01lc3NhZ2UgPSB0LmdldExvY2FsaXplZE1lc3NhZ2UoKTsKCQlpZiAoc3RhdHVzTWVzc2Fn
+ZSAhPSBudWxsICYmIHN0YXR1c01lc3NhZ2UuY29udGFpbnMoIkZUUCBFcnJvciEgIEV4cGVjdGVk
+IDIzMCBidXQgZ290IDUzMCIpKQoJCQlzdGF0dXNNZXNzYWdlID0gTUZUUmVzb3VyY2VzLmdldE1l
+c3NhZ2UoIjE1MDkiKTsKCX0KCXRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKHQpOwp9IGZpbmFs
+bHkgewoJVmFsdWVzRW11bGF0b3IucHV0KG91dHB1dCwgInN1Y2Nlc3MiLCBzdWNjZXNzKTsKCVZh
+bHVlc0VtdWxhdG9yLnB1dChvdXRwdXQsICJjb25uZWN0aW9uc3RhdHVzIiwgY29ubmVjdGlvbnN0
+YXR1cyk7CglWYWx1ZXNFbXVsYXRvci5wdXQob3V0cHV0LCAiY29ubmVjdGlvbmluZm8iLCBjb25u
+ZWN0aW9uaW5mbyk7CglWYWx1ZXNFbXVsYXRvci5wdXQob3V0cHV0LCAiZXJyb3JNZXNzYWdlIiwg
+c3RhdHVzTWVzc2FnZSk7CglWYWx1ZXNFbXVsYXRvci5wdXQob3V0cHV0LCAic3ZjUmVzcG9uc2Ui
+LCBzdmNSZXNwKTsKCVZhbHVlc0VtdWxhdG9yLnB1dChwaXBlbGluZSwgIm91dHB1dCIsIG91dHB1
+dCk7Cn0K</value>
+</Values>

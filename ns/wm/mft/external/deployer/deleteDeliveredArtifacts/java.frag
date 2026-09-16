@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">deleteDeliveredArtifacts</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">U3RyaW5nIGRlcGxveW1lbnRJZCA9IFZhbHVlc0VtdWxhdG9yLmdldFN0cmluZyhpbnB1dCwgRGVw
+bG95ZXJDb25zdGFudHMuREVQTE9ZTUVOVF9JRCk7CkBTdXBwcmVzc1dhcm5pbmdzKCJ1bnVzZWQi
+KQpJRGF0YVtdIGNvbm5lY3Rpb25Qcm9wZXJ0aWVzID0gKElEYXRhW10pIFZhbHVlc0VtdWxhdG9y
+LmdldChpbnB1dCwgRGVwbG95ZXJDb25zdGFudHMuQ09OTl9QUk9QRVJUSUVTKTsKaWYgKGRlcGxv
+eW1lbnRJZCA9PSBudWxsIHx8IGRlcGxveW1lbnRJZC5pc0VtcHR5KCkpIHsKCXRocm93IG5ldyBT
+ZXJ2aWNlRXhjZXB0aW9uKE1GVFJlc291cmNlcy5nZXRNZXNzYWdlKCI3MDAzIikpOwp9IGVsc2Ug
+ewoJRGVwbG95bWVudEhhbmRsZXIuZGVsZXRlRGVsaXZlcmVkQXJ0aWZhY3RzKGRlcGxveW1lbnRJ
+ZCk7Cn0K</value>
+</Values>

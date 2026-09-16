@@ -1,0 +1,13 @@
+enabled=true
+issuerUri=https://solis.ibm.com/auth
+# IBM Solis JWKS endpoint for public key retrieval
+jwkSetUri=https://solis.ibm.com/auth/.well-known/jwks.json
+# Expected audience for JWT tokens (the 'aud' claim)
+audience=mft-api
+# JWKS cache duration in minutes (default: 60)
+jwksCacheDurationMinutes=60
+loginUri=https://aws.login-ui.test.saas.ibm.com/login
+isvTokenEndpoint=https://aws.login.test.saas.ibm.com/security/auth/isv/token
+redirectUri=https://localhost.ipaas.test.automation.ibm.com
+solisAuthEnv=GLOBAL_TEST
+solisCookieDomain=.

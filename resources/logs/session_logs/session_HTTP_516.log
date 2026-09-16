@@ -1,0 +1,47 @@
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *TRANSFER_ID: AG_vg000100k1gh04h9pt91d793*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *Host: localhost*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *Content-Length: 132*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *command:login*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *username:sdey*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *password:************
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *clientid:[Find : vg000100k1gh029hpt91d790]*
+09/02/2026 01:10:38 PM|[HTTP:516::127.0.0.1] READ: *TRANSFER_ID:AG_vg000100k1gh04h9pt91d793*
+09/02/2026 01:10:38 PM|[HTTP:516:sdey:127.0.0.1] WROTE: *Set-Cookie: mainServerInstance=; path=/; secure;HttpOnly
+09/02/2026 01:10:38 PM|Set-Cookie: CrushAuth=*****; path=/; secure;HttpOnly*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788334838576_57Lx1GyIQWcNdMjjiRiDtU4dIMmoxy;*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *Content-Length: 61*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *c2f:moxy*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *command:stat*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 01:10:38 PM|[HTTP:517:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp/. Unknown Host : dev9874072.a-vir-s100.mft.ipaas.dev.automation.ibm.com*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788334838576_57Lx1GyIQWcNdMjjiRiDtU4dIMmoxy;*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *Content-Length: 58*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *c2f:moxy*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *command:stat*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 01:10:39 PM|[HTTP:518:sdey:127.0.0.1] Disconnected:ERROR:Could not establish connection for : /ibmmcsp-sftp. Unknown Host : dev9874072.a-vir-s100.mft.ipaas.dev.automation.ibm.com*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788334838576_57Lx1GyIQWcNdMjjiRiDtU4dIMmoxy;*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *Content-Length: 70*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *c2f:moxy*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *command:getXMLListing*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *path:/ibmmcsp-sftp/*
+09/02/2026 01:10:39 PM|[HTTP:519:sdey:127.0.0.1] READ: *format:stat_dmz*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *POST / HTTP/1.1*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *Cookie: CrushAuth=1788334838576_57Lx1GyIQWcNdMjjiRiDtU4dIMmoxy;*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *TRANSFER_ID: dummy*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *Host: localhost*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *Content-Length: 23*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *c2f:moxy*
+09/02/2026 01:10:40 PM|[HTTP:523:sdey:127.0.0.1] READ: *command:logout*
